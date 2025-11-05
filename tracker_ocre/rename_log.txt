@@ -1,0 +1,721 @@
+Renommé : 'Aboub_4787.png' -> '4787.png'
+
+Renommé : 'Abrakleur_Clair_1047.png' -> '1047.png'
+
+Renommé : 'Abrakleur_sombre_5698.png' -> '5698.png'
+
+Renommé : 'Abrakne_7349.png' -> '7349.png'
+
+Renommé : 'Abrakne_sombre_7341.png' -> '7341.png'
+
+Renommé : 'Abraknyde_7398.png' -> '7398.png'
+
+Renommé : 'Abraknyde_ancestral_173.png' -> '173.png'
+
+Renommé : 'Abraknyde_sombre_7342.png' -> '7342.png'
+
+Renommé : 'Abraknyde_Vénérable_7343.png' -> '7343.png'
+
+Renommé : 'Akakwa_6506.png' -> '6506.png'
+
+Renommé : 'Alhyène_3558.png' -> '3558.png'
+
+Renommé : 'Amlub_385.png' -> '385.png'
+
+Renommé : 'Arakne_8084.png' -> '8084.png'
+
+Renommé : 'Arakne_des_Égouts_255.png' -> '255.png'
+
+Renommé : 'Arakne_Majeure_2630.png' -> '2630.png'
+
+Renommé : 'Arakne_Malade_474.png' -> '474.png'
+
+Renommé : 'Bakazako_6634.png' -> '6634.png'
+
+Renommé : 'Bambouto_6346.png' -> '6346.png'
+
+Renommé : 'Bandit_du_clan_des_Roublards_155.png' -> '155.png'
+
+Renommé : 'Bandit_Manchot_466.png' -> '466.png'
+
+Renommé : 'Barbroussa_1049.png' -> '1049.png'
+
+Renommé : 'Berger Porkass_21.png' -> '21.png'
+
+Renommé : 'Berger_Porkass_344.png' -> '344.png'
+
+Renommé : 'Betto_6505.png' -> '6505.png'
+
+Renommé : 'Biblop Coco_13.png' -> '13.png'
+
+Renommé : 'Biblop Griotte_14.png' -> '14.png'
+
+Renommé : 'Biblop_Coco_7969.png' -> '7969.png'
+
+Renommé : 'Biblop_Griotte_7967.png' -> '7967.png'
+
+Renommé : 'Biblop_Indigo_7968.png' -> '7968.png'
+
+Renommé : 'Biblop_Reinette_7966.png' -> '7966.png'
+
+Renommé : 'Bitouf_Aérien_1020.png' -> '1020.png'
+
+Renommé : 'Bitouf_des_plaines_5704.png' -> '5704.png'
+
+Renommé : 'Bitouf_sombre_5699.png' -> '5699.png'
+
+Renommé : 'Bizarbwork_4626.png' -> '4626.png'
+
+Renommé : 'Black_Tiwabbit_899.png' -> '899.png'
+
+Renommé : 'Black_Wabbit_4982.png' -> '4982.png'
+
+Renommé : 'Blop_Coco_Royal_7973.png' -> '7973.png'
+
+Renommé : 'Blop_Griotte_Royal_7971.png' -> '7971.png'
+
+Renommé : 'Blop_Indigo_Royal_7972.png' -> '7972.png'
+
+Renommé : 'Blop_Multicolore_Royal_1188.png' -> '1188.png'
+
+Renommé : 'Blop_Reinette_Royal_7970.png' -> '7970.png'
+
+Renommé : 'Boomba_4223.png' -> '4223.png'
+
+Renommé : 'Boo_10.png' -> '10.png'
+
+Renommé : 'Boo_6938.png' -> '6938.png'
+
+Renommé : 'Boufton_Blanc_435.png' -> '435.png'
+
+Renommé : 'Boufton_Noir_149.png' -> '149.png'
+
+Renommé : 'Bouftou_1.png' -> '1.png'
+
+Renommé : 'Bouftou_6781.png' -> '6781.png'
+
+Renommé : 'Bouftou_Royal_1190.png' -> '1190.png'
+
+Renommé : 'Boulanger Sombre_2.png' -> '2.png'
+
+Renommé : 'Boulanger_Sombre_153.png' -> '153.png'
+
+Renommé : 'Boumbardier_6586.png' -> '6586.png'
+
+Renommé : 'Bourbassingue_1059.png' -> '1059.png'
+
+Renommé : 'Bourdard_7299.png' -> '7299.png'
+
+Renommé : 'Brouture_5700.png' -> '5700.png'
+
+Renommé : 'Bulbiflore_6322.png' -> '6322.png'
+
+Renommé : 'Bulbuisson_6347.png' -> '6347.png'
+
+Renommé : 'Bworker_478.png' -> '478.png'
+
+Renommé : 'Bworkette_792.png' -> '792.png'
+
+Renommé : 'Bwork_6818.png' -> '6818.png'
+
+Renommé : 'Bwork_Archer_4209.png' -> '4209.png'
+
+Renommé : 'Bwork_Mage_4782.png' -> '4782.png'
+
+Renommé : 'Canondorf_5061.png' -> '5061.png'
+
+Renommé : 'Cavalier_Porkass_343.png' -> '343.png'
+
+Renommé : 'Chafer_6822.png' -> '6822.png'
+
+Renommé : 'Chafer_Archer_5065.png' -> '5065.png'
+
+Renommé : 'Chafer_d'élite_5066.png' -> '5066.png'
+
+Renommé : 'Chafer_Draugr_5053.png' -> '5053.png'
+
+Renommé : 'Chafer_Fantassin_5054.png' -> '5054.png'
+
+Renommé : 'Chafer_Invisible_5055.png' -> '5055.png'
+
+Renommé : 'Chafer_Lancier_5067.png' -> '5067.png'
+
+Renommé : 'Champaknyde_1154.png' -> '1154.png'
+
+Renommé : 'Champa_Bleu_7759.png' -> '7759.png'
+
+Renommé : 'Champa_Marron_7760.png' -> '7760.png'
+
+Renommé : 'Champa_Rouge_7761.png' -> '7761.png'
+
+Renommé : 'Champa_Vert_7762.png' -> '7762.png'
+
+Renommé : 'Champbis_1157.png' -> '1157.png'
+
+Renommé : 'Champmane_1156.png' -> '1156.png'
+
+Renommé : 'Champodonte_1155.png' -> '1155.png'
+
+Renommé : 'Champ_Champ_59.png' -> '59.png'
+
+Renommé : 'Champ_à_Gnons_4925.png' -> '4925.png'
+
+Renommé : 'Chef de Guerre Bouftou_20.png' -> '20.png'
+
+Renommé : 'Chef_Crocodaille_263.png' -> '263.png'
+
+Renommé : 'Chef_de_Guerre_Bouftou_148.png' -> '148.png'
+
+Renommé : 'Chevaucheur_koalak_759.png' -> '759.png'
+
+Renommé : 'Chiendent_5697.png' -> '5697.png'
+
+Renommé : 'Chêne_mou_257.png' -> '257.png'
+
+Renommé : 'Cochon de Lait_17.png' -> '17.png'
+
+Renommé : 'Cochon_de_Lait_123.png' -> '123.png'
+
+Renommé : 'Codem_386.png' -> '386.png'
+
+Renommé : 'Corailleur_3879.png' -> '3879.png'
+
+Renommé : 'Corailleur_Magistral_1027.png' -> '1027.png'
+
+Renommé : 'Corbac_26.png' -> '26.png'
+
+Renommé : 'Corbac_7952.png' -> '7952.png'
+
+Renommé : 'Crabe_6357.png' -> '6357.png'
+
+Renommé : 'Crachefoux_7950.png' -> '7950.png'
+
+Renommé : 'Craqueboule_7297.png' -> '7297.png'
+
+Renommé : 'Craqueboule_Poli_5705.png' -> '5705.png'
+
+Renommé : 'Craqueleur_6799.png' -> '6799.png'
+
+Renommé : 'Craqueleur_des_plaines_2882.png' -> '2882.png'
+
+Renommé : 'Craqueleur_Légendaire_669.png' -> '669.png'
+
+Renommé : 'Craqueleur_poli_5706.png' -> '5706.png'
+
+Renommé : 'Crocabulia_854.png' -> '854.png'
+
+Renommé : 'Crocodaille_6548.png' -> '6548.png'
+
+Renommé : 'Croc_Gland_2622.png' -> '2622.png'
+
+Renommé : 'Croc_Gland_Enragé_397.png' -> '397.png'
+
+Renommé : 'Crowneille_3096.png' -> '3096.png'
+
+Renommé : 'Crustorail_Kouraçao_1060.png' -> '1060.png'
+
+Renommé : 'Crustorail_Malibout_1061.png' -> '1061.png'
+
+Renommé : 'Crustorail_Morito_1063.png' -> '1063.png'
+
+Renommé : 'Crustorail_Passaoh_1062.png' -> '1062.png'
+
+Renommé : 'Disciple_Zoth_1055.png' -> '1055.png'
+
+Renommé : 'DoK_Alako_747.png' -> '747.png'
+
+Renommé : 'Don_Dorgan_601.png' -> '601.png'
+
+Renommé : 'Don_Duss_Ang_600.png' -> '600.png'
+
+Renommé : 'Dragacé_5804.png' -> '5804.png'
+
+Renommé : 'Dragnarok_853.png' -> '853.png'
+
+Renommé : 'Dragodinde_Amande_Sauvage_171.png' -> '171.png'
+
+Renommé : 'Dragodinde_dorée_sauvage_666.png' -> '666.png'
+
+Renommé : 'Dragodinde_Rousse_Sauvage_200.png' -> '200.png'
+
+Renommé : 'DragOeuf_Ardoise_170.png' -> '170.png'
+
+Renommé : 'DragOeuf_Argile_87.png' -> '87.png'
+
+Renommé : 'DragOeuf_Calcaire_90.png' -> '90.png'
+
+Renommé : 'DragOeuf_Charbon_89.png' -> '89.png'
+
+Renommé : 'Dragon_Cochon_1191.png' -> '1191.png'
+
+Renommé : 'Dragoss_Ardoise_905.png' -> '905.png'
+
+Renommé : 'Dragoss_Argile_879.png' -> '879.png'
+
+Renommé : 'Dragoss_Calcaire_878.png' -> '878.png'
+
+Renommé : 'Dragoss_Charbon_858.png' -> '858.png'
+
+Renommé : 'Draguaindrop_862.png' -> '862.png'
+
+Renommé : 'Dragueuse_855.png' -> '855.png'
+
+Renommé : 'Drakoalak_763.png' -> '763.png'
+
+Renommé : 'Déminoboule_832.png' -> '832.png'
+
+Renommé : 'Etoile_de_la_Mer_d'Asse_927.png' -> '927.png'
+
+Renommé : 'Fangshu_6636.png' -> '6636.png'
+
+Renommé : 'Fantôme_Apero_932.png' -> '932.png'
+
+Renommé : 'Fantôme_aux_Plates_378.png' -> '378.png'
+
+Renommé : 'Fantôme_Hicide_380.png' -> '380.png'
+
+Renommé : 'Fantôme_Égérie_379.png' -> '379.png'
+
+Renommé : 'Fauchalak_5022.png' -> '5022.png'
+
+Renommé : 'Flammèche_Air_5498.png' -> '5498.png'
+
+Renommé : 'Flammèche_Eau_5497.png' -> '5497.png'
+
+Renommé : 'Flammèche_Feu_5496.png' -> '5496.png'
+
+Renommé : 'Flammèche_Terre_5495.png' -> '5495.png'
+
+Renommé : 'Floribonde_5701.png' -> '5701.png'
+
+Renommé : 'Floristile_22.png' -> '22.png'
+
+Renommé : 'Floristile_6349.png' -> '6349.png'
+
+Renommé : 'Forgeron_Sombre_119.png' -> '119.png'
+
+Renommé : 'Fossoyeur_koalak_761.png' -> '761.png'
+
+Renommé : 'Foufayteur_5288.png' -> '5288.png'
+
+Renommé : 'Founamboul_6255.png' -> '6255.png'
+
+Renommé : 'Fourbasse_4475.png' -> '4475.png'
+
+Renommé : 'Fécorce_5702.png' -> '5702.png'
+
+Renommé : 'Félygiène_3559.png' -> '3559.png'
+
+Renommé : 'Gamine_Zoth_1053.png' -> '1053.png'
+
+Renommé : 'Gamino_668.png' -> '668.png'
+
+Renommé : 'Gardienne_des_Égouts_450.png' -> '450.png'
+
+Renommé : 'Gargrouille_5243.png' -> '5243.png'
+
+Renommé : 'Gelée_Bleue_55.png' -> '55.png'
+
+Renommé : 'Gelée_Fraise_57.png' -> '57.png'
+
+Renommé : 'Gelée_Menthe_56.png' -> '56.png'
+
+Renommé : 'Gelée_Royale_Bleue_58.png' -> '58.png'
+
+Renommé : 'Gelée_Royale_Citron_430.png' -> '430.png'
+
+Renommé : 'Gelée_Royale_Fraise_86.png' -> '86.png'
+
+Renommé : 'Gelée_Royale_Menthe_85.png' -> '85.png'
+
+Renommé : 'Gink_4780.png' -> '4780.png'
+
+Renommé : 'Gloutovore_5436.png' -> '5436.png'
+
+Renommé : 'Gob-trotteur_62.png' -> '62.png'
+
+Renommé : 'Gobet_7001.png' -> '7001.png'
+
+Renommé : 'Gourlo_le_Terrible_1051.png' -> '1051.png'
+
+Renommé : 'Grand_Pa_Wabbit_99.png' -> '99.png'
+
+Renommé : 'Grenufar_6348.png' -> '6348.png'
+
+Renommé : 'Guerrier_koalak_749.png' -> '749.png'
+
+Renommé : 'Guerrier_Zoth_1054.png' -> '1054.png'
+
+Renommé : 'Hanshi_6212.png' -> '6212.png'
+
+Renommé : 'Haute_Truche_3618.png' -> '3618.png'
+
+Renommé : 'Hell_Mina_3599.png' -> '3599.png'
+
+Renommé : 'Ino-Naru_6214.png' -> '6214.png'
+
+Renommé : 'Ishigro_Pake_6363.png' -> '6363.png'
+
+Renommé : 'Jianshi-Nobi_6386.png' -> '6386.png'
+
+Renommé : 'Kaniblou_3636.png' -> '3636.png'
+
+Renommé : 'Kanigrou_6140.png' -> '6140.png'
+
+Renommé : 'Kanniboul_Ark_211.png' -> '211.png'
+
+Renommé : 'Kanniboul_Eth_212.png' -> '212.png'
+
+Renommé : 'Kanniboul_Jav_213.png' -> '213.png'
+
+Renommé : 'Kanniboul_Sarbak_214.png' -> '214.png'
+
+Renommé : 'Kaonashi_6635.png' -> '6635.png'
+
+Renommé : 'Kaskargo_1044.png' -> '1044.png'
+
+Renommé : 'Kido_5707.png' -> '5707.png'
+
+Renommé : 'Kilibriss_5703.png' -> '5703.png'
+
+Renommé : 'Kirevam_388.png' -> '388.png'
+
+Renommé : 'Koalak_Coco_752.png' -> '752.png'
+
+Renommé : 'Koalak_Farouche_756.png' -> '756.png'
+
+Renommé : 'Koalak_forestier_785.png' -> '785.png'
+
+Renommé : 'Koalak_Griotte_753.png' -> '753.png'
+
+Renommé : 'Koalak_Immature_748.png' -> '748.png'
+
+Renommé : 'Koalak_Indigo_751.png' -> '751.png'
+
+Renommé : 'Koalak_Reinette_754.png' -> '754.png'
+
+Renommé : 'Koalak_sanguin_744.png' -> '744.png'
+
+Renommé : 'Kokoko_209.png' -> '209.png'
+
+Renommé : 'Kokom_6371.png' -> '6371.png'
+
+Renommé : 'Kolérat_4875.png' -> '4875.png'
+
+Renommé : 'Koulosse_670.png' -> '670.png'
+
+Renommé : 'Krambwork_4628.png' -> '4628.png'
+
+Renommé : 'Kraméléhon_836.png' -> '836.png'
+
+Renommé : 'Kurookin_6638.png' -> '6638.png'
+
+Renommé : 'Kwak_de_Flamme_83.png' -> '83.png'
+
+Renommé : 'Kwak_de_Glace_84.png' -> '84.png'
+
+Renommé : 'Kwak_de_Terre_235.png' -> '235.png'
+
+Renommé : 'Kwak_de_Vent_81.png' -> '81.png'
+
+Renommé : 'Kwoan_3277.png' -> '3277.png'
+
+Renommé : 'Larve_Bleue_7987.png' -> '7987.png'
+
+Renommé : 'Larve_Champêtre_4548.png' -> '4548.png'
+
+Renommé : 'Larve_Orange_7989.png' -> '7989.png'
+
+Renommé : 'Larve_Verte_7990.png' -> '7990.png'
+
+Renommé : 'La_Ouassingue_5244.png' -> '5244.png'
+
+Renommé : 'Let_Emoliug_389.png' -> '389.png'
+
+Renommé : 'Le_Flib_3803.png' -> '3803.png'
+
+Renommé : 'Le_Ouassingue_5247.png' -> '5247.png'
+
+Renommé : 'Le_Ouassingue_Entourbé_1096.png' -> '1096.png'
+
+Renommé : 'Lichangoro_6639.png' -> '6639.png'
+
+Renommé : 'Lolojiki_6223.png' -> '6223.png'
+
+Renommé : 'Macien_301.png' -> '301.png'
+
+Renommé : 'Madura_6408.png' -> '6408.png'
+
+Renommé : 'Malle_Outillée_4597.png' -> '4597.png'
+
+Renommé : 'Mama_Koalak_755.png' -> '755.png'
+
+Renommé : 'Mandrine_4852.png' -> '4852.png'
+
+Renommé : 'Maître_Bolet_5290.png' -> '5290.png'
+
+Renommé : 'Maître_Corbac_289.png' -> '289.png'
+
+Renommé : 'Maître_koalak_758.png' -> '758.png'
+
+Renommé : 'Maître_Vampire_124.png' -> '124.png'
+
+Renommé : 'Maître_Zoth_1052.png' -> '1052.png'
+
+Renommé : 'Meulou_4870.png' -> '4870.png'
+
+Renommé : 'Meupette_1046.png' -> '1046.png'
+
+Renommé : 'Milimulou_7327.png' -> '7327.png'
+
+Renommé : 'Milirat Strubien_15.png' -> '15.png'
+
+Renommé : 'Milirat_Strubien_475.png' -> '475.png'
+
+Renommé : 'Mineur_Sombre_8035.png' -> '8035.png'
+
+Renommé : 'Minoskito_2698.png' -> '2698.png'
+
+Renommé : 'Minotoror_2611.png' -> '2611.png'
+
+Renommé : 'Minotot_827.png' -> '827.png'
+
+Renommé : 'Mob_l'Éponge_928.png' -> '928.png'
+
+Renommé : 'Momie_Koalak_760.png' -> '760.png'
+
+Renommé : 'Mominotor_831.png' -> '831.png'
+
+Renommé : 'Moon_226.png' -> '226.png'
+
+Renommé : 'Moskito_7608.png' -> '7608.png'
+
+Renommé : 'Moumoule_954.png' -> '954.png'
+
+Renommé : 'Mufafah_5708.png' -> '5708.png'
+
+Renommé : 'Mulou_7328.png' -> '7328.png'
+
+Renommé : 'Médibwork_4627.png' -> '4627.png'
+
+Renommé : 'Mégabwork_4625.png' -> '4625.png'
+
+Renommé : 'Nakunbra_5036.png' -> '5036.png'
+
+Renommé : 'Negbib_390.png' -> '390.png'
+
+Renommé : 'Nerbe_5696.png' -> '5696.png'
+
+Renommé : 'Nipul_2540.png' -> '2540.png'
+
+Renommé : 'NodKoko_4232.png' -> '4232.png'
+
+Renommé : 'Noeul_6206.png' -> '6206.png'
+
+Renommé : 'Onabu-Geisha_6385.png' -> '6385.png'
+
+Renommé : 'Orfélin_6056.png' -> '6056.png'
+
+Renommé : 'Osurc_4778.png' -> '4778.png'
+
+Renommé : 'Ougah_4999.png' -> '4999.png'
+
+Renommé : 'Palmifleur_Kouraçao_1064.png' -> '1064.png'
+
+Renommé : 'Palmifleur_Malibout_1065.png' -> '1065.png'
+
+Renommé : 'Palmifleur_Morito_1067.png' -> '1067.png'
+
+Renommé : 'Palmifleur_Passaoh_1066.png' -> '1066.png'
+
+Renommé : 'Panthégros_3632.png' -> '3632.png'
+
+Renommé : 'Parashukouï_6222.png' -> '6222.png'
+
+Renommé : 'Pichon Bleu_27.png' -> '27.png'
+
+Renommé : 'Pichon_Blanc_922.png' -> '922.png'
+
+Renommé : 'Pichon_Bleu_8020.png' -> '8020.png'
+
+Renommé : 'Pichon_Kloune_924.png' -> '924.png'
+
+Renommé : 'Pichon_Orange_8019.png' -> '8019.png'
+
+Renommé : 'Pichon_Vert_923.png' -> '923.png'
+
+Renommé : 'Piou_Bleu_491.png' -> '491.png'
+
+Renommé : 'Piou_Jaune_493.png' -> '493.png'
+
+Renommé : 'Piou_Rose_492.png' -> '492.png'
+
+Renommé : 'Piou_Rouge_489.png' -> '489.png'
+
+Renommé : 'Piou_Vert_490.png' -> '490.png'
+
+Renommé : 'Piou_Violet_236.png' -> '236.png'
+
+Renommé : 'Piralak_784.png' -> '784.png'
+
+Renommé : 'Pissenlit_Diabolique_79.png' -> '79.png'
+
+Renommé : 'Poolay_6908.png' -> '6908.png'
+
+Renommé : 'Porsalu_3304.png' -> '3304.png'
+
+Renommé : 'Prespic_16.png' -> '16.png'
+
+Renommé : 'Prespic_4786.png' -> '4786.png'
+
+Renommé : 'Pékeualak_786.png' -> '786.png'
+
+Renommé : 'Pétartifoux_6588.png' -> '6588.png'
+
+Renommé : 'Ramane_d'Egoutant_447.png' -> '447.png'
+
+Renommé : 'Rat_Blanc_940.png' -> '940.png'
+
+Erreur en renommant 'Rat_d'Egoutant_4875.png': [WinError 183] Cannot create a file when that file already exists: "monster_images\\Rat_d'Egoutant_4875.png" -> 'monster_images\\4875.png'
+
+Renommé : 'Rat_d'Hyoactif_449.png' -> '449.png'
+
+Renommé : 'Rat_Noir_939.png' -> '939.png'
+
+Renommé : 'Raul_Mops_926.png' -> '926.png'
+
+Renommé : 'Robionicle_6040.png' -> '6040.png'
+
+Renommé : 'Robot_Fléau_4596.png' -> '4596.png'
+
+Renommé : 'Roissingue_1057.png' -> '1057.png'
+
+Renommé : 'Rose_Démoniaque_78.png' -> '78.png'
+
+Renommé : 'Rose_Obscure_467.png' -> '467.png'
+
+Renommé : 'Rouquette_6589.png' -> '6589.png'
+
+Renommé : 'Sanglier_5300.png' -> '5300.png'
+
+Renommé : 'Sanglier_Des_Plaines_297.png' -> '297.png'
+
+Renommé : 'Sarkapwane_6507.png' -> '6507.png'
+
+Renommé : 'Scarabosse_Doré_797.png' -> '797.png'
+
+Renommé : 'Scarafeuille_Blanc_241.png' -> '241.png'
+
+Renommé : 'Scarafeuille_Bleu_198.png' -> '198.png'
+
+Renommé : 'Scarafeuille_Rouge_194.png' -> '194.png'
+
+Renommé : 'Scorbute_3099.png' -> '3099.png'
+
+Renommé : 'Scélérat_Strubien_465.png' -> '465.png'
+
+Renommé : 'Sergent_Zoth_1056.png' -> '1056.png'
+
+Renommé : 'Serpentin_4569.png' -> '4569.png'
+
+Renommé : 'Serpiplume_829.png' -> '829.png'
+
+Renommé : 'Shin_Larve_457.png' -> '457.png'
+
+Renommé : 'Silf_le_Rasboul_Majeur_1071.png' -> '1071.png'
+
+Renommé : 'Skeunk_780.png' -> '780.png'
+
+Renommé : 'Souris_Grise_126.png' -> '126.png'
+
+Renommé : 'Sparo_2588.png' -> '2588.png'
+
+Renommé : 'Sphincter_Cell_943.png' -> '943.png'
+
+Renommé : 'Susej_393.png' -> '393.png'
+
+Renommé : 'Tambouraï_6384.png' -> '6384.png'
+
+Renommé : 'Tanukouï_San_6218.png' -> '6218.png'
+
+Renommé : 'Tikokoko_8.png' -> '8.png'
+
+Renommé : 'Tikoko_208.png' -> '208.png'
+
+Renommé : 'Tiwabbit_3.png' -> '3.png'
+
+Renommé : 'Tiwabbit_6200.png' -> '6200.png'
+
+Renommé : 'Tofu_7960.png' -> '7960.png'
+
+Renommé : 'Tofu_Malade_5285.png' -> '5285.png'
+
+Renommé : 'Tofu_Maléfique_6728.png' -> '6728.png'
+
+Renommé : 'Tofu_Royal_382.png' -> '382.png'
+
+Renommé : 'Tortue Bleue_23.png' -> '23.png'
+
+Renommé : 'Tortue Jaune_18.png' -> '18.png'
+
+Renommé : 'Tortue Rouge_24.png' -> '24.png'
+
+Renommé : 'Tortue Verte_25.png' -> '25.png'
+
+Renommé : 'Tortue_Bleue_221.png' -> '221.png'
+
+Renommé : 'Tortue_Jaune_223.png' -> '223.png'
+
+Renommé : 'Tortue_Rouge_220.png' -> '220.png'
+
+Renommé : 'Tortue_Verte_222.png' -> '222.png'
+
+Renommé : 'Tourbassingue_1058.png' -> '1058.png'
+
+Renommé : 'Tournesol_Affamé_799.png' -> '799.png'
+
+Renommé : 'Tournesol_Sauvage_48.png' -> '48.png'
+
+Renommé : 'Tromperelle_1153.png' -> '1153.png'
+
+Renommé : 'Tronknyde_7351.png' -> '7351.png'
+
+Renommé : 'Troollaraj_233.png' -> '233.png'
+
+Renommé : 'Trukikol_5008.png' -> '5008.png'
+
+Renommé : 'Tsukinochi_6460.png' -> '6460.png'
+
+Renommé : 'Tsume-Bozu_6392.png' -> '6392.png'
+
+Renommé : 'Tynril_Ahuri_1087.png' -> '1087.png'
+
+Renommé : 'Tynril_Consterné_1072.png' -> '1072.png'
+
+Renommé : 'Tynril_Déconcerté_1085.png' -> '1085.png'
+
+Renommé : 'Tynril_Perfide_1086.png' -> '1086.png'
+
+Renommé : 'Tétonuki_6221.png' -> '6221.png'
+
+Renommé : 'Vampire_12.png' -> '12.png'
+
+Renommé : 'Vampire_5048.png' -> '5048.png'
+
+Renommé : 'Vétauran_5291.png' -> '5291.png'
+
+Renommé : 'Wabbit_19.png' -> '19.png'
+
+Renommé : 'Wabbit_8003.png' -> '8003.png'
+
+Renommé : 'Wabbit_GM_3867.png' -> '3867.png'
+
+Renommé : 'Wabbit_Squelette_3473.png' -> '3473.png'
+
+Renommé : 'Warko_marron_746.png' -> '746.png'
+
+Renommé : 'Warko_Violet_745.png' -> '745.png'
+
+Renommé : 'Wa_Wabbit_180.png' -> '180.png'
+
+Renommé : 'Wo_Wabbit_3461.png' -> '3461.png'

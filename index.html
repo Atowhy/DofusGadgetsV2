@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOFUS GADGETS</title>
+    <link rel="icon" type="image/png" href="images/LogoDGv1.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Base body styles for centering and background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Full viewport height */
+            margin: 0;
+            color: #e2e8f0; /* Light text */
+        }
+
+        /* Initially show the main content of the website */
+        .main-container {
+            display: block; /* Changed from 'none' to 'block' */
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+            width: 100%; /* Ensure it takes full width when visible */
+        }
+
+        /* Background video styles */
+        .video-background {
+            position: fixed; /* Use fixed to ensure it covers the whole screen */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -2;
+        }
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-overlay {
+            position: fixed; /* Use fixed for overlay too */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+        /* Card background for the main content */
+        .card-bg {
+            background-color: rgba(31, 41, 55, 0.85); /* bg-gray-800 with 85% opacity */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* NEW ANIMATION STYLES FOR EGG AND GEAR */
+        .image-wrapper {
+            position: relative; /* Needed for absolute positioning of the gear */
+            /* Adjusted size to match original logo's h-48 */
+            width: 192px; /* h-48 is approx 192px */
+            height: 192px; /* h-48 is approx 192px */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto; /* Centers the wrapper */
+            margin-bottom: 1rem; /* Replaces original mb-4 from LogoDGv1.png */
+        }
+
+        .egg-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures the image fits within its container */
+            border-radius: 0.5rem; /* Slightly rounded corners for the image */
+            opacity: 0.8; /* Retain original logo's opacity */
+        }
+
+        .rotating-gear {
+            position: absolute;
+            /* Adjust these values to position the gear precisely over the egg */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centers the gear relative to its parent (.image-wrapper) */
+            /* Removed explicit width/height to use natural image size */
+            /* Removed object-fit as it's not needed for natural size */
+
+            /* Animation properties */
+            animation: spin 4s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+            transform-origin: center center; /* Ensures rotation around its own center */
+        }
+
+        /* Define the animation keyframes */
+        @keyframes spin {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        /* Responsive adjustments for image-wrapper (egg size) */
+        @media (min-width: 768px) { /* md breakpoint */
+            .image-wrapper {
+                width: 256px; /* md:h-64 is approx 256px */
+                height: 256px; /* md:h-64 is approx 256px */
+            }
+            /* Removed rotating-gear size adjustments here as well */
+        }
+    </style>
+</head>
+<body class="text-white antialiased">
+
+    <!-- Your original main website content -->
+    <!-- This div is now always visible -->
+    <div class="main-container">
+        <!-- Background video container -->
+        <div class="video-background">
+            <video autoplay loop muted playsinline>
+                <source src="images/headervideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Overlay for better text readability on video -->
+        <div class="video-overlay"></div>
+
+        <div class="relative z-10 container mx-auto p-4 md:p-8 max-w-4xl min-h-screen flex flex-col">
+
+            <!-- Language selector -->
+            <div class="flex justify-end mb-4">
+                <select id="language-selector" class="bg-gray-700 border border-gray-600 rounded-lg px-3 py-1 text-white focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition">
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="pt-br">🇧🇷 Português (BR)</option>
+                    <option value="it">🇮🇹 Italiano</option>
+                </select>
+            </div>
+
+            <!-- Dofus Logo and titles - NOW WITH ANIMATED GEAR -->
+            <div class="text-center my-4">
+                <!-- Replaced original LogoDGv1.png with animated egg and gear -->
+                <div class="image-wrapper">
+                    <img src="images/LogoDG_egg.png" alt="Dofus Egg" class="egg-image">
+                    <img src="images/LogoDG_gear.png" alt="Dofus Gear" class="rotating-gear">
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-white" data-translate-key="main_title">DOFUS GADGETS</h1>
+                <p class="text-gray-400 mt-2" data-translate-key="subtitle">Une collection d'outils, plus ou moins utiles, pour t'aider dans ton aventure.</p>
+            </div>
+
+            <!-- Main content area with tool cards -->
+            <main class="flex-grow">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Card for Recipe Cost Calculator -->
+                    <div class="card-bg p-6 rounded-2xl shadow-lg flex flex-col justify-between hover:border-teal-500 border-2 border-transparent transition-all duration-300 transform hover:-translate-y-1">
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img src="images/craftkamas.png" alt="Craft Kamas" class="h-32 w-32 object-contain">
+                            </div>
+                            <h2 class="text-2xl font-bold text-white mb-2 text-center" data-translate-key="recipe_cost_calculator_title">Calculateur de Coût de Recette</h2>
+                            <p class="text-gray-400 mb-6 text-center" data-translate-key="recipe_cost_calculator_desc">
+                                Calcule le coût total des ressources nécessaires pour fabriquer un objet.
+                            </p>
+                        </div>
+                        <!-- Corrected URL to new folder structure -->
+                        <a href="recipe_cost_calculator/" class="mt-auto block text-center w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 shadow-md" data-translate-key="btn_access">
+                            Accéder à l'outil
+                        </a>
+                    </div>
+					
+					<!-- NOUVELLE CARTE : Créateur de liste pour l'Almanax -->
+                    <div class="card-bg p-6 rounded-2xl shadow-lg flex flex-col justify-between hover:border-teal-500 border-2 border-transparent transition-all duration-300 transform hover:-translate-y-1">
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img src="images/AlmanaxGuy.png" alt="Almanax Guy" class="h-32 w-32 object-contain">
+                            </div>
+                            <h2 class="text-2xl font-bold text-white mb-2 text-center" data-translate-key="almanax_list_creator_title">Créateur de liste pour l'Almanax</h2>
+                            <p class="text-gray-400 mb-6 text-center" data-translate-key="almanax_list_creator_desc">
+                                Vous permet de générer une liste de ressources pour une période donnée.
+                            </p>
+                        </div>
+                        <!-- Link to the new Almanax List Creator tool -->
+                        <a href="almanax_list_creator/" class="mt-auto block text-center w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 shadow-md" data-translate-key="btn_access">
+                            Accéder à l'outil
+                        </a>
+                    </div>
+
+                    <!-- Card for Pet XP Calculator -->
+                    <div class="card-bg p-6 rounded-2xl shadow-lg flex flex-col justify-between hover:border-teal-500 border-2 border-transparent transition-all duration-300 transform hover:-translate-y-1">
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img src="images/tifoux.png" alt="Tifoux" class="h-32 w-32 object-contain">
+                            </div>
+                            <h2 class="text-2xl font-bold text-white mb-2 text-center" data-translate-key="calculator_title">Calculateur d'xp pour familier</h2>
+                            <p class="text-gray-400 mb-6 text-center" data-translate-key="calculator_desc">
+                                Optimise les coûts pour monter tes familiers en trouvant les ressources les plus rentables.
+                            </p>
+                        </div>
+                        <!-- Corrected URL to new folder structure -->
+                        <a href="pet_xp_calculator/" class="mt-auto block text-center w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 shadow-md" data-translate-key="btn_access">
+                            Accéder à l'outil
+                        </a>
+                    </div>
+
+                    <!-- Nouvelle carte pour le calculateur de taux de butin -->
+                    <div class="card-bg p-6 rounded-2xl shadow-lg flex flex-col justify-between hover:border-teal-500 border-2 border-transparent transition-all duration-300 transform hover:-translate-y-1">
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img src="images/parangon.png" alt="Parangon" class="h-32 w-32 object-contain">
+                            </div>
+                            <h2 class="text-2xl font-bold text-white mb-2 text-center" data-translate-key="droprate_calculator_title">Calculateur de Taux de Butin</h2>
+                            <p class="text-gray-400 mb-6 text-center" data-translate-key="droprate_calculator_desc">
+                                Estime tes chances d'obtenir des objets en fonction de ta prospection et bonus.
+                            </p>
+                        </div>
+                        <!-- Corrected URL to new folder structure -->
+                        <a href="droprate_calculator/" class="mt-auto block text-center w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 shadow-md" data-translate-key="btn_access">
+                            Accéder à l'outil
+                        </a>
+                    </div>
+
+                    <!-- Nouvelle carte pour le calculateur d'XP de personnage -->
+                    <div class="card-bg p-6 rounded-2xl shadow-lg flex flex-col justify-between hover:border-teal-500 border-2 border-transparent transition-all duration-300 transform hover:-translate-y-1">
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img src="images/dofuscawotte.png" alt="Dofus Cawotte" class="h-32 w-32 object-contain">
+                            </div>
+                            <h2 class="text-2xl font-bold text-white mb-2 text-center" data-translate-key="char_xp_calculator_title">Calculateur d'XP de Personnage</h2>
+                            <p class="text-gray-400 mb-6 text-center" data-translate-key="char_xp_calculator_desc">
+                                Calcule l'XP et le temps nécessaire pour ton personnage.
+                            </p>
+                        </div>
+                        <!-- Corrected URL to new folder structure -->
+                        <a href="char_xp_calculator/" class="mt-auto block text-center w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 shadow-md" data-translate-key="btn_access">
+                            Accéder à l'outil
+                        </a>
+                    </div>
+                    
+                    <!-- Nouvelle carte pour le Traqueur de Quête du Dofus Ocre -->
+                    <div class="card-bg p-6 rounded-2xl shadow-lg flex flex-col justify-between hover:border-teal-500 border-2 border-transparent transition-all duration-300 transform hover:-translate-y-1">
+                        <div>
+                            <div class="flex justify-center mb-4">
+                                <img src="images/Ochre_Dofus.webp" alt="Dofus Ocre" class="h-32 w-32 object-contain">
+                            </div>
+                            <h2 class="text-2xl font-bold text-white mb-2 text-center" data-translate-key="ocre_tracker_title">Traqueur de Quête du Dofus Ocre</h2>
+                            <p class="text-gray-400 mb-6 text-center" data-translate-key="ocre_tracker_desc">
+                                Suivez votre progression dans la longue quête du Dofus Ocre.
+                            </p>
+                        </div>
+                        <a href="/tracker_ocre" class="mt-auto block text-center w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 shadow-md" data-translate-key="btn_access">
+                            Accéder à l'outil
+                        </a>
+                    </div>
+
+                    <!-- Carte pour un futur outil (exemple) -->
+                    <div class="card-bg p-6 rounded-2xl shadow-lg flex flex-col justify-between border-2 border-dashed border-gray-700">
+                         <div class="text-center">
+                            <h2 class="text-2xl font-bold text-gray-500 mb-2" data-translate-key="soon_title">Outil à venir...</h2>
+                            <p class="text-gray-600 mb-6" data-translate-key="soon_desc">
+                               Un nouvel outil sera bientôt disponible ici.
+                            </p>
+                            <div class="flex justify-center mb-4">
+                                <img src="images/Ougah.png" alt="Ougah" class="h-28 w-28 object-contain opacity-30">
+                            </div>
+                        </div>
+                         <div class="mt-auto block text-center w-full bg-gray-700 text-gray-500 font-bold py-3 px-4 rounded-lg cursor-not-allowed" data-translate-key="btn_unavailable">
+                            Indisponible
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+            <!-- Footer section -->
+            <footer class="text-center text-gray-500 text-sm mt-12 pb-4">
+                <p data-translate-key="signature">Apps by Ato</p>
+                <p class="text-xs text-gray-600 mt-4" data-translate-key="disclaimer">Dofus et toutes les images associées utilisées sur ce site sont la propriété d'Ankama</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Language translation logic (your existing code)
+        document.addEventListener('DOMContentLoaded', () => {
+            const translations = {
+                fr: {
+                    main_title: "DOFUS GADGETS",
+                    subtitle: "Une collection d'outils, plus ou moins utiles, pour t'aider dans ton aventure.",
+                    calculator_title: "Calculateur d'xp pour familier",
+                    calculator_desc: "Optimise les coûts pour monter tes familiers en trouvant les ressources les plus rentables.",
+                    droprate_calculator_title: "Calculateur de Taux de Butin",
+                    droprate_calculator_desc: "Estime tes chances d'obtenir des objets en fonction de ta prospection et bonus.",
+                    char_xp_calculator_title: "Calculateur d'XP de Personnage",
+                    char_xp_calculator_desc: "Calcule l'XP et le temps nécessaire pour ton personnage.",
+                    recipe_cost_calculator_title: "Calculateur de Coût de Recette",
+                    recipe_cost_calculator_desc: "Calcule le coût total des ressources nécessaires pour fabriquer un objet.",
+                    almanax_list_creator_title: "Créateur de liste pour l'Almanax", // NEW TRANSLATION
+                    almanax_list_creator_desc: "Vous permet de générer une liste de ressources pour une période donnée.", // NEW TRANSLATION
+                    ocre_tracker_title: "Traqueur de Quête du Dofus Ocre", // NEW TRANSLATION
+                    ocre_tracker_desc: "Suivez votre progression dans la longue quête du Dofus Ocre.", // NEW TRANSLATION
+                    btn_access: "Accéder à l'outil",
+                    soon_title: "Outil à venir...",
+                    soon_desc: "Un nouvel outil sera bientôt disponible ici.",
+                    btn_unavailable: "Indisponible",
+                    signature: "Apps by Ato",
+                    disclaimer: "Dofus et toutes les images associées utilisées sur ce site sont la propriété d'Ankama"
+                },
+                en: {
+                    main_title: "DOFUS GADGETS",
+                    subtitle: "A collection of tools to help you in your adventure.",
+                    calculator_title: "Pet XP Calculator",
+                    calculator_desc: "Optimize costs to level up your pets by finding the most profitable resources.",
+                    droprate_calculator_title: "Drop Rate Calculator",
+                    droprate_calculator_desc: "Estimate your chances of obtaining items based on your prospecting and bonuses.",
+                    char_xp_calculator_title: "Character XP Calculator",
+                    char_xp_calculator_desc: "Calculates the XP and time needed for your character.",
+                    recipe_cost_calculator_title: "Recipe Cost Calculator",
+                    recipe_cost_calculator_desc: "Calculates the total cost of resources needed to craft an item.",
+                    almanax_list_creator_title: "Almanax List Creator", // NEW TRANSLATION
+                    almanax_list_creator_desc: "Allows you to generate a list of resources for a given period.", // NEW TRANSLATION
+                    ocre_tracker_title: "Ochre Dofus Quest Tracker", // NEW TRANSLATION
+                    ocre_tracker_desc: "Track your progress in the long Ochre Dofus quest.", // NEW TRANSLATION
+                    btn_access: "Access the tool",
+                    soon_title: "Tool coming soon...",
+                    soon_desc: "A new tool will be available here soon.",
+                    btn_unavailable: "Unavailable",
+                    signature: "Apps by Ato",
+                    disclaimer: "Dofus and any related images used on this website are the properties of Ankama"
+                },
+                es: {
+                    main_title: "DOFUS GADGETS",
+                    subtitle: "Una colección de herramientas para ayudarte en tu aventura.",
+                    calculator_title: "Calculadora de XP para Mascota",
+                    calculator_desc: "Optimiza los costos para subir de nivel a tus mascotas encontrando los recursos más rentables.",
+                    droprate_calculator_title: "Calculadora de Tasa de Drop",
+                    droprate_calculator_desc: "Estima tus posibilidades de obtener objetos según tu prospección y bonificaciones.",
+                    char_xp_calculator_title: "Calculadora de XP de Personaje",
+                    char_xp_calculator_desc: "Calcula la XP y el tiempo necesario para tu personaje.",
+                    recipe_cost_calculator_title: "Calculadora de Costo de Fabricación",
+                    recipe_cost_calculator_desc: "Calcula el costo total de los recursos necesarios para fabricar un objeto.",
+                    almanax_list_creator_title: "Creador de lista para el Almanax", // NEW TRANSLATION
+                    almanax_list_creator_desc: "Te permite generar una lista de recursos para un período dado.", // NEW TRANSLATION
+                    ocre_tracker_title: "Rastreador de la Misión del Dofus Ocre", // NEW TRANSLATION
+                    ocre_tracker_desc: "Sigue tu progreso en la larga misión del Dofus Ocre.", // NEW TRANSLATION
+                    btn_access: "Acceder a la herramienta",
+                    soon_title: "Herramienta próximamente...",
+                    soon_desc: "Una nueva herramienta estará disponible aquí pronto.",
+                    btn_unavailable: "No disponible",
+                    signature: "Apps by Ato",
+                    disclaimer: "Dofus y cualquier imagen relacionada utilizada en este sitio web son propiedad de Ankama"
+                },
+                'pt-br': {
+                    main_title: "DOFUS GADGETS",
+                    subtitle: "Una colección de herramientas para ajudá-lo em sua aventura.",
+                    calculator_title: "Calculadora de XP para Mascote",
+                    calculator_desc: "Otimize os custos para evoluir seus mascotes encontrando os recursos mais lucrativos.",
+                    droprate_calculator_title: "Calculadora de Taxa de Drop",
+                    droprate_calculator_desc: "Estime suas chances de obter itens com base na sua prospecção e bônus.",
+                    char_xp_calculator_title: "Calculadora de XP de Personagem",
+                    char_xp_calculator_desc: "Calcule a XP e o tempo necessário para seu personagem.",
+                    recipe_cost_calculator_title: "Calculadora de Custo de Receita",
+                    recipe_cost_calculator_desc: "Calcule o custo total dos recursos necessários para fabricar um objeto.",
+                    almanax_list_creator_title: "Criador de lista para o Almanax", // NEW TRANSLATION
+                    almanax_list_creator_desc: "Permite gerar uma lista de recursos para un determinado período.", // NEW TRANSLATION
+                    ocre_tracker_title: "Rastreador da Missão Dofus Ocre", // NEW TRANSLATION
+                    ocre_tracker_desc: "Acompanhe seu progresso na longa missão do Dofus Ocre.", // NEW TRANSLATION
+                    btn_access: "Acessar a ferramenta",
+                    soon_title: "Ferramenta em breve...",
+                    soon_desc: "Uma nova ferramenta estará disponível aqui em breve.",
+                    btn_unavailable: "Indisponível",
+                    signature: "Apps by Ato",
+                    disclaimer: "Dofus e quaisquer images liées utilisées sur ce site Web sont la propriedade d'Ankama"
+                },
+                it: {
+                    main_title: "DOFUS GADGETS",
+                    subtitle: "Una raccolta di strumenti per aiutarti nella tua avventura.",
+                    calculator_title: "Calcolatore di XP per Famiglio",
+                    calculator_desc: "Ottimizza i costi per far salire di livello i tuoi famigli trovando le risorse più redditizie.",
+                    droprate_calculator_title: "Calcolatore Tasso di Drop",
+                    droprate_calculator_desc: "Stima le tue possibilità di ottenere oggetti in base alla tua prospezione e bonus.",
+                    char_xp_calculator_title: "Calcolatore XP Personaggio",
+                    char_xp_calculator_desc: "Stima l'XP e il tempo necessario per il tuo personaggio.",
+                    recipe_cost_calculator_title: "Calcolatore Costo Ricetta",
+                    recipe_cost_calculator_desc: "Calcola il costo totale delle risorse necessarie per creare un oggetto.",
+                    almanax_list_creator_title: "Creatore di liste per l'Almanax", // NEW TRANSLATION
+                    almanax_list_creator_desc: "Ti permette di generare una lista di risorse per un dato periodo.", // NEW TRANSLATION
+                    ocre_tracker_title: "Tracciatore Missione Dofus Ocra", // NEW TRANSLATION
+                    ocre_tracker_desc: "Tieni traccia dei tuoi progressi nella lunga missione del Dofus Ocra.", // NEW TRANSLATION
+                    btn_access: "Accedi allo strumento",
+                    soon_title: "Strumento in arrivo...",
+                    soon_desc: "Un nuovo strumento sarà presto disponibile qui.",
+                    btn_unavailable: "Non disponibile",
+                    signature: "Apps by Ato",
+                    disclaimer: "Dofus e qualsiasi immagine correlata utilizzata su questo sito Web sono di proprietà di Ankama"
+                }
+            };
+
+            const languageSelector = document.getElementById('language-selector');
+
+            function setLanguage(lang) {
+                localStorage.setItem('dofusToolsLang', lang);
+                languageSelector.value = lang;
+                document.querySelectorAll('[data-translate-key]').forEach(element => {
+                    const key = element.getAttribute('data-translate-key');
+                    if (translations[lang] && translations[lang][key]) {
+                        element.textContent = translations[lang][key];
+                    }
+                });
+            }
+
+            languageSelector.addEventListener('change', (e) => {
+                setLanguage(e.target.value);
+            });
+
+            const savedLang = localStorage.getItem('dofusToolsLang') || 'fr';
+            setLanguage(savedLang);
+        });
+    </script>
+
+</body>
+</html>

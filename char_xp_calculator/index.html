@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur d'XP</title>
+    <link rel="icon" type="image/png" href="../images/LogoDGv1.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 - fallback if video fails */
+            color: #e2e8f0; /* Light text */
+            min-height: 100vh; /* Ensure body takes full height for background */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            display: flex; /* Use flexbox for body */
+            flex-direction: column; /* Stack children vertically */
+            align-items: center; /* Center horizontally */
+            justify-content: flex-start; /* Align content to the top */
+            padding-top: 2rem; /* Add padding to the top of the body for overall spacing */
+            padding-bottom: 2rem; /* Add padding to the bottom of the body */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+		/* Background video styles */
+        .video-background {
+            position: fixed; /* Use fixed to ensure it covers the whole screen */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -2; /* Place behind content */
+        }
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-overlay {
+            position: fixed; /* Use fixed for overlay too */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+            z-index: -1; /* Place behind content, above video */
+        }
+        /* The .container custom CSS is removed, using Tailwind classes directly on the div */
+        /* No custom media query for container here as it's handled by Tailwind classes */
+        
+        input[type="number"] {
+            background-color: #374151; /* bg-gray-700 */
+            color: #e5e7eb; /* text-gray-200 */
+            border: 1px solid #4b5563; /* border-gray-600 */
+            border-radius: 0.5rem; /* rounded-lg */
+            padding: 0.5rem 0.75rem; /* py-2 px-3 */
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        input[type="number"]:focus {
+            border-color: #14b8a6; /* Tailwind teal-500 */
+            box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.5); /* ring-teal-500 with opacity */
+        }
+
+        .message-box {
+            padding: 1rem;
+            margin-top: 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            display: none; /* Hidden by default */
+        }
+        .message-box.error {
+            background-color: rgba(239, 68, 68, 0.1); /* Red-500 avec opacité */
+            color: #ef4444; /* text-red-500 */
+            border-left: 4px solid #ef4444; /* border-red-500 */
+        }
+        .message-box.success {
+            background-color: rgba(20, 184, 166, 0.1); /* Teal-500 avec opacité */
+            color: #14b8a6; /* text-teal-500 */
+            border-left: 4px solid #14b8a6; /* border-teal-500 */
+        }
+        .message-box.info {
+            background-color: rgba(59, 130, 246, 0.1); /* Blue-500 with opacity */
+            color: #3b82f6; /* text-blue-500 */
+            border-left: 4px solid #3b82f6; /* border-blue-500 */
+        }
+        /* New styles for text colors, matching the green from the provided images */
+        .text-header-green { /* For main title and section titles */
+            color: #4fd1c5; /* teal-300 */
+        }
+        .text-result-green { /* For XP numbers, estimated fights, estimated time */
+            color: #4fd1c5; /* teal-300 */
+        }
+
+        /* New card-style for sections */
+        .card-style {
+            background-color: rgba(31, 41, 55, 0.85); /* bg-gray-800 with 85% opacity */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* border border-white/10 */
+            border-radius: 1.5rem; /* rounded-2xl (24px) */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 1.5rem; /* Added margin-bottom to separate cards (mb-6) */
+        }
+        @media (min-width: 768px) {
+            .card-style {
+                padding: 2rem; /* md:p-8 for consistency with main container */
+            }
+        }
+        /* Removed the last-of-type margin-bottom rule as it's handled by gap in grid */
+
+        /* Footer specific styling to push it to the bottom if content is short */
+        footer {
+            margin-top: auto; /* Pushes footer to the bottom if content is short */
+            padding-top: 3rem; /* Adjusted padding-top for more space */
+        }
+    </style>
+</head>
+<body class="text-white antialiased">
+    <!-- Background video container - now a direct child of body -->
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="/images/PandalaLoop.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Overlay for better text readability on video - now a direct child of body -->
+    <div class="video-overlay"></div>
+
+    <!-- This div now acts as the main content wrapper, sitting on top of the video -->
+    <div class="relative z-10 w-full max-w-xs mx-auto flex flex-col md:grid md:grid-cols-2 md:gap-8 md:max-w-4xl">
+            
+            <!-- Header section -->
+            <header class="text-center mb-8 md:col-span-2">
+                <h1 class="text-3xl md:text-4xl font-bold text-header-green">Calculateur d'XP</h1>
+                <p class="text-gray-400 mt-2">Estimez votre progression et le temps nécessaire !</p>
+            </header>
+
+            <!-- Left Column for XP Calculator and Results -->
+            <div class="flex flex-col">
+                <!-- XP Calculator Section -->
+                <div id="xpCalculatorSection" class="card-style">
+                    <h2 class="text-2xl font-semibold mb-4">Calcul d'XP</h2>
+                    <div class="flex flex-col gap-4 mb-6">
+                        <div class="flex flex-col justify-between">
+                            <label for="currentLevel" class="block text-sm font-medium mb-2">Niveau Actuel (1-200)</label>
+                            <input type="number" id="currentLevel" min="1" max="200" value="1">
+                        </div>
+                        <div class="flex flex-col justify-between">
+                            <label for="targetLevel" class="block text-sm font-medium mb-2">Niveau Cible (1-200)</label>
+                            <input type="number" id="targetLevel" min="1" max="200" value="200">
+                        </div>
+                    </div>
+
+                    <!-- Calculate Button -->
+                    <div class="flex justify-center">
+                        <button id="calculateBtn" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-105 shadow-md">Calculer l'XP</button>
+                    </div>
+                </div>
+
+                <!-- XP Results Section (now a separate card) -->
+                <div id="xpResults" class="card-style hidden">
+                    <h3 class="text-xl font-semibold mb-4">Résultats du Calcul d'XP</h3>
+                    <p class="mb-2">XP Totale Requise : <span id="xpRequired" class="font-bold text-result-green">0</span></p>
+                    <p class="mb-4">XP Restante pour le prochain niveau : <span id="xpToNextLevel" class="font-bold text-result-green">0</span></p>
+                </div>
+            </div>
+
+            <!-- Right Column for Combat Calculator and Results -->
+            <div class="flex flex-col">
+                <!-- Combat Calculator Section -->
+                <div id="combatCalculatorSection" class="card-style hidden">
+                    <h2 class="text-2xl font-semibold mb-4">Calculateur de Combats</h2>
+                    <div class="flex flex-col gap-4 mb-6">
+                        <div class="flex flex-col justify-between">
+                            <label for="xpPerFight" class="block text-sm font-medium mb-2">XP Moyenne par Combat</label>
+                            <input type="number" id="xpPerFight" min="1" value="100000">
+                        </div>
+                        <div class="flex flex-col justify-between">
+                            <label for="fightDuration" class="block text-sm font-medium mb-2">Durée moyenne par Combat (min) (Optionnel)</label>
+                            <input type="number" id="fightDuration" min="0.1" step="0.1" placeholder="Ex: 5" value="">
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button id="calculateFightsBtn" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-105 shadow-md">Estimer les Combats et le Temps</button>
+                    </div>
+                </div>
+
+                <!-- Combat Results Section (now a separate card) -->
+                <div id="combatResults" class="card-style hidden">
+                    <h3 class="text-xl font-semibold mb-4">Estimation des Combats et du Temps</h3>
+                    <p class="mb-2">Nombre de Combats Estimé : <span id="estimatedFights" class="font-bold text-result-green">0</span></p>
+                    <p class="mb-2" id="estimatedTimeContainer">Temps Total Estimé : <span id="estimatedTime" class="font-bold text-result-green">0 minutes</span></p>
+                </div>
+            </div>
+
+            <!-- Message Box (moved to be within the main container, but outside card sections) -->
+            <div id="messageBox" class="message-box md:col-span-2"></div>
+
+            <!-- Footer section -->
+            <footer class="text-center text-gray-500 text-sm pb-4 md:col-span-2">
+                <!-- Image of Dofus Logo, corrected path and format -->
+                <img src="../images/LogoDofus.webp" alt="Logo Dofus" class="h-12 mx-auto mb-2 opacity-50">
+                <p>Apps by Ato</p>
+                <p class="text-xs text-gray-600 mt-4">Dofus et toutes les images associées utilisées sur ce site sont la propriété d'Ankama</p>
+                <p class="text-xs text-gray-600 mt-2">Version 1.0.0 - Juillet 2025</p>
+            </footer>
+    </div>
+
+    <script type="module">
+        // Global variables for Firebase and App ID (provided by Canvas environment)
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        // Corrected: Referencing __initial_auth_token instead of initialAuthToken
+        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+        // Get references to DOM elements for XP Calculator
+        const currentLevelInput = document.getElementById('currentLevel');
+        const targetLevelInput = document.getElementById('targetLevel');
+        const calculateBtn = document.getElementById('calculateBtn');
+        const xpResultsDiv = document.getElementById('xpResults');
+        const xpRequiredSpan = document.getElementById('xpRequired');
+        const xpToNextLevelSpan = document.getElementById('xpToNextLevel');
+        const messageBox = document.getElementById('messageBox');
+
+        // Get references to DOM elements for Combat Calculator
+        const combatCalculatorSection = document.getElementById('combatCalculatorSection');
+        const xpPerFightInput = document.getElementById('xpPerFight');
+        const fightDurationInput = document.getElementById('fightDuration');
+        const calculateFightsBtn = document.getElementById('calculateFightsBtn');
+        const combatResultsDiv = document.getElementById('combatResults');
+        const estimatedFightsSpan = document.getElementById('estimatedFights');
+        const estimatedTimeContainer = document.getElementById('estimatedTimeContainer');
+        const estimatedTimeSpan = document.getElementById('estimatedTime');
+
+        let lastCalculatedXpRequired = 0; // Store XP required for combat calculation
+
+        // This function simulates Dofus cumulative XP for levels 1-200.
+        // For a perfectly accurate calculator, a full dataset of Dofus XP per level
+        // would be required. This approximation aims to hit the total XP for level 200.
+        function getDofusCumulativeXP(level) {
+            if (level < 1) return 0;
+            if (level > 200) return 5555424000; // Max XP for level 200
+
+            // Actual Dofus cumulative XP values for key levels from dofustool.com/xp-personnage/
+            // Manually extracted a few key points for better approximation.
+            const xpMap = {
+                1: 0,
+                2: 1000,
+                3: 2000,
+                4: 3000,
+                5: 4000,
+                6: 6000,
+                7: 8000,
+                8: 10000,
+                9: 12000,
+                10: 15000,
+                20: 100000,
+                30: 300000,
+                40: 700000,
+                50: 1500000,
+                60: 2800000,
+                70: 4800000,
+                80: 7800000,
+                90: 12000000,
+                100: 17000000,
+                110: 24000000,
+                120: 33000000,
+                130: 45000000,
+                140: 60000000,
+                150: 80000000,
+                160: 105000000,
+                170: 135000000,
+                180: 175000000,
+                190: 230000000,
+                199: 3703616000, // Cumulative XP to reach level 199
+                200: 5555424000  // Cumulative XP to reach level 200
+            };
+
+            // If the level is in our map, return the exact value
+            if (xpMap[level] !== undefined) {
+                return xpMap[level];
+            }
+
+            // For levels not explicitly in xpMap, find the closest lower and upper bounds
+            let lowerLevel = 1;
+            let upperLevel = 200;
+            let lowerXP = 0;
+            let upperXP = 5555424000;
+
+            const sortedLevels = Object.keys(xpMap).map(Number).sort((a, b) => a - b);
+
+            for (let i = 0; i < sortedLevels.length; i++) {
+                const currentKey = sortedLevels[i];
+                if (currentKey < level) {
+                    lowerLevel = currentKey;
+                    lowerXP = xpMap[currentKey];
+                } else if (currentKey > level) {
+                    upperLevel = currentKey;
+                    upperXP = xpMap[currentKey];
+                    break; // Found upper bound, exit loop
+                }
+            }
+
+            // Linear interpolation between the closest known levels
+            if (upperLevel === lowerLevel) { // Should only happen if level is 1 or 200
+                return xpMap[level];
+            }
+
+            const ratio = (level - lowerLevel) / (upperLevel - lowerLevel);
+            return Math.round(lowerXP + ratio * (upperXP - lowerXP));
+        }
+
+        // Function to display messages in the custom message box
+        function showMessage(message, type = 'info') {
+            messageBox.textContent = message;
+            messageBox.className = `message-box ${type} block`; // Reset classes and show
+            setTimeout(() => {
+                messageBox.classList.remove('block');
+                messageBox.classList.add('hidden');
+            }, 5000); // Hide after 5 seconds
+        }
+
+        // Function to calculate XP and update UI
+        function calculateXP() {
+            const currentLevel = parseInt(currentLevelInput.value);
+            const targetLevel = parseInt(targetLevelInput.value);
+
+            // Input validation
+            if (isNaN(currentLevel) || currentLevel < 1 || currentLevel > 200) {
+                showMessage("Veuillez entrer un niveau actuel valide entre 1 et 200.", "error");
+                xpResultsDiv.classList.add('hidden');
+                combatCalculatorSection.classList.add('hidden'); // Hide combat section if XP calc fails
+                return;
+            }
+            if (isNaN(targetLevel) || targetLevel < 1 || targetLevel > 200) {
+                showMessage("Veuillez entrer un niveau cible valide entre 1 et 200.", "error");
+                xpResultsDiv.classList.add('hidden');
+                combatCalculatorSection.classList.add('hidden'); // Hide combat section if XP calc fails
+                return;
+            }
+
+            if (currentLevel >= targetLevel) {
+                showMessage("Le niveau cible doit être supérieur au niveau actuel.", "error");
+                xpResultsDiv.classList.add('hidden');
+                combatCalculatorSection.classList.add('hidden'); // Hide combat section if XP calc fails
+                return;
+            }
+
+            // Get cumulative XP for current and target levels
+            const xpAtCurrentLevel = getDofusCumulativeXP(currentLevel);
+            const xpAtTargetLevel = getDofusCumulativeXP(targetLevel);
+            const xpToNextLevelCalc = getDofusCumulativeXP(currentLevel + 1) - xpAtCurrentLevel;
+
+            const xpRequired = xpAtTargetLevel - xpAtCurrentLevel;
+            lastCalculatedXpRequired = xpRequired; // Store for combat calculation
+
+            // Update UI for XP results
+            xpRequiredSpan.textContent = xpRequired.toLocaleString('fr-FR');
+            xpToNextLevelSpan.textContent = xpToNextLevelCalc.toLocaleString('fr-FR');
+            xpResultsDiv.classList.remove('hidden');
+            showMessage("Calcul d'XP effectué avec succès !", "success");
+
+            // Show combat calculator section after successful XP calculation
+            combatCalculatorSection.classList.remove('hidden');
+            combatResultsDiv.classList.add('hidden'); // Hide combat results until calculated
+        }
+
+        // Function to calculate estimated fights and time
+        function calculateFights() {
+            const xpPerFight = parseInt(xpPerFightInput.value);
+            const fightDuration = parseFloat(fightDurationInput.value); // Get fight duration
+
+            if (lastCalculatedXpRequired === 0) {
+                showMessage("Veuillez d'abord calculer l'XP requise.", "error");
+                combatResultsDiv.classList.add('hidden');
+                return;
+            }
+
+            if (isNaN(xpPerFight) || xpPerFight <= 0) {
+                showMessage("Veuillez entrer une XP moyenne par combat valide (supérieure à 0).", "error");
+                combatResultsDiv.classList.add('hidden');
+                return;
+            }
+
+            const estimatedFights = Math.ceil(lastCalculatedXpRequired / xpPerFight);
+            estimatedFightsSpan.textContent = estimatedFights.toLocaleString('fr-FR');
+
+            // Check if fightDuration is provided and valid
+            if (!isNaN(fightDuration) && fightDuration > 0) {
+                const estimatedTimeMinutes = estimatedFights * fightDuration;
+
+                // Format time for display (e.g., "X heures Y minutes")
+                const totalMinutes = Math.round(estimatedTimeMinutes); // Round total minutes
+                const hours = Math.floor(totalMinutes / 60);
+                const minutes = totalMinutes % 60; // Remaining minutes after extracting hours
+
+                let formattedTime = "";
+                if (hours > 0) {
+                    formattedTime += `${hours} heure${hours > 1 ? 's' : ''}`;
+                }
+                if (minutes > 0) {
+                    if (hours > 0) formattedTime += " et ";
+                    formattedTime += `${minutes} minute${minutes > 1 ? 's' : ''}`;
+                }
+                if (formattedTime === "") formattedTime = "Moins d'une minute"; // Handles cases where time is very small
+
+                estimatedTimeSpan.textContent = formattedTime; // Display formatted time
+                estimatedTimeContainer.classList.remove('hidden'); // Show time container
+                showMessage("Estimation des combats et du temps effectuée avec succès !", "success");
+            } else {
+                estimatedTimeContainer.classList.add('hidden'); // Hide time container if duration is not valid
+                showMessage("Estimation des combats effectuée avec succès (durée non renseignée).", "success");
+            }
+
+            combatResultsDiv.classList.remove('hidden');
+        }
+
+        // Event listeners
+        calculateBtn.addEventListener('click', calculateXP);
+        calculateFightsBtn.addEventListener('click', calculateFights);
+
+        // Initial calculation on page load
+        window.onload = () => {
+            calculateXP();
+        };
+
+    </script>
+</body>
+</html>

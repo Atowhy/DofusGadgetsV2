@@ -1,0 +1,1832 @@
+[
+    {
+        "short_date":"01-01",
+        "resource_count":1,
+        "resource":"Métronome du Début-Temps"
+    },
+    {
+        "short_date":"01-02",
+        "resource_count":4,
+        "resource":"Michette"
+    },
+    {
+        "short_date":"01-03",
+        "resource_count":1,
+        "resource":"Capuche d'Armécréante"
+    },
+    {
+        "short_date":"01-04",
+        "resource_count":3,
+        "resource":"Cœur de Crapeur"
+    },
+    {
+        "short_date":"01-05",
+        "resource_count":10,
+        "resource":"Frostiz"
+    },
+    {
+        "short_date":"01-06",
+        "resource_count":6,
+        "resource":"Poils de Barbe du Grand Pa Wabbit"
+    },
+    {
+        "short_date":"01-07",
+        "resource_count":6,
+        "resource":"Boue du Boo"
+    },
+    {
+        "short_date":"01-08",
+        "resource_count":6,
+        "resource":"Serviette de Plage"
+    },
+    {
+        "short_date":"01-09",
+        "resource_count":1,
+        "resource":"Épée Sacrée"
+    },
+    {
+        "short_date":"01-10",
+        "resource_count":1,
+        "resource":"Ceinture de Célérité"
+    },
+    {
+        "short_date":"01-11",
+        "resource_count":6,
+        "resource":"Miroir de Dopeul"
+    },
+    {
+        "short_date":"01-12",
+        "resource_count":30,
+        "resource":"Argent"
+    },
+    {
+        "short_date":"01-13",
+        "resource_count":2,
+        "resource":"Bave de Nessil"
+    },
+    {
+        "short_date":"01-14",
+        "resource_count":10,
+        "resource":"Bois de Tremble"
+    },
+    {
+        "short_date":"01-15",
+        "resource_count":6,
+        "resource":"Botte trouée de Mégabwork"
+    },
+    {
+        "short_date":"01-16",
+        "resource_count":6,
+        "resource":"Relique Familiale"
+    },
+    {
+        "short_date":"01-17",
+        "resource_count":9,
+        "resource":"Glande d'Arak-haï"
+    },
+    {
+        "short_date":"01-18",
+        "resource_count":40,
+        "resource":"Poisson-Chaton"
+    },
+    {
+        "short_date":"01-19",
+        "resource_count":2,
+        "resource":"Pagne d'Alashasss"
+    },
+    {
+        "short_date":"01-20",
+        "resource_count":2,
+        "resource":"Poil de Rat Brâkmarien"
+    },
+    {
+        "short_date":"01-21",
+        "resource_count":1,
+        "resource":"Bouteille de Gloutoburg"
+    },
+    {
+        "short_date":"01-22",
+        "resource_count":40,
+        "resource":"Ortie"
+    },
+    {
+        "short_date":"01-23",
+        "resource_count":2,
+        "resource":"Rune So"
+    },
+    {
+        "short_date":"01-24",
+        "resource_count":2,
+        "resource":"Bourgeon d'Abraknyde Sombre Irascible"
+    },
+    {
+        "short_date":"01-25",
+        "resource_count":5,
+        "resource":"Tibia de Koalak Fossoyeur"
+    },
+    {
+        "short_date":"01-26",
+        "resource_count":40,
+        "resource":"Bois de Chêne"
+    },
+    {
+        "short_date":"01-27",
+        "resource_count":4,
+        "resource":"Carasau"
+    },
+    {
+        "short_date":"01-28",
+        "resource_count":2,
+        "resource":"Queue de Rat Pine"
+    },
+    {
+        "short_date":"01-29",
+        "resource_count":6,
+        "resource":"Laine de Bouftou"
+    },
+    {
+        "short_date":"01-30",
+        "resource_count":6,
+        "resource":"Bourse Suspecte"
+    },
+    {
+        "short_date":"01-31",
+        "resource_count":40,
+        "resource":"Menthe Sauvage"
+    },
+    {
+        "short_date":"02-01",
+        "resource_count":1,
+        "resource":"Blessure du Sacrieur"
+    },
+    {
+        "short_date":"02-02",
+        "resource_count":2,
+        "resource":"Brioche à la viande de bouftou"
+    },
+    {
+        "short_date":"02-03",
+        "resource_count":6,
+        "resource":"Bombe de Graboule"
+    },
+    {
+        "short_date":"02-04",
+        "resource_count":2,
+        "resource":"Molaire de Blérice"
+    },
+    {
+        "short_date":"02-05",
+        "resource_count":1,
+        "resource":"Fil de Néfleuse"
+    },
+    {
+        "short_date":"02-06",
+        "resource_count":2,
+        "resource":"Marteau de Boisaille"
+    },
+    {
+        "short_date":"02-07",
+        "resource_count":6,
+        "resource":"Lamelle de Champa Vert"
+    },
+    {
+        "short_date":"02-08",
+        "resource_count":40,
+        "resource":"Bois de Frêne"
+    },
+    {
+        "short_date":"02-09",
+        "resource_count":2,
+        "resource":"Tignasse de Kanihilan"
+    },
+    {
+        "short_date":"02-10",
+        "resource_count":6,
+        "resource":"Pic de Dragodinde Dorée"
+    },
+    {
+        "short_date":"02-11",
+        "resource_count":40,
+        "resource":"Bar Rikain"
+    },
+    {
+        "short_date":"02-12",
+        "resource_count":5,
+        "resource":"Poils de Mulounoké"
+    },
+    {
+        "short_date":"02-13",
+        "resource_count":1,
+        "resource":"Bottes Karnaval"
+    },
+    {
+        "short_date":"02-14",
+        "resource_count":9,
+        "resource":"Shigekax Passion"
+    },
+    {
+        "short_date":"02-15",
+        "resource_count":1,
+        "resource":"Potion de Vieillesse"
+    },
+    {
+        "short_date":"02-16",
+        "resource_count":6,
+        "resource":"Beignet Astrubien"
+    },
+    {
+        "short_date":"02-17",
+        "resource_count":1,
+        "resource":"Écorce de Champaknyde"
+    },
+    {
+        "short_date":"02-18",
+        "resource_count":6,
+        "resource":"Écorce d'Abrakne Sombre"
+    },
+    {
+        "short_date":"02-19",
+        "resource_count":40,
+        "resource":"Carpe d'Iem"
+    },
+    {
+        "short_date":"02-20",
+        "resource_count":3,
+        "resource":"Croupion du Bitouf aérien"
+    },
+    {
+        "short_date":"02-21",
+        "resource_count":9,
+        "resource":"Bière bwork"
+    },
+    {
+        "short_date":"02-22",
+        "resource_count":5,
+        "resource":"Peau de Dragueuse"
+    },
+    {
+        "short_date":"02-23",
+        "resource_count":2,
+        "resource":"Corne de Malbois"
+    },
+    {
+        "short_date":"02-24",
+        "resource_count":2,
+        "resource":"Cuir d'Eskoglyphe"
+    },
+    {
+        "short_date":"02-25",
+        "resource_count":1,
+        "resource":"Goulobule rouge"
+    },
+    {
+        "short_date":"02-26",
+        "resource_count":2,
+        "resource":"Armure de Blindur"
+    },
+    {
+        "short_date":"02-27",
+        "resource_count":4,
+        "resource":"Marinade Sucrée-Salée"
+    },
+    {
+        "short_date":"02-28",
+        "resource_count":3,
+        "resource":"Plume de Domoizelle"
+    },
+    {
+        "short_date":"02-29",
+        "resource_count":6,
+        "resource":"Nageoire de Compétition"
+    },
+    {
+        "short_date":"03-01",
+        "resource_count":1,
+        "resource":"La Chaîne Nhanor Kibrill"
+    },
+    {
+        "short_date":"03-02",
+        "resource_count":5,
+        "resource":"Crâne d'Aventurier"
+    },
+    {
+        "short_date":"03-03",
+        "resource_count":20,
+        "resource":"Bois de Charme"
+    },
+    {
+        "short_date":"03-04",
+        "resource_count":3,
+        "resource":"Volve de Fistulor"
+    },
+    {
+        "short_date":"03-05",
+        "resource_count":3,
+        "resource":"Poil de Gliglitch"
+    },
+    {
+        "short_date":"03-06",
+        "resource_count":1,
+        "resource":"Baguette de Glace"
+    },
+    {
+        "short_date":"03-07",
+        "resource_count":4,
+        "resource":"Tête de lance de Fangshu"
+    },
+    {
+        "short_date":"03-08",
+        "resource_count":6,
+        "resource":"Patte de Wabbit"
+    },
+    {
+        "short_date":"03-09",
+        "resource_count":50,
+        "resource":"Houblon"
+    },
+    {
+        "short_date":"03-10",
+        "resource_count":1,
+        "resource":"Foudroyeur en Frêne"
+    },
+    {
+        "short_date":"03-11",
+        "resource_count":8,
+        "resource":"Dent de Crocodaille"
+    },
+    {
+        "short_date":"03-12",
+        "resource_count":3,
+        "resource":"Poisson Pané Frit"
+    },
+    {
+        "short_date":"03-13",
+        "resource_count":2,
+        "resource":"Œil de Harrogant"
+    },
+    {
+        "short_date":"03-14",
+        "resource_count":40,
+        "resource":"Trèfle à feuilles"
+    },
+    {
+        "short_date":"03-15",
+        "resource_count":5,
+        "resource":"Gratrooll"
+    },
+    {
+        "short_date":"03-16",
+        "resource_count":4,
+        "resource":"Jouet de Gamine Zoth"
+    },
+    {
+        "short_date":"03-17",
+        "resource_count":1,
+        "resource":"Cape du Piou Vert"
+    },
+    {
+        "short_date":"03-18",
+        "resource_count":2,
+        "resource":"Rune Fui"
+    },
+    {
+        "short_date":"03-19",
+        "resource_count":30,
+        "resource":"Manganèse"
+    },
+    {
+        "short_date":"03-20",
+        "resource_count":2,
+        "resource":"Queue de Mantaze"
+    },
+    {
+        "short_date":"03-21",
+        "resource_count":2,
+        "resource":"Œil de Feutôme"
+    },
+    {
+        "short_date":"03-22",
+        "resource_count":2,
+        "resource":"Incus de Verglasseur"
+    },
+    {
+        "short_date":"03-23",
+        "resource_count":1,
+        "resource":"Gravure de Crachin"
+    },
+    {
+        "short_date":"03-24",
+        "resource_count":6,
+        "resource":"Ailes de Scarafeuille Blanc"
+    },
+    {
+        "short_date":"03-25",
+        "resource_count":2,
+        "resource":"Antenne de Bacterrib"
+    },
+    {
+        "short_date":"03-26",
+        "resource_count":1,
+        "resource":"Incisive de Glourmand"
+    },
+    {
+        "short_date":"03-27",
+        "resource_count":4,
+        "resource":"Papillote au Citron"
+    },
+    {
+        "short_date":"03-28",
+        "resource_count":2,
+        "resource":"Canine de Kanimate"
+    },
+    {
+        "short_date":"03-29",
+        "resource_count":2,
+        "resource":"Boulon de Cybwork"
+    },
+    {
+        "short_date":"03-30",
+        "resource_count":6,
+        "resource":"Queue de Fennex"
+    },
+    {
+        "short_date":"03-31",
+        "resource_count":1,
+        "resource":"Œuf de Dragoeuf Calcaire"
+    },
+    {
+        "short_date":"04-01",
+        "resource_count":3,
+        "resource":"Fluide Glacial"
+    },
+    {
+        "short_date":"04-02",
+        "resource_count":1,
+        "resource":"Abreuvoir en Frêne"
+    },
+    {
+        "short_date":"04-03",
+        "resource_count":3,
+        "resource":"Lanterne usée"
+    },
+    {
+        "short_date":"04-04",
+        "resource_count":1,
+        "resource":"Ceinture de Sécurité"
+    },
+    {
+        "short_date":"04-05",
+        "resource_count":40,
+        "resource":"Edelweiss"
+    },
+    {
+        "short_date":"04-06",
+        "resource_count":5,
+        "resource":"Canine de Mergranlou"
+    },
+    {
+        "short_date":"04-07",
+        "resource_count":50,
+        "resource":"Orge"
+    },
+    {
+        "short_date":"04-08",
+        "resource_count":6,
+        "resource":"Carapace Verte"
+    },
+    {
+        "short_date":"04-09",
+        "resource_count":5,
+        "resource":"Plume de Gobvious"
+    },
+    {
+        "short_date":"04-10",
+        "resource_count":2,
+        "resource":"Anneau Fortifiant"
+    },
+    {
+        "short_date":"04-11",
+        "resource_count":6,
+        "resource":"Bout de Blop Coco"
+    },
+    {
+        "short_date":"04-12",
+        "resource_count":3,
+        "resource":"Os de Jiangshi-Nobi"
+    },
+    {
+        "short_date":"04-13",
+        "resource_count":40,
+        "resource":"Bois de Kaliptus"
+    },
+    {
+        "short_date":"04-14",
+        "resource_count":4,
+        "resource":"Plume du Kwak de Vent"
+    },
+    {
+        "short_date":"04-15",
+        "resource_count":1,
+        "resource":"Baffeur en Frêne"
+    },
+    {
+        "short_date":"04-16",
+        "resource_count":40,
+        "resource":"Greuvette"
+    },
+    {
+        "short_date":"04-17",
+        "resource_count":1,
+        "resource":"Multygely"
+    },
+    {
+        "short_date":"04-18",
+        "resource_count":2,
+        "resource":"Cuir de Cuirboule"
+    },
+    {
+        "short_date":"04-19",
+        "resource_count":30,
+        "resource":"Or"
+    },
+    {
+        "short_date":"04-20",
+        "resource_count":2,
+        "resource":"Nectar de l'Orient"
+    },
+    {
+        "short_date":"04-21",
+        "resource_count":1,
+        "resource":"Boule polie"
+    },
+    {
+        "short_date":"04-22",
+        "resource_count":2,
+        "resource":"Dent de Tilamproie"
+    },
+    {
+        "short_date":"04-23",
+        "resource_count":5,
+        "resource":"Bave de Ouassingue"
+    },
+    {
+        "short_date":"04-24",
+        "resource_count":6,
+        "resource":"Pierre du Craqueleur"
+    },
+    {
+        "short_date":"04-25",
+        "resource_count":6,
+        "resource":"Viande Rassie"
+    },
+    {
+        "short_date":"04-26",
+        "resource_count":1,
+        "resource":"Kamatrix"
+    },
+    {
+        "short_date":"04-27",
+        "resource_count":6,
+        "resource":"Oreille de Foufayteur"
+    },
+    {
+        "short_date":"04-28",
+        "resource_count":1,
+        "resource":"Cristal"
+    },
+    {
+        "short_date":"04-29",
+        "resource_count":6,
+        "resource":"Plume de Tofu"
+    },
+    {
+        "short_date":"04-30",
+        "resource_count":40,
+        "resource":"Graine de Pandouille"
+    },
+    {
+        "short_date":"05-01",
+        "resource_count":2,
+        "resource":"Capsule Explosive"
+    },
+    {
+        "short_date":"05-02",
+        "resource_count":1,
+        "resource":"Langue de Champodonte"
+    },
+    {
+        "short_date":"05-03",
+        "resource_count":4,
+        "resource":"Croupion de Truchmuche"
+    },
+    {
+        "short_date":"05-04",
+        "resource_count":6,
+        "resource":"Longue-vue de Gob-Trotteur"
+    },
+    {
+        "short_date":"05-05",
+        "resource_count":6,
+        "resource":"Fragment de Pierre Pointue"
+    },
+    {
+        "short_date":"05-06",
+        "resource_count":40,
+        "resource":"Bois d'Érable"
+    },
+    {
+        "short_date":"05-07",
+        "resource_count":1,
+        "resource":"Dent de Klémort"
+    },
+    {
+        "short_date":"05-08",
+        "resource_count":20,
+        "resource":"Pomme de Terre"
+    },
+    {
+        "short_date":"05-09",
+        "resource_count":1,
+        "resource":"Sac du Petit Récolteur"
+    },
+    {
+        "short_date":"05-10",
+        "resource_count":6,
+        "resource":"Pic de Dragodinde"
+    },
+    {
+        "short_date":"05-11",
+        "resource_count":1,
+        "resource":"Fiole à élément"
+    },
+    {
+        "short_date":"05-12",
+        "resource_count":50,
+        "resource":"Malt"
+    },
+    {
+        "short_date":"05-13",
+        "resource_count":1,
+        "resource":"Dédicace de Skeunk pour Émeraude"
+    },
+    {
+        "short_date":"05-14",
+        "resource_count":1,
+        "resource":"Bouclier de Bowisse"
+    },
+    {
+        "short_date":"05-15",
+        "resource_count":2,
+        "resource":"Collier de Khan Karkass"
+    },
+    {
+        "short_date":"05-16",
+        "resource_count":40,
+        "resource":"Belladone"
+    },
+    {
+        "short_date":"05-17",
+        "resource_count":1,
+        "resource":"Étoffe du Roissingue"
+    },
+    {
+        "short_date":"05-18",
+        "resource_count":3,
+        "resource":"Pollen de Bulbiflore"
+    },
+    {
+        "short_date":"05-19",
+        "resource_count":30,
+        "resource":"Étain"
+    },
+    {
+        "short_date":"05-20",
+        "resource_count":2,
+        "resource":"Cawotte"
+    },
+    {
+        "short_date":"05-21",
+        "resource_count":1,
+        "resource":"Capouze des Champs"
+    },
+    {
+        "short_date":"05-22",
+        "resource_count":1,
+        "resource":"Sac du Petit Aventurier"
+    },
+    {
+        "short_date":"05-23",
+        "resource_count":40,
+        "resource":"Brochet"
+    },
+    {
+        "short_date":"05-24",
+        "resource_count":40,
+        "resource":"Seigle"
+    },
+    {
+        "short_date":"05-25",
+        "resource_count":5,
+        "resource":"Duvet du Kilibriss"
+    },
+    {
+        "short_date":"05-26",
+        "resource_count":4,
+        "resource":"Corne de Gamino"
+    },
+    {
+        "short_date":"05-27",
+        "resource_count":2,
+        "resource":"Tanche en Matelote"
+    },
+    {
+        "short_date":"05-28",
+        "resource_count":6,
+        "resource":"Viande Sanguinolente"
+    },
+    {
+        "short_date":"05-29",
+        "resource_count":6,
+        "resource":"Miséricorde du Chafer d'Élite"
+    },
+    {
+        "short_date":"05-30",
+        "resource_count":3,
+        "resource":"Rune Pui"
+    },
+    {
+        "short_date":"05-31",
+        "resource_count":3,
+        "resource":"Lamelle de Dramanite"
+    },
+    {
+        "short_date":"06-01",
+        "resource_count":6,
+        "resource":"Pince de Crabe"
+    },
+    {
+        "short_date":"06-02",
+        "resource_count":2,
+        "resource":"Biscotte"
+    },
+    {
+        "short_date":"06-03",
+        "resource_count":6,
+        "resource":"Graine de la Discorde"
+    },
+    {
+        "short_date":"06-04",
+        "resource_count":1,
+        "resource":"Bouclier du Bouftou"
+    },
+    {
+        "short_date":"06-05",
+        "resource_count":2,
+        "resource":"Coquille de Virustine"
+    },
+    {
+        "short_date":"06-06",
+        "resource_count":2,
+        "resource":"Œil de Cycloïde"
+    },
+    {
+        "short_date":"06-07",
+        "resource_count":2,
+        "resource":"Griffe de Blérauve"
+    },
+    {
+        "short_date":"06-08",
+        "resource_count":6,
+        "resource":"Roue de Tivelo"
+    },
+    {
+        "short_date":"06-09",
+        "resource_count":40,
+        "resource":"Orchidée Freyesque"
+    },
+    {
+        "short_date":"06-10",
+        "resource_count":6,
+        "resource":"Lait de Dragodinde"
+    },
+    {
+        "short_date":"06-11",
+        "resource_count":1,
+        "resource":"Bouteille de Bouchonnois"
+    },
+    {
+        "short_date":"06-12",
+        "resource_count":1,
+        "resource":"Sang de Harpo"
+    },
+    {
+        "short_date":"06-13",
+        "resource_count":40,
+        "resource":"Bois de Bambou"
+    },
+    {
+        "short_date":"06-14",
+        "resource_count":1,
+        "resource":"Clef des Champs"
+    },
+    {
+        "short_date":"06-15",
+        "resource_count":6,
+        "resource":"Coccyx du Corailleur"
+    },
+    {
+        "short_date":"06-16",
+        "resource_count":6,
+        "resource":"Coquille de Dragoeuf Ardoise"
+    },
+    {
+        "short_date":"06-17",
+        "resource_count":6,
+        "resource":"Racine d'Abraknyde"
+    },
+    {
+        "short_date":"06-18",
+        "resource_count":30,
+        "resource":"Cendrepierre"
+    },
+    {
+        "short_date":"06-19",
+        "resource_count":4,
+        "resource":"Peau de Crachefoux"
+    },
+    {
+        "short_date":"06-20",
+        "resource_count":50,
+        "resource":"Blé"
+    },
+    {
+        "short_date":"06-21",
+        "resource_count":6,
+        "resource":"Tambour de Gobaladée"
+    },
+    {
+        "short_date":"06-22",
+        "resource_count":6,
+        "resource":"Pince de Crustorail"
+    },
+    {
+        "short_date":"06-23",
+        "resource_count":1,
+        "resource":"Appendice Démoniaque"
+    },
+    {
+        "short_date":"06-24",
+        "resource_count":1,
+        "resource":"Peau de Larve Champêtre"
+    },
+    {
+        "short_date":"06-25",
+        "resource_count":1,
+        "resource":"Eau Ferrugineuse"
+    },
+    {
+        "short_date":"06-26",
+        "resource_count":1,
+        "resource":"Bouclier Volant"
+    },
+    {
+        "short_date":"06-27",
+        "resource_count":2,
+        "resource":"Tentacule de Grofond"
+    },
+    {
+        "short_date":"06-28",
+        "resource_count":2,
+        "resource":"Grenat de Momistik"
+    },
+    {
+        "short_date":"06-29",
+        "resource_count":2,
+        "resource":"Viande Noire"
+    },
+    {
+        "short_date":"06-30",
+        "resource_count":6,
+        "resource":"Bonnet de Gobaliste"
+    },
+    {
+        "short_date":"07-01",
+        "resource_count":5,
+        "resource":"Écaille de Dragoss Charbon"
+    },
+    {
+        "short_date":"07-02",
+        "resource_count":1,
+        "resource":"Œuf de Tofubine"
+    },
+    {
+        "short_date":"07-03",
+        "resource_count":3,
+        "resource":"Potion Raide Dite"
+    },
+    {
+        "short_date":"07-04",
+        "resource_count":4,
+        "resource":"Friture Amaknéenne"
+    },
+    {
+        "short_date":"07-05",
+        "resource_count":2,
+        "resource":"Poils magiques de Tanuki"
+    },
+    {
+        "short_date":"07-06",
+        "resource_count":40,
+        "resource":"Truite"
+    },
+    {
+        "short_date":"07-07",
+        "resource_count":50,
+        "resource":"Maïs"
+    },
+    {
+        "short_date":"07-08",
+        "resource_count":2,
+        "resource":"Nœud de Marin"
+    },
+    {
+        "short_date":"07-09",
+        "resource_count":2,
+        "resource":"Rune Pod"
+    },
+    {
+        "short_date":"07-10",
+        "resource_count":1,
+        "resource":"Arc Sifflant"
+    },
+    {
+        "short_date":"07-11",
+        "resource_count":30,
+        "resource":"Bauxite"
+    },
+    {
+        "short_date":"07-12",
+        "resource_count":2,
+        "resource":"Poils de barbe de Barbélier"
+    },
+    {
+        "short_date":"07-13",
+        "resource_count":2,
+        "resource":"Eau de Kwapa"
+    },
+    {
+        "short_date":"07-14",
+        "resource_count":6,
+        "resource":"Chaînes Brisées"
+    },
+    {
+        "short_date":"07-15",
+        "resource_count":2,
+        "resource":"Viande Goûtue"
+    },
+    {
+        "short_date":"07-16",
+        "resource_count":2,
+        "resource":"Boue Vénérable"
+    },
+    {
+        "short_date":"07-17",
+        "resource_count":6,
+        "resource":"Peau de Larve Verte"
+    },
+    {
+        "short_date":"07-18",
+        "resource_count":1,
+        "resource":"Mauvaise Pioche"
+    },
+    {
+        "short_date":"07-19",
+        "resource_count":1,
+        "resource":"Peau de Trithon"
+    },
+    {
+        "short_date":"07-20",
+        "resource_count":1,
+        "resource":"Huile de Tournesol Sauvage"
+    },
+    {
+        "short_date":"07-21",
+        "resource_count":1,
+        "resource":"Fragment de pépite de Sakaï"
+    },
+    {
+        "short_date":"07-22",
+        "resource_count":3,
+        "resource":"Sardine à l'Étouffée"
+    },
+    {
+        "short_date":"07-23",
+        "resource_count":1,
+        "resource":"Chacha"
+    },
+    {
+        "short_date":"07-24",
+        "resource_count":10,
+        "resource":"Bois d'Orme"
+    },
+    {
+        "short_date":"07-25",
+        "resource_count":3,
+        "resource":"Furoncle de la Mama Bwork"
+    },
+    {
+        "short_date":"07-26",
+        "resource_count":3,
+        "resource":"Pic de Malépik"
+    },
+    {
+        "short_date":"07-27",
+        "resource_count":6,
+        "resource":"Boulette de Viande"
+    },
+    {
+        "short_date":"07-28",
+        "resource_count":4,
+        "resource":"Lame brisée de Lichangoro"
+    },
+    {
+        "short_date":"07-29",
+        "resource_count":2,
+        "resource":"Jus de Cacterre"
+    },
+    {
+        "short_date":"07-30",
+        "resource_count":3,
+        "resource":"Cuir de Boostache Prépubère"
+    },
+    {
+        "short_date":"07-31",
+        "resource_count":2,
+        "resource":"Flèche de Crâmbo"
+    },
+    {
+        "short_date":"08-01",
+        "resource_count":40,
+        "resource":"Sauge"
+    },
+    {
+        "short_date":"08-02",
+        "resource_count":4,
+        "resource":"Plume de Truchideur"
+    },
+    {
+        "short_date":"08-03",
+        "resource_count":3,
+        "resource":"Potion de cité : Bonta"
+    },
+    {
+        "short_date":"08-04",
+        "resource_count":4,
+        "resource":"Cendres Matures"
+    },
+    {
+        "short_date":"08-05",
+        "resource_count":10,
+        "resource":"Poisskaille"
+    },
+    {
+        "short_date":"08-06",
+        "resource_count":6,
+        "resource":"Crème à bronzer"
+    },
+    {
+        "short_date":"08-07",
+        "resource_count":3,
+        "resource":"Racine de Tronkoblop"
+    },
+    {
+        "short_date":"08-08",
+        "resource_count":1,
+        "resource":"Aluminite"
+    },
+    {
+        "short_date":"08-09",
+        "resource_count":6,
+        "resource":"Pétale de Tournesol Sauvage"
+    },
+    {
+        "short_date":"08-10",
+        "resource_count":1,
+        "resource":"Mangeoire en Frêne"
+    },
+    {
+        "short_date":"08-11",
+        "resource_count":3,
+        "resource":"Kapokaza"
+    },
+    {
+        "short_date":"08-12",
+        "resource_count":4,
+        "resource":"Viande de Brousse"
+    },
+    {
+        "short_date":"08-13",
+        "resource_count":2,
+        "resource":"Flaque Vénérable"
+    },
+    {
+        "short_date":"08-14",
+        "resource_count":1,
+        "resource":"Œil de Crocodaille albinos"
+    },
+    {
+        "short_date":"08-15",
+        "resource_count":6,
+        "resource":"Paupière d'Étoile"
+    },
+    {
+        "short_date":"08-16",
+        "resource_count":40,
+        "resource":"Ginseng"
+    },
+    {
+        "short_date":"08-17",
+        "resource_count":6,
+        "resource":"Plume de Corbac"
+    },
+    {
+        "short_date":"08-18",
+        "resource_count":1,
+        "resource":"Pierre de Rubis"
+    },
+    {
+        "short_date":"08-19",
+        "resource_count":1,
+        "resource":"Bottes de l'Apprenti"
+    },
+    {
+        "short_date":"08-20",
+        "resource_count":2,
+        "resource":"Cocon de Ver de Terre"
+    },
+    {
+        "short_date":"08-21",
+        "resource_count":1,
+        "resource":"Plume de Corbac Apprivoisé"
+    },
+    {
+        "short_date":"08-22",
+        "resource_count":2,
+        "resource":"Cœur de Craqueleur Légendaire"
+    },
+    {
+        "short_date":"08-23",
+        "resource_count":1,
+        "resource":"Trophée de l'Apprenti"
+    },
+    {
+        "short_date":"08-24",
+        "resource_count":4,
+        "resource":"Patte de Wabbit Squelette"
+    },
+    {
+        "short_date":"08-25",
+        "resource_count":6,
+        "resource":"Peau de Bouftou Royal"
+    },
+    {
+        "short_date":"08-26",
+        "resource_count":40,
+        "resource":"Chanvre"
+    },
+    {
+        "short_date":"08-27",
+        "resource_count":1,
+        "resource":"Plume de Corbac Noir"
+    },
+    {
+        "short_date":"08-28",
+        "resource_count":3,
+        "resource":"Viande Hachée"
+    },
+    {
+        "short_date":"08-29",
+        "resource_count":2,
+        "resource":"Œil de Corbac"
+    },
+    {
+        "short_date":"08-30",
+        "resource_count":1,
+        "resource":"Dofus Cawotte"
+    },
+    {
+        "short_date":"08-31",
+        "resource_count":6,
+        "resource":"Queue de Scorbute"
+    },
+    {
+        "short_date":"09-01",
+        "resource_count":40,
+        "resource":"Bois de Noyer"
+    },
+    {
+        "short_date":"09-02",
+        "resource_count":1,
+        "resource":"Anneau de l'Apprenti"
+    },
+    {
+        "short_date":"09-03",
+        "resource_count":6,
+        "resource":"Œil de Corbac Apprivoisé"
+    },
+    {
+        "short_date":"09-04",
+        "resource_count":2,
+        "resource":"Viande de Dragodinde"
+    },
+    {
+        "short_date":"09-05",
+        "resource_count":30,
+        "resource":"Fer"
+    },
+    {
+        "short_date":"09-06",
+        "resource_count":1,
+        "resource":"Bottes de l'Aventurier"
+    },
+    {
+        "short_date":"09-07",
+        "resource_count":2,
+        "resource":"Œil de Corbac Noir"
+    },
+    {
+        "short_date":"09-08",
+        "resource_count":6,
+        "resource":"Queue de Dragodinde Sauvage"
+    },
+    {
+        "short_date":"09-09",
+        "resource_count":1,
+        "resource":"Trophée de l'Aventurier"
+    },
+    {
+        "short_date":"09-10",
+        "resource_count":4,
+        "resource":"Patte de Wabbit Garou"
+    },
+    {
+        "short_date":"09-11",
+        "resource_count":6,
+        "resource":"Peau de Bouftou Céleste"
+    },
+    {
+        "short_date":"09-12",
+        "resource_count":40,
+        "resource":"Céréale"
+    },
+    {
+        "short_date":"09-13",
+        "resource_count":1,
+        "resource":"Plume de Corbac Blanc"
+    },
+    {
+        "short_date":"09-14",
+        "resource_count":3,
+        "resource":"Viande Séchée de Dragodinde"
+    },
+    {
+        "short_date":"09-15",
+        "resource_count":2,
+        "resource":"Œil de Corbac Blanc"
+    },
+    {
+        "short_date":"09-16",
+        "resource_count":1,
+        "resource":"Dofus Émeraude"
+    },
+    {
+        "short_date":"09-17",
+        "resource_count":6,
+        "resource":"Queue de Scorbute Royal"
+    },
+    {
+        "short_date":"09-18",
+        "resource_count":40,
+        "resource":"Bois de Châtaignier"
+    },
+    {
+        "short_date":"09-19",
+        "resource_count":1,
+        "resource":"Anneau de l'Aventurier"
+    },
+    {
+        "short_date":"09-20",
+        "resource_count":6,
+        "resource":"Œil de Corbac Royal"
+    },
+    {
+        "short_date":"09-21",
+        "resource_count":2,
+        "resource":"Viande de Dragodinde Sauvage"
+    },
+    {
+        "short_date":"09-22",
+        "resource_count":30,
+        "resource":"Cuivre"
+    },
+    {
+        "short_date":"09-23",
+        "resource_count":1,
+        "resource":"Bottes du Voyageur"
+    },
+    {
+        "short_date":"09-24",
+        "resource_count":2,
+        "resource":"Œil de Corbac Mystique"
+    },
+    {
+        "short_date":"09-25",
+        "resource_count":6,
+        "resource":"Queue de Dragodinde Céleste"
+    },
+    {
+        "short_date":"09-26",
+        "resource_count":1,
+        "resource":"Trophée du Voyageur"
+    },
+    {
+        "short_date":"09-27",
+        "resource_count":4,
+        "resource":"Patte de Wabbit Géant"
+    },
+    {
+        "short_date":"09-28",
+        "resource_count":6,
+        "resource":"Peau de Bouftou Mystique"
+    },
+    {
+        "short_date":"09-29",
+        "resource_count":40,
+        "resource":"Blé d'Or"
+    },
+    {
+        "short_date":"09-30",
+        "resource_count":1,
+        "resource":"Plume de Corbac Légendaire"
+    },
+    {
+        "short_date":"10-01",
+        "resource_count":3,
+        "resource":"Viande Séchée de Dragodinde Sauvage"
+    },
+    {
+        "short_date":"10-02",
+        "resource_count":2,
+        "resource":"Œil de Corbac Légendaire"
+    },
+    {
+        "short_date":"10-03",
+        "resource_count":1,
+        "resource":"Dofus Pourpre"
+    },
+    {
+        "short_date":"10-04",
+        "resource_count":6,
+        "resource":"Queue de Scorbute Mystique"
+    },
+    {
+        "short_date":"10-05",
+        "resource_count":40,
+        "resource":"Bois de Cèdre"
+    },
+    {
+        "short_date":"10-06",
+        "resource_count":1,
+        "resource":"Anneau du Voyageur"
+    },
+    {
+        "short_date":"10-07",
+        "resource_count":6,
+        "resource":"Œil de Corbac Ancestral"
+    },
+    {
+        "short_date":"10-08",
+        "resource_count":2,
+        "resource":"Viande de Dragodinde Céleste"
+    },
+    {
+        "short_date":"10-09",
+        "resource_count":30,
+        "resource":"Bronze"
+    },
+    {
+        "short_date":"10-10",
+        "resource_count":1,
+        "resource":"Bottes du Conquérant"
+    },
+    {
+        "short_date":"10-11",
+        "resource_count":2,
+        "resource":"Œil de Corbac Ancien"
+    },
+    {
+        "short_date":"10-12",
+        "resource_count":6,
+        "resource":"Queue de Dragodinde Ancestrale"
+    },
+    {
+        "short_date":"10-13",
+        "resource_count":1,
+        "resource":"Trophée du Conquérant"
+    },
+    {
+        "short_date":"10-14",
+        "resource_count":4,
+        "resource":"Patte de Wabbit Ancien"
+    },
+    {
+        "short_date":"10-15",
+        "resource_count":6,
+        "resource":"Peau de Bouftou Ancestral"
+    },
+    {
+        "short_date":"10-16",
+        "resource_count":40,
+        "resource":"Riz"
+    },
+    {
+        "short_date":"10-17",
+        "resource_count":1,
+        "resource":"Plume de Corbac Ancien"
+    },
+    {
+        "short_date":"10-18",
+        "resource_count":3,
+        "resource":"Viande Séchée de Dragodinde Céleste"
+    },
+    {
+        "short_date":"10-19",
+        "resource_count":2,
+        "resource":"Œil de Corbac Vénérable"
+    },
+    {
+        "short_date":"10-20",
+        "resource_count":1,
+        "resource":"Dofus Turquoise"
+    },
+    {
+        "short_date":"10-21",
+        "resource_count":6,
+        "resource":"Queue de Scorbute Ancien"
+    },
+    {
+        "short_date":"10-22",
+        "resource_count":40,
+        "resource":"Bois de Bambou Sombre"
+    },
+    {
+        "short_date":"10-23",
+        "resource_count":1,
+        "resource":"Anneau du Conquérant"
+    },
+    {
+        "short_date":"10-24",
+        "resource_count":6,
+        "resource":"Œil de Corbac Immortel"
+    },
+    {
+        "short_date":"10-25",
+        "resource_count":2,
+        "resource":"Viande de Dragodinde Ancestrale"
+    },
+    {
+        "short_date":"10-26",
+        "resource_count":30,
+        "resource":"Argent Pur"
+    },
+    {
+        "short_date":"10-27",
+        "resource_count":1,
+        "resource":"Bottes du Légendaire"
+    },
+    {
+        "short_date":"10-28",
+        "resource_count":2,
+        "resource":"Œil de Corbac Éternel"
+    },
+    {
+        "short_date":"10-29",
+        "resource_count":6,
+        "resource":"Queue de Dragodinde Immortelle"
+    },
+    {
+        "short_date":"10-30",
+        "resource_count":1,
+        "resource":"Trophée du Légendaire"
+    },
+    {
+        "short_date":"10-31",
+        "resource_count":4,
+        "resource":"Patte de Wabbit Immortel"
+    },
+    {
+        "short_date":"11-01",
+        "resource_count":6,
+        "resource":"Peau de Bouftou Immortel"
+    },
+    {
+        "short_date":"11-02",
+        "resource_count":40,
+        "resource":"Maïs Doré"
+    },
+    {
+        "short_date":"11-03",
+        "resource_count":1,
+        "resource":"Plume de Corbac Divin"
+    },
+    {
+        "short_date":"11-04",
+        "resource_count":3,
+        "resource":"Viande Séchée de Dragodinde Ancestrale"
+    },
+    {
+        "short_date":"11-05",
+        "resource_count":2,
+        "resource":"Œil de Corbac Divin"
+    },
+    {
+        "short_date":"11-06",
+        "resource_count":1,
+        "resource":"Dofus Ébène"
+    },
+    {
+        "short_date":"11-07",
+        "resource_count":6,
+        "resource":"Queue de Scorbute Immortel"
+    },
+    {
+        "short_date":"11-08",
+        "resource_count":40,
+        "resource":"Bois de Bambou Sacré"
+    },
+    {
+        "short_date":"11-09",
+        "resource_count":1,
+        "resource":"Anneau du Légendaire"
+    },
+    {
+        "short_date":"11-10",
+        "resource_count":6,
+        "resource":"Œil de Corbac Sacré"
+    },
+    {
+        "short_date":"11-11",
+        "resource_count":2,
+        "resource":"Viande de Dragodinde Immortelle"
+    },
+    {
+        "short_date":"11-12",
+        "resource_count":30,
+        "resource":"Or Pur"
+    },
+    {
+        "short_date":"11-13",
+        "resource_count":1,
+        "resource":"Bottes du Divin"
+    },
+    {
+        "short_date":"11-14",
+        "resource_count":2,
+        "resource":"Œil de Corbac Céleste"
+    },
+    {
+        "short_date":"11-15",
+        "resource_count":6,
+        "resource":"Queue de Dragodinde Divine"
+    },
+    {
+        "short_date":"11-16",
+        "resource_count":1,
+        "resource":"Trophée du Divin"
+    },
+    {
+        "short_date":"11-17",
+        "resource_count":4,
+        "resource":"Patte de Wabbit Divin"
+    },
+    {
+        "short_date":"11-18",
+        "resource_count":6,
+        "resource":"Peau de Bouftou Divin"
+    },
+    {
+        "short_date":"11-19",
+        "resource_count":40,
+        "resource":"Chanvre Sacré"
+    },
+    {
+        "short_date":"11-20",
+        "resource_count":1,
+        "resource":"Plume de Corbac Royal"
+    },
+    {
+        "short_date":"11-21",
+        "resource_count":3,
+        "resource":"Viande Séchée de Dragodinde Immortelle"
+    },
+    {
+        "short_date":"11-22",
+        "resource_count":2,
+        "resource":"Œil de Corbac Royal"
+    },
+    {
+        "short_date":"11-23",
+        "resource_count":1,
+        "resource":"Dofus Vulbis"
+    },
+    {
+        "short_date":"11-24",
+        "resource_count":6,
+        "resource":"Queue de Scorbute Divine"
+    },
+    {
+        "short_date":"11-25",
+        "resource_count":40,
+        "resource":"Bois de Bambou Royal"
+    },
+    {
+        "short_date":"11-26",
+        "resource_count":1,
+        "resource":"Anneau du Divin"
+    },
+    {
+        "short_date":"11-27",
+        "resource_count":6,
+        "resource":"Œil de Corbac Suprême"
+    },
+    {
+        "short_date":"11-28",
+        "resource_count":2,
+        "resource":"Viande de Dragodinde Divine"
+    },
+    {
+        "short_date":"11-29",
+        "resource_count":30,
+        "resource":"Diamant"
+    },
+    {
+        "short_date":"11-30",
+        "resource_count":1,
+        "resource":"Bottes du Suprême"
+    },
+    {
+        "short_date":"12-01",
+        "resource_count":2,
+        "resource":"Œil de Gouligane"
+    },
+    {
+        "short_date":"12-02",
+        "resource_count":1,
+        "resource":"Bouclier du tournesol sauvage"
+    },
+    {
+        "short_date":"12-03",
+        "resource_count":4,
+        "resource":"Peau de Mansobèse"
+    },
+    {
+        "short_date":"12-04",
+        "resource_count":40,
+        "resource":"Bois d'Oliviolet"
+    },
+    {
+        "short_date":"12-05",
+        "resource_count":6,
+        "resource":"Casque de Martoa"
+    },
+    {
+        "short_date":"12-06",
+        "resource_count":6,
+        "resource":"Charbon"
+    },
+    {
+        "short_date":"12-07",
+        "resource_count":6,
+        "resource":"Étoffe de Dok Alako"
+    },
+    {
+        "short_date":"12-08",
+        "resource_count":10,
+        "resource":"Perce-Neige"
+    },
+    {
+        "short_date":"12-09",
+        "resource_count":2,
+        "resource":"Poil de Rat Bontarien"
+    },
+    {
+        "short_date":"12-10",
+        "resource_count":1,
+        "resource":"Queue de Dragodinde"
+    },
+    {
+        "short_date":"12-11",
+        "resource_count":6,
+        "resource":"Plume de Corbac"
+    },
+    {
+        "short_date":"12-12",
+        "resource_count":40,
+        "resource":"Graine de Pandouille"
+    },
+    {
+        "short_date":"12-13",
+        "resource_count":2,
+        "resource":"Capsule Explosive"
+    },
+    {
+        "short_date":"12-14",
+        "resource_count":1,
+        "resource":"Langue de Champodonte"
+    },
+    {
+        "short_date":"12-15",
+        "resource_count":4,
+        "resource":"Croupion de Truchmuche"
+    },
+    {
+        "short_date":"12-16",
+        "resource_count":6,
+        "resource":"Longue-vue de Gob-Trotteur"
+    },
+    {
+        "short_date":"12-17",
+        "resource_count":6,
+        "resource":"Fragment de Pierre Pointue"
+    },
+    {
+        "short_date":"12-18",
+        "resource_count":40,
+        "resource":"Bois d'Érable"
+    },
+    {
+        "short_date":"12-19",
+        "resource_count":1,
+        "resource":"Dent de Klémort"
+    },
+    {
+        "short_date":"12-20",
+        "resource_count":20,
+        "resource":"Pomme de Terre"
+    },
+    {
+        "short_date":"12-21",
+        "resource_count":1,
+        "resource":"Sac du Petit Récolteur"
+    },
+    {
+        "short_date":"12-22",
+        "resource_count":6,
+        "resource":"Pic de Dragodinde"
+    },
+    {
+        "short_date":"12-23",
+        "resource_count":1,
+        "resource":"Fiole à élément"
+    },
+    {
+        "short_date":"12-24",
+        "resource_count":50,
+        "resource":"Malt"
+    },
+    {
+        "short_date":"12-25",
+        "resource_count":1,
+        "resource":"Dédicace de Skeunk pour Émeraude"
+    },
+    {
+        "short_date":"12-26",
+        "resource_count":1,
+        "resource":"Bouclier de Bowisse"
+    },
+    {
+        "short_date":"12-27",
+        "resource_count":2,
+        "resource":"Collier de Khan Karkass"
+    },
+    {
+        "short_date":"12-28",
+        "resource_count":40,
+        "resource":"Belladone"
+    },
+    {
+        "short_date":"12-29",
+        "resource_count":1,
+        "resource":"Étoffe du Roissingue"
+    },
+    {
+        "short_date":"12-30",
+        "resource_count":3,
+        "resource":"Pollen de Bulbiflore"
+    },
+    {
+        "short_date":"12-31",
+        "resource_count":30,
+        "resource":"Étain"
+    }
+]

@@ -1,0 +1,2930 @@
+[
+    {
+        "short_date": "01-01",
+        "offering_to": "Mazic",
+        "bonus": "Jour de l'anOnome attend les aventuriers qui veulent célébrer la nouvelle année près du temple de Xélor. Sa bénédiction accorde un sortilège temporaire, le bond du Début-Temps, que vous serez capable de lancer durant 12 heures.",
+        "resource_count": 1,
+        "resource": "Métronome du Début-Temps",
+        "resource_url": "https://dofusdb.fr/fr/database/object/29379"
+    },
+    {
+        "short_date": "01-02",
+        "offering_to": "Arouz",
+        "bonus": "Économie d'ingrédientsLes Paysans économisent 15 % de leurs ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 4,
+        "resource": "Michette",
+        "resource_url": "https://dofusdb.fr/fr/database/object/521"
+    },
+    {
+        "short_date": "01-03",
+        "offering_to": "Orage",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon de la Tempête de l'Eliocalypse.",
+        "resource_count": 1,
+        "resource": "Capuche d'Armécréante",
+        "resource_url": "https://dofusdb.fr/fr/database/object/22217"
+    },
+    {
+        "short_date": "01-04",
+        "offering_to": "Thomahon",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans la zone des Larmes d'Ouronigride.",
+        "resource_count": 3,
+        "resource": "Cœur de Crapeur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11327"
+    },
+    {
+        "short_date": "01-05",
+        "offering_to": "Ling",
+        "bonus": "Récolte abondanteLes quantités de Frostiz récupérées par les Paysans sont augmentées de 200 %.",
+        "resource_count": 10,
+        "resource": "Frostiz",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11109"
+    },
+    {
+        "short_date": "01-06",
+        "offering_to": "Sebklav",
+        "bonus": "Quête répétableUne quête répétable spéciale est disponible aujourd'hui près de l'atelier des paysans du village d'Amakna. Réalisable à partir du niveau 20, elle est indépendante de la quête d'offrande.\nNom de la quête : Farine assassine.",
+        "resource_count": 6,
+        "resource": "Poils de Barbe du Grand Pa Wabbit",
+        "resource_url": "https://dofusdb.fr/fr/database/object/418"
+    },
+    {
+        "short_date": "01-07",
+        "offering_to": "Yvad",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Gadouilleux.",
+        "resource_count": 6,
+        "resource": "Boue du Boo",
+        "resource_url": "https://dofusdb.fr/fr/database/object/417"
+    },
+    {
+        "short_date": "01-08",
+        "offering_to": "Leszak",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon du Château Ensablé.",
+        "resource_count": 6,
+        "resource": "Serviette de Plage",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13487"
+    },
+    {
+        "short_date": "01-09",
+        "offering_to": "Stun",
+        "bonus": "Objets de qualitéLa qualité des objets fabriqués dans la ville de Bonta est augmentée.",
+        "resource_count": 1,
+        "resource": "Épée Sacrée",
+        "resource_url": "https://dofusdb.fr/fr/database/object/821"
+    },
+    {
+        "short_date": "01-10",
+        "offering_to": "Trôma",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos roux donnent naissance à un bébé supplémentaire.",
+        "resource_count": 1,
+        "resource": "Ceinture de Célérité",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1700"
+    },
+    {
+        "short_date": "01-11",
+        "offering_to": "Ashvey",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Dopeuls.",
+        "resource_count": 6,
+        "resource": "Miroir de Dopeul",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13489"
+    },
+    {
+        "short_date": "01-12",
+        "offering_to": "Rojers",
+        "bonus": "Minerai abondantLes quantités d'Argent récupérées par les Mineurs sont augmentées de 125 %.",
+        "resource_count": 30,
+        "resource": "Argent",
+        "resource_url": "https://dofusdb.fr/fr/database/object/350"
+    },
+    {
+        "short_date": "01-13",
+        "offering_to": "Katlestyn",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans les 4 zones des remparts du Château Harebourg et dans la Tour de la Clepsydre.",
+        "resource_count": 2,
+        "resource": "Bave de Nessil",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13937"
+    },
+    {
+        "short_date": "01-14",
+        "offering_to": "Guigui",
+        "bonus": "Bois abondantLes quantités de Bois de Tremble récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 10,
+        "resource": "Bois de Tremble",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11107"
+    },
+    {
+        "short_date": "01-15",
+        "offering_to": "Poupline",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Bworks de Cania.",
+        "resource_count": 10,
+        "resource": "Botte trouée",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18232"
+    },
+    {
+        "short_date": "01-16",
+        "offering_to": "Bubba",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans la zone de la Bordure de Brâkmar.",
+        "resource_count": 6,
+        "resource": "Relique Familiale",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13491"
+    },
+    {
+        "short_date": "01-17",
+        "offering_to": "Kia",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Arak-haï.",
+        "resource_count": 2,
+        "resource": "Glande d'Arak-haï",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16215"
+    },
+    {
+        "short_date": "01-18",
+        "offering_to": "Yêcetu",
+        "bonus": "Pêche abondanteLes quantités de poissons récupérées par les Pêcheurs de tous niveaux sont augmentées de 100 %.",
+        "resource_count": 40,
+        "resource": "Poisson-Chaton",
+        "resource_url": "https://dofusdb.fr/fr/database/object/603"
+    },
+    {
+        "short_date": "01-19",
+        "offering_to": "Eskarina",
+        "bonus": "Anomalies temporellesLes gains d'expérience des montures sont augmentés de 100 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone de Crocuzko.",
+        "resource_count": 2,
+        "resource": "Pagne d'Alashasss",
+        "resource_url": "https://dofusdb.fr/fr/database/object/21211"
+    },
+    {
+        "short_date": "01-20",
+        "offering_to": "Inkola",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Rats Brâkmariens.",
+        "resource_count": 2,
+        "resource": "Poil de Rat Brâkmarien",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8571"
+    },
+    {
+        "short_date": "01-21",
+        "offering_to": "Magikow",
+        "bonus": "Fabrication intensivePour chaque objet fabriqué, les Alchimistes ont 25 % de chances de créer un second objet.",
+        "resource_count": 1,
+        "resource": "Bouteille de Gloutoburg",
+        "resource_url": "https://dofusdb.fr/fr/database/object/9968"
+    },
+    {
+        "short_date": "01-22",
+        "offering_to": "Danizzal",
+        "bonus": "Cueillette abondanteLes quantités d'Ortie récupérées par les Alchimistes sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Ortie",
+        "resource_url": "https://dofusdb.fr/fr/database/object/23176"
+    },
+    {
+        "short_date": "01-23",
+        "offering_to": "Kestra",
+        "bonus": "Forgemagie amélioréeLes Sculptemages ont 15 % de chances de ne pas consumer de rune lorsqu'ils tentent d'améliorer une arme.",
+        "resource_count": 2,
+        "resource": "Rune So",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7434"
+    },
+    {
+        "short_date": "01-24",
+        "offering_to": "Shiva",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon de la Clairière du Chêne Mou.",
+        "resource_count": 2,
+        "resource": "Bourgeon d'Abraknyde Sombre Irascible",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13528"
+    },
+    {
+        "short_date": "01-25",
+        "offering_to": "Billfer",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 75 % dans la zone du Cimetière Primitif.",
+        "resource_count": 5,
+        "resource": "Tibia de Koalak Fossoyeur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8057"
+    },
+    {
+        "short_date": "01-26",
+        "offering_to": "Pierrock",
+        "bonus": "Bois abondantLes quantités de Bois de Chêne récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Bois de Chêne",
+        "resource_url": "https://dofusdb.fr/fr/database/object/460"
+    },
+    {
+        "short_date": "01-27",
+        "offering_to": "Maribri",
+        "bonus": "Fabrication intensivePour chaque objet fabriqué, les Paysans ont 25 % de chances de créer un second objet.",
+        "resource_count": 4,
+        "resource": "Carasau",
+        "resource_url": "https://dofusdb.fr/fr/database/object/528"
+    },
+    {
+        "short_date": "01-28",
+        "offering_to": "Koppapi",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon du Repaire de Sphincter Cell.",
+        "resource_count": 2,
+        "resource": "Queue de Rat Pine",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13493"
+    },
+    {
+        "short_date": "01-29",
+        "offering_to": "Krala",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans la zone du Coin des Bouftous.",
+        "resource_count": 6,
+        "resource": "Laine de Bouftou",
+        "resource_url": "https://dofusdb.fr/fr/database/object/384"
+    },
+    {
+        "short_date": "01-30",
+        "offering_to": "Lôrf",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Bandits, dont les Artisans sombres.",
+        "resource_count": 6,
+        "resource": "Bourse Suspecte",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13505"
+    },
+    {
+        "short_date": "01-31",
+        "offering_to": "Teskirf",
+        "bonus": "Cueillette abondanteLes quantités de Menthe Sauvage récupérées par les Alchimistes sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Menthe Sauvage",
+        "resource_url": "https://dofusdb.fr/fr/database/object/380"
+    },
+    {
+        "short_date": "02-01",
+        "offering_to": "Tolgnas",
+        "bonus": "Points d'expérience et butin en larmesLes gains d'expérience lors des combats contre les monstres et les chances d'obtenir du butin sont augmentés de 50 % pour tous les aventuriers qui sont sous l'influence d'une Idole de Tolgnas.",
+        "resource_count": 1,
+        "resource": "Blessure du Sacrieur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1493"
+    },
+    {
+        "short_date": "02-02",
+        "offering_to": "Ruevas",
+        "bonus": "La Grande BouffeLes bonus apportés par les challenges réussis sont augmentés de 125 % sur toutes les créatures considérées comme des Bouftous, y compris les boufmouths et les boufcouls. De plus, les gains d'expérience sont augmentés de 50 % pour les Chasseurs, les Paysans et les Pêcheurs.",
+        "resource_count": 2,
+        "resource": "Brioche à la viande de bouftou",
+        "resource_url": "https://dofusdb.fr/fr/database/object/10663"
+    },
+    {
+        "short_date": "02-03",
+        "offering_to": "Marke",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Magik Riktus.",
+        "resource_count": 6,
+        "resource": "Bombe de Graboule",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1614"
+    },
+    {
+        "short_date": "02-04",
+        "offering_to": "Eritem",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans la zone des Crocs de verre.",
+        "resource_count": 2,
+        "resource": "Molaire de Blérice",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11927"
+    },
+    {
+        "short_date": "02-05",
+        "offering_to": "Val",
+        "bonus": "Percepteurs avidesLe butin généré par les Percepteurs est augmenté de 200 % dans les donjons de niveau 80 à 110.",
+        "resource_count": 6,
+        "resource": "Fil de Néfileuse",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16219"
+    },
+    {
+        "short_date": "02-06",
+        "offering_to": "Misdup",
+        "bonus": "Économie d'ingrédientsLes Forgerons économisent 15 % de leurs ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 2,
+        "resource": "Marteau de Boisaille",
+        "resource_url": "https://dofusdb.fr/fr/database/object/147"
+    },
+    {
+        "short_date": "02-07",
+        "offering_to": "Kimykay",
+        "bonus": "Anomalies temporellesLes gains d'expérience sont augmentés de 50 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone du Bord de la Forêt Maléfique.",
+        "resource_count": 6,
+        "resource": "Lamelle de Champa Vert",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16168"
+    },
+    {
+        "short_date": "02-08",
+        "offering_to": "Eramas",
+        "bonus": "Bois abondantLes quantités de Bois de Frêne récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Bois de Frêne",
+        "resource_url": "https://dofusdb.fr/fr/database/object/303"
+    },
+    {
+        "short_date": "02-09",
+        "offering_to": "Kilistin",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le donjon de la Grotte de Kanigroula.",
+        "resource_count": 2,
+        "resource": "Tignasse de Kanihilan",
+        "resource_url": "https://dofusdb.fr/fr/database/object/15041"
+    },
+    {
+        "short_date": "02-10",
+        "offering_to": "Meash",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos dorés donnent naissance à un bébé supplémentaire.",
+        "resource_count": 6,
+        "resource": "Pic de Dragodinde Dorée",
+        "resource_url": "https://dofusdb.fr/fr/database/object/14280"
+    },
+    {
+        "short_date": "02-11",
+        "offering_to": "Bazûkana",
+        "bonus": "Pêche abondanteLes quantités de Bar Rikain et de Tanche récupérées par les Pêcheurs sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Bar Rikain",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1779"
+    },
+    {
+        "short_date": "02-12",
+        "offering_to": "Karlita",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Mulous.",
+        "resource_count": 5,
+        "resource": "Poils de Mulounoké",
+        "resource_url": "https://dofusdb.fr/fr/database/object/291"
+    },
+    {
+        "short_date": "02-13",
+        "offering_to": "Edyxo",
+        "bonus": "Minerai abondantLes quantités de Cuivre récupérées par les Mineurs sont augmentées de 125 %.",
+        "resource_count": 30,
+        "resource": "Cuivre",
+        "resource_url": "https://dofusdb.fr/fr/database/object/31276"
+    },
+    {
+        "short_date": "02-14",
+        "offering_to": "Duf",
+        "bonus": "Expérience amoureuseTous les personnages atteints par la Malédiction du Ballotin voient leurs gains d'expérience augmentés de 100 % lors des combats contre les monstres.",
+        "resource_count": 9,
+        "resource": "Shigekax Passion",
+        "resource_url": "https://dofusdb.fr/fr/database/object/9472"
+    },
+    {
+        "short_date": "02-15",
+        "offering_to": "Güss",
+        "bonus": "Coffres aux trésorsDes Coffres de Güss peuvent être gagnés à la fin des chasses aux trésors.",
+        "resource_count": 1,
+        "resource": "Potion de Vieillesse",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17060"
+    },
+    {
+        "short_date": "02-16",
+        "offering_to": "Tehego",
+        "bonus": "Économie d'ingrédientsLes Chasseurs économisent 15 % de leurs ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 6,
+        "resource": "Beignet Astrubien",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17169"
+    },
+    {
+        "short_date": "02-17",
+        "offering_to": "Fitsef",
+        "bonus": "Cadeaux surprisesDes Pochettes-Surprises ont été ajoutées aux butins des monstres. Lorsqu'elles sont utilisées, elles permettent d'obtenir des Beignets de Karnaval ou bien de se retrouver déguisé en monstre Tout-Fou.",
+        "resource_count": 1,
+        "resource": "Bottes Karnaval",
+        "resource_url": "https://dofusdb.fr/fr/database/object/15100"
+    },
+    {
+        "short_date": "02-18",
+        "offering_to": "Amirniana",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Abraknydiens Sombres.",
+        "resource_count": 6,
+        "resource": "Écorce d'Abrakne Sombre",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16154"
+    },
+    {
+        "short_date": "02-19",
+        "offering_to": "Karat",
+        "bonus": "Pêche abondanteLes quantités de Poisson-Chaton et de Carpe d'Iem récupérées par les Pêcheurs sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Carpe d'Iem",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1794"
+    },
+    {
+        "short_date": "02-20",
+        "offering_to": "Atog",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans les zones du Feuillage et du Tronc de l'arbre Hakam.",
+        "resource_count": 3,
+        "resource": "Croupion du Bitouf aérien",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8788"
+    },
+    {
+        "short_date": "02-21",
+        "offering_to": "Bii",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans les zones du Village des Bworks et du Campement des Bworks.",
+        "resource_count": 9,
+        "resource": "Bière bwork",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8145"
+    },
+    {
+        "short_date": "02-22",
+        "offering_to": "Ludobel",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 75 % dans la zone du Sanctuaire des Dragoeufs.",
+        "resource_count": 5,
+        "resource": "Peau de Dragueuse",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8356"
+    },
+    {
+        "short_date": "02-23",
+        "offering_to": "Rumo",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon du Tertre du long sommeil.",
+        "resource_count": 2,
+        "resource": "Corne de Malbois",
+        "resource_url": "https://dofusdb.fr/fr/database/object/26321"
+    },
+    {
+        "short_date": "02-24",
+        "offering_to": "Vinstyl",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans les salles de la Base Abyssale.",
+        "resource_count": 2,
+        "resource": "Cuir d'Eskoglyphe",
+        "resource_url": "https://dofusdb.fr/fr/database/object/14860"
+    },
+    {
+        "short_date": "02-25",
+        "offering_to": "Kanabal",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le donjon du Manoir de Katrepat.",
+        "resource_count": 1,
+        "resource": "Goulobule rouge",
+        "resource_url": "https://dofusdb.fr/fr/database/object/19074"
+    },
+    {
+        "short_date": "02-26",
+        "offering_to": "Krisdip",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Marteaux-Aigris.",
+        "resource_count": 2,
+        "resource": "Armure de Blindur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/27434"
+    },
+    {
+        "short_date": "02-27",
+        "offering_to": "Tiko",
+        "bonus": "Gibier abondantLes quantités de Viande Saignante et de Viande Persillée récupérées par les Chasseurs sont augmentées de 125 %.",
+        "resource_count": 4,
+        "resource": "Marinade Sucrée-Salée",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17191"
+    },
+    {
+        "short_date": "02-28",
+        "offering_to": "Tidihef",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le donjon de l'Arbre de Moon.",
+        "resource_count": 3,
+        "resource": "Plume de Domoizelle",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2602"
+    },
+    {
+        "short_date": "02-29",
+        "offering_to": "Yalpriaf",
+        "bonus": "Points d'expérience et butin pour tousLes gains d'expérience et les chances d'obtenir du butin sont augmentés de 75 % lors des combats contre les monstres. De plus, les gains d'expérience sont augmentés de 50 % pour tous les métiers.",
+        "resource_count": 6,
+        "resource": "Nageoire de Compétition",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13494"
+    },
+    {
+        "short_date": "03-01",
+        "offering_to": "Jonat",
+        "bonus": "Économie d'ingrédientsLes Bijoutiers économisent 15 % de leurs ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 1,
+        "resource": "La Chaîne Nhanor Kibrill",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1490"
+    },
+    {
+        "short_date": "03-02",
+        "offering_to": "Meluze",
+        "bonus": "Points d'expérienceLes bonus apportés par les challenges réussis sont augmentés de 150 % dans la zone de la Vallée de la Morh'Kitu.",
+        "resource_count": 5,
+        "resource": "Crâne d'Aventurier",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13495"
+    },
+    {
+        "short_date": "03-03",
+        "offering_to": "Marifriss",
+        "bonus": "Bois abondantLes quantités de Bois de Charme et de Bois de Bambou Sombre récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 20,
+        "resource": "Bois de Charme",
+        "resource_url": "https://dofusdb.fr/fr/database/object/472"
+    },
+    {
+        "short_date": "03-04",
+        "offering_to": "Sylkauf",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Sylvesprits.",
+        "resource_count": 3,
+        "resource": "Volve de Fistulor",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11888"
+    },
+    {
+        "short_date": "03-05",
+        "offering_to": "Darkchy",
+        "bonus": "Anomalies temporellesLes chances d'obtenir du butin sont augmentées de 50 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone des Landes de Cania.",
+        "resource_count": 3,
+        "resource": "Poil de Gliglitch",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1894"
+    },
+    {
+        "short_date": "03-06",
+        "offering_to": "Marilez",
+        "bonus": "Objets de qualitéLa qualité des objets fabriqués dans la ville de la Bourgade est augmentée.",
+        "resource_count": 1,
+        "resource": "Baguette de Glace",
+        "resource_url": "https://dofusdb.fr/fr/database/object/165"
+    },
+    {
+        "short_date": "03-07",
+        "offering_to": "Tella",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Kozaru.",
+        "resource_count": 4,
+        "resource": "Tête de lance de Fangshu",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7300"
+    },
+    {
+        "short_date": "03-08",
+        "offering_to": "Davkaz",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Wabbits, Wabbits mutants et Gawde du Wa.",
+        "resource_count": 6,
+        "resource": "Patte de Wabbit",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2288"
+    },
+    {
+        "short_date": "03-09",
+        "offering_to": "Totot",
+        "bonus": "Récolte abondanteLes quantités de Houblon récupérées par les Paysans sont augmentées de 125 %.",
+        "resource_count": 50,
+        "resource": "Houblon",
+        "resource_url": "https://dofusdb.fr/fr/database/object/401"
+    },
+    {
+        "short_date": "03-10",
+        "offering_to": "Inndo",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos indigo ainsi que de volkornes saphir donnent naissance à un bébé supplémentaire.",
+        "resource_count": 1,
+        "resource": "Foudroyeur en Frêne",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7775"
+    },
+    {
+        "short_date": "03-11",
+        "offering_to": "Laetux",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans les zones des Marécages d'Amakna, des Marécages nauséabonds et des Marécages sans fond.",
+        "resource_count": 8,
+        "resource": "Dent de Crocodaille",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1664"
+    },
+    {
+        "short_date": "03-12",
+        "offering_to": "Tajonoo",
+        "bonus": "Économie d'ingrédientsLes Pêcheurs économisent 15 % de leurs ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 3,
+        "resource": "Poisson Pané Frit",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1752"
+    },
+    {
+        "short_date": "03-13",
+        "offering_to": "Maëmon",
+        "bonus": "Expérience RobillesqueLes gains d'expérience sont augmentés de 75 % sur tous les gardiens de donjon.",
+        "resource_count": 2,
+        "resource": "Œil de Harrogant",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13913"
+    },
+    {
+        "short_date": "03-14",
+        "offering_to": "Todobaï",
+        "bonus": "Cueillette abondanteLes quantités de Trèfles à 5 Feuilles récupérées par les Alchimistes sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Trèfle à 5 feuilles",
+        "resource_url": "https://dofusdb.fr/fr/database/object/395"
+    },
+    {
+        "short_date": "03-15",
+        "offering_to": "Cycloune",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les créatures de type Troolls de Litneg.",
+        "resource_count": 5,
+        "resource": "Gratrooll",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18209"
+    },
+    {
+        "short_date": "03-16",
+        "offering_to": "Orété",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Zoths.",
+        "resource_count": 4,
+        "resource": "Jouet de Gamine Zoth",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13499"
+    },
+    {
+        "short_date": "03-17",
+        "offering_to": "Wish",
+        "bonus": "Fortune des LeprechaunsLes aventuriers en quête de binouzetons peuvent récupérer deux fois plus de pièces sur les Leprechauns.",
+        "resource_count": 1,
+        "resource": "Cape du Piou Vert",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8236"
+    },
+    {
+        "short_date": "03-18",
+        "offering_to": "Ninefi",
+        "bonus": "Forgemagie amélioréeLes Façomages ont 15 % de chances de ne pas consumer de rune lorsqu'ils tentent d'améliorer un objet.",
+        "resource_count": 2,
+        "resource": "Rune Fui",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11637"
+    },
+    {
+        "short_date": "03-19",
+        "offering_to": "Icleen",
+        "bonus": "Minerai abondantLes quantités de Manganèse récupérées par les Mineurs sont augmentées de 125 %.",
+        "resource_count": 30,
+        "resource": "Manganèse",
+        "resource_url": "https://dofusdb.fr/fr/database/object/445"
+    },
+    {
+        "short_date": "03-20",
+        "offering_to": "Elosi",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le Vaisseau du Capitaine Meno.",
+        "resource_count": 2,
+        "resource": "Queue de Mantaze",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17973"
+    },
+    {
+        "short_date": "03-21",
+        "offering_to": "Cébeyon",
+        "bonus": "Anomalies temporellesLe butin généré par les Percepteurs est augmenté de 100 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone de la Caserne du Jour sans fin.",
+        "resource_count": 2,
+        "resource": "Œil de Feutôme",
+        "resource_url": "https://dofusdb.fr/fr/database/object/19231"
+    },
+    {
+        "short_date": "03-22",
+        "offering_to": "Konala",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans la Forgefroide de Missiz Frizz.",
+        "resource_count": 2,
+        "resource": "Incus de Verglasseur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13931"
+    },
+    {
+        "short_date": "03-23",
+        "offering_to": "Perviom",
+        "bonus": "Apparition des ressourcesLa vitesse d'apparition des bois de tous types est augmentée de 100 %.",
+        "resource_count": 1,
+        "resource": "Gravure de Crachin",
+        "resource_url": "https://dofusdb.fr/fr/database/object/26355"
+    },
+    {
+        "short_date": "03-24",
+        "offering_to": "Socren",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Scarafeuilles.",
+        "resource_count": 6,
+        "resource": "Ailes de Scarafeuille Blanc",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1456"
+    },
+    {
+        "short_date": "03-25",
+        "offering_to": "Fala",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Krobes.",
+        "resource_count": 2,
+        "resource": "Antenne de Bacterrib",
+        "resource_url": "https://dofusdb.fr/fr/database/object/15686"
+    },
+    {
+        "short_date": "03-26",
+        "offering_to": "Dees",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Gloursons.",
+        "resource_count": 1,
+        "resource": "Incisive de Glourmand",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11939"
+    },
+    {
+        "short_date": "03-27",
+        "offering_to": "Sha",
+        "bonus": "Gibier abondantLes quantités de Viande Minérale et de Viande Frelatée récupérées par les Chasseurs sont augmentées de 125%.",
+        "resource_count": 4,
+        "resource": "Papillote au Citron",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17173"
+    },
+    {
+        "short_date": "03-28",
+        "offering_to": "Clynt",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le Transporteur de Sylargh.",
+        "resource_count": 2,
+        "resource": "Canine de Kanimate",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13949"
+    },
+    {
+        "short_date": "03-29",
+        "offering_to": "Ocarian",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans la Grotte du Bworker.",
+        "resource_count": 2,
+        "resource": "Boulon de Cybwork",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13746"
+    },
+    {
+        "short_date": "03-30",
+        "offering_to": "Mahadine",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Animaux du désert.",
+        "resource_count": 6,
+        "resource": "Queue de Fennex",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18370"
+    },
+    {
+        "short_date": "03-31",
+        "offering_to": "Kimbru",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon des Larves.",
+        "resource_count": 6,
+        "resource": "Dent de Larve Émeraude",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13500"
+    },
+    {
+        "short_date": "04-01",
+        "offering_to": "Azra",
+        "bonus": "Points d'expérience et butin sur les créatures marinesLes gains d'expérience et les chances d'obtenir du butin sont augmentés de 50 % sur tous les monstres considérés comme des créatures marines (pichons, monstres des plages, corailleurs, crustorails, tortues de Moon, crabe Hijacob, gélikan, Kralamoure Géant, monstres des abysses de Sufokia, Mercemers, Submergés, Crocodailles de Crocuzko).",
+        "resource_count": 3,
+        "resource": "Fluide Glacial",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13502"
+    },
+    {
+        "short_date": "04-02",
+        "offering_to": "Yamato",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans la zone du Territoire Cacterre.",
+        "resource_count": 1,
+        "resource": "Abreuvoir en Frêne",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7590"
+    },
+    {
+        "short_date": "04-03",
+        "offering_to": "Jébédaï",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 75 % dans la zone du Mont des Tombeaux.",
+        "resource_count": 3,
+        "resource": "Lanterne usée",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7410"
+    },
+    {
+        "short_date": "04-04",
+        "offering_to": "Typlanêt",
+        "bonus": "Objets de qualitéLa qualité des objets fabriqués dans la ville de Sufokia est augmentée.",
+        "resource_count": 1,
+        "resource": "Ceinture de Sécurité",
+        "resource_url": "https://dofusdb.fr/fr/database/object/734"
+    },
+    {
+        "short_date": "04-05",
+        "offering_to": "Etnop",
+        "bonus": "Quête répétable et chocomaniaUne quête répétable spéciale est disponible aujourd'hui près du sanctuaire des Zobals. Réalisable à partir du niveau 20, elle est indépendante de la quête d'offrande.\nNom de la quête : Qui vole un oeuf cherche l'embrouille.\n\nDe plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 30 % dans toutes les zones de l'Île de Pwâk.",
+        "resource_count": 1,
+        "resource": "Œuf de Dragoeuf Calcaire",
+        "resource_url": "https://dofusdb.fr/fr/database/object/847"
+    },
+    {
+        "short_date": "04-06",
+        "offering_to": "Itourp",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans la zone des Hauts des Hurlements.",
+        "resource_count": 5,
+        "resource": "Canine de Mergranlou",
+        "resource_url": "https://dofusdb.fr/fr/database/object/439"
+    },
+    {
+        "short_date": "04-07",
+        "offering_to": "Bensom",
+        "bonus": "Récolte abondanteLes quantités d'Orge récupérées par les Paysans sont augmentées de 125 %.",
+        "resource_count": 50,
+        "resource": "Orge",
+        "resource_url": "https://dofusdb.fr/fr/database/object/31197"
+    },
+    {
+        "short_date": "04-08",
+        "offering_to": "Enaibi",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 75 % dans la zone de la Plage de la Tortue.",
+        "resource_count": 6,
+        "resource": "Carapace Verte",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1010"
+    },
+    {
+        "short_date": "04-09",
+        "offering_to": "Mak",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon du Théâtre de Dramak.",
+        "resource_count": 5,
+        "resource": "Plume de Gobvious",
+        "resource_url": "https://dofusdb.fr/fr/database/object/14512"
+    },
+    {
+        "short_date": "04-10",
+        "offering_to": "Nunu",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos pourpres ainsi que de volkornes jade donnent naissance à un bébé supplémentaire.",
+        "resource_count": 2,
+        "resource": "Anneau Fortifiant",
+        "resource_url": "https://dofusdb.fr/fr/database/object/785"
+    },
+    {
+        "short_date": "04-11",
+        "offering_to": "Jay",
+        "bonus": "Anomalies temporellesLes gains d'expérience sont augmentés de 50 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone du Lac de Cania.",
+        "resource_count": 6,
+        "resource": "Bout de Blop Coco",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1770"
+    },
+    {
+        "short_date": "04-12",
+        "offering_to": "Mobbib",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Armée de Brume.",
+        "resource_count": 3,
+        "resource": "Os de Jiangshi-Nobi",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7404"
+    },
+    {
+        "short_date": "04-13",
+        "offering_to": "Gorzarel",
+        "bonus": "Bois abondantLes quantités de Bois d'Ébène et de Bois de Kaliptus récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Bois de Kaliptus",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7925"
+    },
+    {
+        "short_date": "04-14",
+        "offering_to": "Bûnty",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le Nid du Kwakwa.",
+        "resource_count": 4,
+        "resource": "Plume du Kwak de Vent",
+        "resource_url": "https://dofusdb.fr/fr/database/object/416"
+    },
+    {
+        "short_date": "04-15",
+        "offering_to": "Mascha",
+        "bonus": "Fabrication intensivePour chaque objet fabriqué, les Bricoleurs ont 25 % de chances de créer un second objet.",
+        "resource_count": 1,
+        "resource": "Baffeur en Frêne",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7759"
+    },
+    {
+        "short_date": "04-16",
+        "offering_to": "Favarez",
+        "bonus": "Pêche abondanteLes quantités de Greuvette et de Crabe Sourimi récupérées par les Pêcheurs sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Greuvette",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1811"
+    },
+    {
+        "short_date": "04-17",
+        "offering_to": "Sehb",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans la zone de la péninsule des Gelées.",
+        "resource_count": 1,
+        "resource": "Multygely",
+        "resource_url": "https://dofusdb.fr/fr/database/object/996"
+    },
+    {
+        "short_date": "04-18",
+        "offering_to": "Duc",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le donjon des Salons privés de Klime.",
+        "resource_count": 2,
+        "resource": "Cuir de Cuirboule",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13921"
+    },
+    {
+        "short_date": "04-19",
+        "offering_to": "Tchoub",
+        "bonus": "Minerai abondantLes quantités d'Or récupérées par les Mineurs sont augmentées de 150 %.",
+        "resource_count": 30,
+        "resource": "Or",
+        "resource_url": "https://dofusdb.fr/fr/database/object/22178"
+    },
+    {
+        "short_date": "04-20",
+        "offering_to": "Viti",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Plantalas.",
+        "resource_count": 2,
+        "resource": "Nectar de l'Orient",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7291"
+    },
+    {
+        "short_date": "04-21",
+        "offering_to": "Scheik",
+        "bonus": "Coffres aux trésorsDes Coffres de Scheik peuvent être gagnés à la fin des chasses aux trésors.",
+        "resource_count": 1,
+        "resource": "Boule polie",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8737"
+    },
+    {
+        "short_date": "04-22",
+        "offering_to": "Sylfaen",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Monstres des ruines sous-marines.",
+        "resource_count": 2,
+        "resource": "Dent de Tilamproie",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17990"
+    },
+    {
+        "short_date": "04-23",
+        "offering_to": "Katelruz",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Monstres des Tourbières.",
+        "resource_count": 5,
+        "resource": "Bave de Ouassingue",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13490"
+    },
+    {
+        "short_date": "04-24",
+        "offering_to": "Lakha",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans la zone de la Montagne des Craqueleurs.",
+        "resource_count": 6,
+        "resource": "Pierre du Craqueleur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2251"
+    },
+    {
+        "short_date": "04-25",
+        "offering_to": "Rakreveï",
+        "bonus": "Gibier abondantLes quantités de Viande Rassie et de Viande Exsudative récupérées par les Chasseurs sont augmentées de 125 %.",
+        "resource_count": 6,
+        "resource": "Viande Rassie",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17138"
+    },
+    {
+        "short_date": "04-26",
+        "offering_to": "Fako",
+        "bonus": "Quêtes et kamasLes gains de kamas sont augmentés de 100 % pour toutes les quêtes.",
+        "resource_count": 1,
+        "resource": "Kamatrix",
+        "resource_url": "https://dofusdb.fr/fr/database/object/15182"
+    },
+    {
+        "short_date": "04-27",
+        "offering_to": "Proff",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Ruffians de Cania.",
+        "resource_count": 6,
+        "resource": "Oreille de Foufayteur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2551"
+    },
+    {
+        "short_date": "04-28",
+        "offering_to": "Shinkarré",
+        "bonus": "Minerai abondantLes quantités de minerai récupérées par les Mineurs de tous niveaux sont augmentées de 100 %.",
+        "resource_count": 1,
+        "resource": "Cristal",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1124"
+    },
+    {
+        "short_date": "04-29",
+        "offering_to": "Mylka",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Tofus.",
+        "resource_count": 6,
+        "resource": "Plume de Tofu",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7622"
+    },
+    {
+        "short_date": "04-30",
+        "offering_to": "Franek",
+        "bonus": "Cueillette abondanteLes quantités de Plantes récupérées par les Alchimistes de tous niveaux sont augmentées de 100 %.",
+        "resource_count": 40,
+        "resource": "Graine de Pandouille",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7059"
+    },
+    {
+        "short_date": "05-01",
+        "offering_to": "Esthoma",
+        "bonus": "Fabrique FéériqueLes gains d'expérience sont augmentés de 50 % pour tous les métiers. De plus, pour chaque Fée d'Artifice fabriquée, les personnages ont 25 % de chances de créer une seconde Fée et 15 % de chances d'économiser des ingrédients. Ils peuvent aussi récupérer 2 fois plus de Capsules Explosives en combattant des Bworks Mages.",
+        "resource_count": 2,
+        "resource": "Capsule Explosive",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2330"
+    },
+    {
+        "short_date": "05-02",
+        "offering_to": "Gymcitro",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le donjon du Temple du Grand Ougah.",
+        "resource_count": 1,
+        "resource": "Langue de Champodonte",
+        "resource_url": "https://dofusdb.fr/fr/database/object/9269"
+    },
+    {
+        "short_date": "05-03",
+        "offering_to": "Rikku",
+        "bonus": "Anomalies temporellesLes bonus apportés par les challenges réussis sont augmentés de 75 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone du Cirque de Cania.",
+        "resource_count": 4,
+        "resource": "Croupion de Truchmuche",
+        "resource_url": "https://dofusdb.fr/fr/database/object/15069"
+    },
+    {
+        "short_date": "05-04",
+        "offering_to": "Malava",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Gobelins d'Amakna.",
+        "resource_count": 6,
+        "resource": "Longue-vue de Gob-Trotteur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/382"
+    },
+    {
+        "short_date": "05-05",
+        "offering_to": "Bo",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans la zone des Plaines Rocheuses.",
+        "resource_count": 6,
+        "resource": "Fragment de Pierre Pointue",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2305"
+    },
+    {
+        "short_date": "05-06",
+        "offering_to": "Bipup",
+        "bonus": "Bois abondantLes quantités de Bombu et d'Érable récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Bois d'Érable",
+        "resource_url": "https://dofusdb.fr/fr/database/object/471"
+    },
+    {
+        "short_date": "05-07",
+        "offering_to": "Azkatraz",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans les donjons de la Tour de Solar et de la Tour de Bethel.",
+        "resource_count": 1,
+        "resource": "Dent de Klémort",
+        "resource_url": "https://dofusdb.fr/fr/database/object/19399"
+    },
+    {
+        "short_date": "05-08",
+        "offering_to": "Bigg",
+        "bonus": "Quête répétableUne quête répétable spéciale est disponible aujourd'hui près du château d'Amakna. Réalisable à partir du niveau 20, elle est indépendante de la quête d'offrande.\nNom de la quête : Le fabuleux festin d'Amélie Poêlon.",
+        "resource_count": 20,
+        "resource": "Pomme de Terre",
+        "resource_url": "https://dofusdb.fr/fr/database/object/537"
+    },
+    {
+        "short_date": "05-09",
+        "offering_to": "Bern",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans la zone du Canyon Sauvage.",
+        "resource_count": 6,
+        "resource": "Pierre Médicinale",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13731"
+    },
+    {
+        "short_date": "05-10",
+        "offering_to": "Loumi",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos turquoise donnent naissance à un bébé supplémentaire.",
+        "resource_count": 6,
+        "resource": "Pic de Dragodinde",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2599"
+    },
+    {
+        "short_date": "05-11",
+        "offering_to": "Duanaf",
+        "bonus": "Expérience des métiersLes gains d'expérience sont augmentés de 50 % pour les métiers de forgemagie d'armes (Forgemage et Sculptemage).",
+        "resource_count": 1,
+        "resource": "Fiole à élément",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1463"
+    },
+    {
+        "short_date": "05-12",
+        "offering_to": "Zebdara",
+        "bonus": "Récolte abondanteLes quantités de Malt récupérées par les Paysans sont augmentées de 125 %.",
+        "resource_count": 50,
+        "resource": "Malt",
+        "resource_url": "https://dofusdb.fr/fr/database/object/26308"
+    },
+    {
+        "short_date": "05-13",
+        "offering_to": "Todeb",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon du Repaire de Skeunk.",
+        "resource_count": 1,
+        "resource": "Dédicace de Skeunk pour Émeraude",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13702"
+    },
+    {
+        "short_date": "05-14",
+        "offering_to": "Emil",
+        "bonus": "Objets de qualitéLa qualité des objets fabriqués dans le village et la forêt d'Amakna est augmentée.",
+        "resource_count": 1,
+        "resource": "Bouclier de Bowisse",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18665"
+    },
+    {
+        "short_date": "05-15",
+        "offering_to": "Nell",
+        "bonus": "Cadeaux surprisesDes Boufballes Surprises ont été ajoutées aux butins des monstres. Lorsqu'elles sont utilisées, elles permettent d'obtenir des Bouf'gommes de différents parfums.",
+        "resource_count": 2,
+        "resource": "Collier de Khan Karkass",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17487"
+    },
+    {
+        "short_date": "05-16",
+        "offering_to": "Ku",
+        "bonus": "Apparition des ressourcesLa vitesse d'apparition des fleurs et des plantes cueillies par les Alchimistes est augmentée de 100 %.",
+        "resource_count": 40,
+        "resource": "Belladone",
+        "resource_url": "https://dofusdb.fr/fr/database/object/31306"
+    },
+    {
+        "short_date": "05-17",
+        "offering_to": "Khâm",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Monstres des Tourbières.",
+        "resource_count": 1,
+        "resource": "Étoffe du Roissingue",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8808"
+    },
+    {
+        "short_date": "05-18",
+        "offering_to": "Kevlatahmu",
+        "bonus": "Anomalies temporellesLe butin généré par les Percepteurs est augmenté de 100 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone de Plantala.",
+        "resource_count": 3,
+        "resource": "Pollen de Bulbiflore",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7269"
+    },
+    {
+        "short_date": "05-19",
+        "offering_to": "Tyrben",
+        "bonus": "Minerai abondantLes quantités d'Étain et de Silicate récupérées par les Mineurs sont augmentées de 125 %.",
+        "resource_count": 30,
+        "resource": "Étain",
+        "resource_url": "https://dofusdb.fr/fr/database/object/444"
+    },
+    {
+        "short_date": "05-20",
+        "offering_to": "Jember",
+        "bonus": "Économie d'ingrédientsLes Façonneurs économisent 15 % de leurs ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 1,
+        "resource": "Bouclier Tonbarien",
+        "resource_url": "https://dofusdb.fr/fr/database/object/29463"
+    },
+    {
+        "short_date": "05-21",
+        "offering_to": "Ntamak",
+        "bonus": "Expérience des métiersLes gains d'expérience sont augmentés de 50 % pour les métiers de fabrication de vêtements et de parures (Bijoutier, Cordonnier et Tailleur).",
+        "resource_count": 1,
+        "resource": "Capouze des Champs",
+        "resource_url": "https://dofusdb.fr/fr/database/object/6795"
+    },
+    {
+        "short_date": "05-22",
+        "offering_to": "Krisegis",
+        "bonus": "Expérience des quêtesLes gains d'expérience sont augmentés de 100 % pour toutes les quêtes.",
+        "resource_count": 1,
+        "resource": "Sac du Petit Aventurier",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1699"
+    },
+    {
+        "short_date": "05-23",
+        "offering_to": "Osebo",
+        "bonus": "Pêche abondanteLes quantités de Brochet, de Perche et de Lotte récupérées par les Pêcheurs sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Brochet",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1847"
+    },
+    {
+        "short_date": "05-24",
+        "offering_to": "Daza",
+        "bonus": "Apparition des ressourcesLa vitesse d'apparition des ressources est augmentée de 150 % dans la zone des Champs de Cania.",
+        "resource_count": 40,
+        "resource": "Seigle",
+        "resource_url": "https://dofusdb.fr/fr/database/object/539"
+    },
+    {
+        "short_date": "05-25",
+        "offering_to": "Seyfani",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 75 % dans la zone des Plaines Herbeuses.",
+        "resource_count": 5,
+        "resource": "Duvet du Kilibriss",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8756"
+    },
+    {
+        "short_date": "05-26",
+        "offering_to": "Taelstrom",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans la zone du Labyrinthe du Minotoror.",
+        "resource_count": 4,
+        "resource": "Corne de Gamino",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13504"
+    },
+    {
+        "short_date": "05-27",
+        "offering_to": "Milidès",
+        "bonus": "Fabrication intensivePour chaque objet fabriqué, les Pêcheurs ont 25 % de chances de créer un second objet.",
+        "resource_count": 2,
+        "resource": "Tanche en Matelote",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16483"
+    },
+    {
+        "short_date": "05-28",
+        "offering_to": "Izmar",
+        "bonus": "Gibier abondantLes quantités de Viande Sanguinolente récupérées par les Chasseurs sont augmentées de 125%.",
+        "resource_count": 6,
+        "resource": "Viande Sanguinolente",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17136"
+    },
+    {
+        "short_date": "05-29",
+        "offering_to": "Alikindoy",
+        "bonus": "Nature généreuseLa vitesse d'apparition des ressources de tous types est augmentée de 100 %. De plus, les récolteurs peuvent récupérer des Fleurs de Rosal ou des Fringales de Silouate en affrontant les Protecteurs de ressources.",
+        "resource_count": 1,
+        "resource": "Sac du Petit Récolteur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1698"
+    },
+    {
+        "short_date": "05-30",
+        "offering_to": "Xandra",
+        "bonus": "Forgemagie amélioréeLes Forgemages ont 15 % de chances de ne pas consumer de rune lorsqu'ils tentent d'améliorer une arme.",
+        "resource_count": 3,
+        "resource": "Rune Pui",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7436"
+    },
+    {
+        "short_date": "05-31",
+        "offering_to": "Tiny",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le donjon de l'Antre du Korriandre.",
+        "resource_count": 3,
+        "resource": "Lamelle de Dramanite",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11885"
+    },
+    {
+        "short_date": "06-01",
+        "offering_to": "Namyknof",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les créatures de type Monstres des plages.",
+        "resource_count": 6,
+        "resource": "Pince de Crabe",
+        "resource_url": "https://dofusdb.fr/fr/database/object/379"
+    },
+    {
+        "short_date": "06-02",
+        "offering_to": "Elgero",
+        "bonus": "Vœu de pauvretéDes Sébiles d'Elgero ont été ajoutées aux butins des monstres des donjons. Lorsqu'elles sont utilisées, elles font disparaître les kamas... et permettent de bénéficier d'un effet aléatoire de charité bien ordonnée.",
+        "resource_count": 2,
+        "resource": "Biscotte",
+        "resource_url": "https://dofusdb.fr/fr/database/object/522"
+    },
+    {
+        "short_date": "06-03",
+        "offering_to": "Mikart",
+        "bonus": "Percepteurs avidesLe butin généré par les Percepteurs est augmenté de 200 % dans les donjons de niveau 40 à 70.",
+        "resource_count": 6,
+        "resource": "Graine de la Discorde",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13730"
+    },
+    {
+        "short_date": "06-04",
+        "offering_to": "Martero",
+        "bonus": "Gardiens de la natureLes protecteurs de ressources ont 5 fois plus de chances d'apparaître pendant les activités de récolte. De plus, la vitesse d'apparition des Archimonstres est augmentée de 200 %.",
+        "resource_count": 1,
+        "resource": "Bouclier du Bouftou",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18666"
+    },
+    {
+        "short_date": "06-05",
+        "offering_to": "Aris",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Krobes.",
+        "resource_count": 2,
+        "resource": "Coquille de Virustine",
+        "resource_url": "https://dofusdb.fr/fr/database/object/15687"
+    },
+    {
+        "short_date": "06-06",
+        "offering_to": "Mendelia",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le Donjon du Comte Harebourg.",
+        "resource_count": 2,
+        "resource": "Œil de Cycloïde",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13988"
+    },
+    {
+        "short_date": "06-07",
+        "offering_to": "Halden",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Bléros.",
+        "resource_count": 2,
+        "resource": "Griffe de Blérauve",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11923"
+    },
+    {
+        "short_date": "06-08",
+        "offering_to": "Tigibon",
+        "bonus": "Anomalies temporellesLes gains d'expérience des montures sont augmentés de 100 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone de la Route des Roulottes.",
+        "resource_count": 6,
+        "resource": "Roue de Tivelo",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1610"
+    },
+    {
+        "short_date": "06-09",
+        "offering_to": "Toun",
+        "bonus": "Quête répétableUne quête répétable spéciale est disponible aujourd'hui à l'est de l'atelier des bûcherons de la forêt d'Amakna. Réalisable à partir du niveau 20, elle est indépendante de la quête d'offrande.\nNom de la quête : Que le Gwan Kwic me cwoque.",
+        "resource_count": 2,
+        "resource": "Cawotte",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16949"
+    },
+    {
+        "short_date": "06-10",
+        "offering_to": "Jibejan",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos amande donnent naissance à un bébé supplémentaire.",
+        "resource_count": 1,
+        "resource": "Lailait d’amande",
+        "resource_url": "https://dofusdb.fr/fr/database/object/30825"
+    },
+    {
+        "short_date": "06-11",
+        "offering_to": "Teluomaj",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le Camp du Comte Razof.",
+        "resource_count": 1,
+        "resource": "Bouteille de Bouchonnois",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18735"
+    },
+    {
+        "short_date": "06-12",
+        "offering_to": "Aazimar",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon de l'Aquadôme de Merkator.",
+        "resource_count": 1,
+        "resource": "Sang de Harpo",
+        "resource_url": "https://dofusdb.fr/fr/database/object/14859"
+    },
+    {
+        "short_date": "06-13",
+        "offering_to": "Blou",
+        "bonus": "Bois abondantLes quantités de Bambou récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Bois de Bambou",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7678"
+    },
+    {
+        "short_date": "06-14",
+        "offering_to": "Yaka",
+        "bonus": "Économie d'ingrédientsLes Bricoleurs ont 15 % de chances d'économiser des ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 1,
+        "resource": "Clef des Champs",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8143"
+    },
+    {
+        "short_date": "06-15",
+        "offering_to": "Bek",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans laGrotte Hesque.",
+        "resource_count": 6,
+        "resource": "Coccyx du Corailleur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8730"
+    },
+    {
+        "short_date": "06-16",
+        "offering_to": "Pytch",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans les zones de la Presqu'île des Dragoeufs.",
+        "resource_count": 6,
+        "resource": "Coquille de Dragoeuf Ardoise",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1129"
+    },
+    {
+        "short_date": "06-17",
+        "offering_to": "Seyroth",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Abraknydiens.",
+        "resource_count": 6,
+        "resource": "Racine d'Abraknyde",
+        "resource_url": "https://dofusdb.fr/fr/database/object/462"
+    },
+    {
+        "short_date": "06-18",
+        "offering_to": "Redfis",
+        "bonus": "Minerai abondantLes quantités de Cendrepierre récupérées par les Mineurs sont augmentées de 125 %.",
+        "resource_count": 30,
+        "resource": "Cendrepierre",
+        "resource_url": "https://dofusdb.fr/fr/database/object/27621"
+    },
+    {
+        "short_date": "06-19",
+        "offering_to": "Lim",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans la zone de Feudala.",
+        "resource_count": 4,
+        "resource": "Peau de Crachefoux",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7299"
+    },
+    {
+        "short_date": "06-20",
+        "offering_to": "Grut",
+        "bonus": "Récolte abondanteLes quantités de Blé récupérées par les Paysans sont augmentées de 125 %.",
+        "resource_count": 50,
+        "resource": "Blé",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7592"
+    },
+    {
+        "short_date": "06-21",
+        "offering_to": "Atsu",
+        "bonus": "Du miel dans les oreillesLes amateurs de musique peuvent récupérer deux fois plus de pollenectar sur les créatures du Monde des Douze (hors dimensions, zones sous-marines et intérieurs).",
+        "resource_count": 6,
+        "resource": "Tambour de Gobaladée",
+        "resource_url": "https://dofusdb.fr/fr/database/object/302"
+    },
+    {
+        "short_date": "06-22",
+        "offering_to": "Gnat",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans les zones de la Plage de Corail.",
+        "resource_count": 2,
+        "resource": "Pince de Crustorail",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8744"
+    },
+    {
+        "short_date": "06-23",
+        "offering_to": "Hellmut",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Possédés.",
+        "resource_count": 1,
+        "resource": "Appendice Démoniaque",
+        "resource_url": "https://dofusdb.fr/fr/database/object/25182"
+    },
+    {
+        "short_date": "06-24",
+        "offering_to": "Azrou",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de typeAnimaux des champs.",
+        "resource_count": 1,
+        "resource": "Peau de Larve Champêtre",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18187"
+    },
+    {
+        "short_date": "06-25",
+        "offering_to": "Oopah",
+        "bonus": "Apparition des ressourcesLa vitesse d'apparition des ressources est augmentée de 150 % dans la zone de la Mine Istairameur.",
+        "resource_count": 1,
+        "resource": "Eau Ferrugineuse",
+        "resource_url": "https://dofusdb.fr/fr/database/object/27413"
+    },
+    {
+        "short_date": "06-26",
+        "offering_to": "Bouliks",
+        "bonus": "Objets de qualitéLa qualité des objets fabriqués sur l'île de Pandala est augmentée.",
+        "resource_count": 1,
+        "resource": "Bouclier Volant",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18668"
+    },
+    {
+        "short_date": "06-27",
+        "offering_to": "Ansôh",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le Temple de Koutoulou.",
+        "resource_count": 2,
+        "resource": "Tentacule de Grofond",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17983"
+    },
+    {
+        "short_date": "06-28",
+        "offering_to": "Ikoan",
+        "bonus": "Anomalies temporellesLes bonus apportés par les challenges réussis sont augmentés de 75 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone de la Pyramide Maudite.",
+        "resource_count": 2,
+        "resource": "Grenat de Momistik",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18539"
+    },
+    {
+        "short_date": "06-29",
+        "offering_to": "Poch",
+        "bonus": "Gibier abondantLes quantités de Viande Gâtée et de Viande Noire récupérées par les Chasseurs sont augmentées de 125%.",
+        "resource_count": 2,
+        "resource": "Viande Noire",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17158"
+    },
+    {
+        "short_date": "06-30",
+        "offering_to": "Lamarilu",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans l'Akadémie des Gobs.",
+        "resource_count": 6,
+        "resource": "Bonnet de Gobaliste",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2674"
+    },
+    {
+        "short_date": "07-01",
+        "offering_to": "Rems",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Dragoss.",
+        "resource_count": 5,
+        "resource": "Écaille de Dragoss Charbon",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8352"
+    },
+    {
+        "short_date": "07-02",
+        "offering_to": "Yanouchk",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon du Tofulailler Royal.",
+        "resource_count": 1,
+        "resource": "Œuf de Tofubine",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13723"
+    },
+    {
+        "short_date": "07-03",
+        "offering_to": "Sirdal",
+        "bonus": "Économie d'ingrédientsLes Alchimistes ont 15 % de chances d'économiser des ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 3,
+        "resource": "Potion Raide Dite",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16404"
+    },
+    {
+        "short_date": "07-04",
+        "offering_to": "Eiwech",
+        "bonus": "Rêve amaknéenLes gains d'expérience et les chances d'obtenir du butin sont augmentés de 50 % sur tous les monstres présents dans les zones du royaume d'Amakna. De plus, les quantités de Points de rêve obtenus dans les Songes infinis sont augmentées de 200 %.",
+        "resource_count": 4,
+        "resource": "Friture Amaknéenne",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17177"
+    },
+    {
+        "short_date": "07-05",
+        "offering_to": "Alaokit",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le donjon de l'Atelier du Tanukouï San.",
+        "resource_count": 2,
+        "resource": "Poils magiques de Tanuki",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7305"
+    },
+    {
+        "short_date": "07-06",
+        "offering_to": "Poupik",
+        "bonus": "Pêche abondanteLes quantités de Goujon et de Truite récupérées par les Pêcheurs sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Truite",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7983"
+    },
+    {
+        "short_date": "07-07",
+        "offering_to": "Lazura",
+        "bonus": "Récolte abondanteLes quantités de Maïs et de Millet récupérées par les Paysans sont augmentées de 125 %.",
+        "resource_count": 50,
+        "resource": "Maïs",
+        "resource_url": "https://dofusdb.fr/fr/database/object/20430"
+    },
+    {
+        "short_date": "07-08",
+        "offering_to": "Unkn",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Pirates de Moon.",
+        "resource_count": 2,
+        "resource": "Nœud de Marin",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13343"
+    },
+    {
+        "short_date": "07-09",
+        "offering_to": "Blid",
+        "bonus": "Forgemagie amélioréeLes Cordomages ont 15 % de chances de ne pas consumer de rune lorsqu'ils tentent d'améliorer un objet.",
+        "resource_count": 2,
+        "resource": "Rune Pod",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7443"
+    },
+    {
+        "short_date": "07-10",
+        "offering_to": "Jihelair",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos prune donnent naissance à un bébé supplémentaire.",
+        "resource_count": 1,
+        "resource": "Arc Sifflant",
+        "resource_url": "https://dofusdb.fr/fr/database/object/828"
+    },
+    {
+        "short_date": "07-11",
+        "offering_to": "Oskerine",
+        "bonus": "Minerai abondantLes quantités de Bauxite récupérées par les Mineurs sont augmentées de 125 %.",
+        "resource_count": 30,
+        "resource": "Bauxite",
+        "resource_url": "https://dofusdb.fr/fr/database/object/446"
+    },
+    {
+        "short_date": "07-12",
+        "offering_to": "Pasquéoz",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les créatures de type Clan Martegel.",
+        "resource_count": 2,
+        "resource": "Poils de barbe de Barbélier",
+        "resource_url": "https://dofusdb.fr/fr/database/object/19972"
+    },
+    {
+        "short_date": "07-13",
+        "offering_to": "Klernodie",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le donjon de la Vallée de la Dame des eaux.",
+        "resource_count": 2,
+        "resource": "Eau de Kwapa",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2654"
+    },
+    {
+        "short_date": "07-14",
+        "offering_to": "Zuart",
+        "bonus": "Expérience du KolizéumLes gains d'expérience sont augmentés de 75 % lors des combats du Kolizéum.",
+        "resource_count": 6,
+        "resource": "Chaînes Brisées",
+        "resource_url": "https://dofusdb.fr/fr/database/object/14278"
+    },
+    {
+        "short_date": "07-15",
+        "offering_to": "Bouilli",
+        "bonus": "Gibier abondantLes quantités de Viande Goûtue récupérées par les Chasseurs sont augmentées de 125%.",
+        "resource_count": 2,
+        "resource": "Viande Goûtue",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17160"
+    },
+    {
+        "short_date": "07-16",
+        "offering_to": "Okajin",
+        "bonus": "Anomalies temporellesLes chances d'obtenir du butin sont augmentées de 50 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans les zones des forêts de Vulkania.",
+        "resource_count": 2,
+        "resource": "Boue Vénérable",
+        "resource_url": "https://dofusdb.fr/fr/database/object/12431"
+    },
+    {
+        "short_date": "07-17",
+        "offering_to": "Luzbel",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 75 % dans la zone des Prairies d'Astrub.",
+        "resource_count": 6,
+        "resource": "Peau de Larve Verte",
+        "resource_url": "https://dofusdb.fr/fr/database/object/364"
+    },
+    {
+        "short_date": "07-18",
+        "offering_to": "Titi",
+        "bonus": "ConcassagePour chaque rune obtenue en brisant des objets, les concasseurs ont 10 % de chances de créer une seconde rune.",
+        "resource_count": 1,
+        "resource": "Mauvaise Pioche",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1439"
+    },
+    {
+        "short_date": "07-19",
+        "offering_to": "Alucard",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le donjon du Palais de Dantinea.",
+        "resource_count": 1,
+        "resource": "Peau de Trithon",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17981"
+    },
+    {
+        "short_date": "07-20",
+        "offering_to": "Gurvamon",
+        "bonus": "Apparition des ressourcesLa vitesse d'apparition des céréales récoltées par les Paysans est augmentée de 100 %.",
+        "resource_count": 1,
+        "resource": "Huile de Tournesol Sauvage",
+        "resource_url": "https://dofusdb.fr/fr/database/object/389"
+    },
+    {
+        "short_date": "07-21",
+        "offering_to": "Alhera",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Gobelins de Sakaï.",
+        "resource_count": 1,
+        "resource": "Fragment de pépite de Sakaï",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11522"
+    },
+    {
+        "short_date": "07-22",
+        "offering_to": "Tholank",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 75 % dans les zones du Port de givre et de La Bourgade.",
+        "resource_count": 3,
+        "resource": "Sardine à l'Étouffée",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1825"
+    },
+    {
+        "short_date": "07-23",
+        "offering_to": "Kaoly",
+        "bonus": "Expérience des familiersLes gains d'expérience des familiers sont augmentés de 50 %.",
+        "resource_count": 1,
+        "resource": "Chacha",
+        "resource_url": "https://dofusdb.fr/fr/database/object/15568"
+    },
+    {
+        "short_date": "07-24",
+        "offering_to": "Xan",
+        "bonus": "Bois abondantLes quantités de Bambou Sacré et d'Orme récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 10,
+        "resource": "Bois d'Orme",
+        "resource_url": "https://dofusdb.fr/fr/database/object/470"
+    },
+    {
+        "short_date": "07-25",
+        "offering_to": "Anulideven",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans la zone de Gisgoul.",
+        "resource_count": 3,
+        "resource": "Furoncle de la Mama Bwork",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13736"
+    },
+    {
+        "short_date": "07-26",
+        "offering_to": "Lokhaan",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans les zones de l'Orée enchantée et du Dédale du Dark Vlad.",
+        "resource_count": 3,
+        "resource": "Pic de Malépik",
+        "resource_url": "https://dofusdb.fr/fr/database/object/26319"
+    },
+    {
+        "short_date": "07-27",
+        "offering_to": "Benka",
+        "bonus": "Gibier abondantLes quantités de Viande Hachée et de Viande Faisandée récupérées par les Chasseurs sont augmentées de 125%.",
+        "resource_count": 6,
+        "resource": "Boulette de Viande",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17168"
+    },
+    {
+        "short_date": "07-28",
+        "offering_to": "Nobozil",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le donjon du Dojo du Vent.",
+        "resource_count": 4,
+        "resource": "Lame brisée de Lichangoro",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8347"
+    },
+    {
+        "short_date": "07-29",
+        "offering_to": "Olileb",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le donjon de laCaverne d'El Piko.",
+        "resource_count": 2,
+        "resource": "Jus de Cacterre",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18357"
+    },
+    {
+        "short_date": "07-30",
+        "offering_to": "Aleb",
+        "bonus": "Troollez manègeLes gains d'expérience et les chances d'obtenir du butin sont augmentés de 100 % dans le donjon de la Maison Fantôme. De plus, Leonzi Trool attend les aventuriers à la Foire du Trool. Sa bénédiction permet de trooller à tout va (bonus d'initiative et coups critiques durant 15 combats).",
+        "resource_count": 3,
+        "resource": "Cuir de Boostache Prépubère",
+        "resource_url": "https://dofusdb.fr/fr/database/object/883"
+    },
+    {
+        "short_date": "07-31",
+        "offering_to": "Krisdanh",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Chassouilleurs.",
+        "resource_count": 2,
+        "resource": "Flèche de Crâmbo",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18733"
+    },
+    {
+        "short_date": "08-01",
+        "offering_to": "Jycêdus",
+        "bonus": "Cueillette abondanteLes quantités de Sauge récupérées par les Alchimistes sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Sauge",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7965"
+    },
+    {
+        "short_date": "08-02",
+        "offering_to": "Pô",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Truches.",
+        "resource_count": 4,
+        "resource": "Plume de Truchideur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/15071"
+    },
+    {
+        "short_date": "08-03",
+        "offering_to": "Puliblak",
+        "bonus": "Quête répétableUne quête répétable spéciale est disponible aujourd'hui au sud des portes de Bonta. Réalisable à partir du niveau 20, elle est indépendante de la quête d'offrande.\nNom de la quête : Bon comme du bon pain.",
+        "resource_count": 3,
+        "resource": "Potion de cité : Bonta",
+        "resource_url": "https://dofusdb.fr/fr/database/object/6965"
+    },
+    {
+        "short_date": "08-04",
+        "offering_to": "Anshâ",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le Cratère Minus.",
+        "resource_count": 4,
+        "resource": "Cendres Matures",
+        "resource_url": "https://dofusdb.fr/fr/database/object/12438"
+    },
+    {
+        "short_date": "08-05",
+        "offering_to": "Meda",
+        "bonus": "Pêche abondanteLes quantités de Poisskaille récupérées par les Pêcheurs sont augmentées de 200 %.",
+        "resource_count": 10,
+        "resource": "Poisskaille",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11992"
+    },
+    {
+        "short_date": "08-06",
+        "offering_to": "Jü",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans la zone des Calanques d'Astrub.",
+        "resource_count": 6,
+        "resource": "Crème à bronzer",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13727"
+    },
+    {
+        "short_date": "08-07",
+        "offering_to": "Dramon",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon de l'Antre du Blop Multicolore Royal.",
+        "resource_count": 3,
+        "resource": "Racine de Tronkoblop",
+        "resource_url": "https://dofusdb.fr/fr/database/object/9383"
+    },
+    {
+        "short_date": "08-08",
+        "offering_to": "Zeg",
+        "bonus": "Économie d'ingrédientsLes Mineurs ont 15 % de chances d'économiser des ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 1,
+        "resource": "Aluminite",
+        "resource_url": "https://dofusdb.fr/fr/database/object/747"
+    },
+    {
+        "short_date": "08-09",
+        "offering_to": "Tix",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Plantes des champs.",
+        "resource_count": 6,
+        "resource": "Pétale de Tournesol Sauvage",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2659"
+    },
+    {
+        "short_date": "08-10",
+        "offering_to": "Rigamix",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos capables de se reproduire donnent naissance à un bébé supplémentaire.",
+        "resource_count": 1,
+        "resource": "Mangeoire en Frêne",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7607"
+    },
+    {
+        "short_date": "08-11",
+        "offering_to": "Matgap",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans la zone du Mont des Tombeaux.",
+        "resource_count": 3,
+        "resource": "Kapokaza",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7408"
+    },
+    {
+        "short_date": "08-12",
+        "offering_to": "Sab",
+        "bonus": "Gibier abondantLes quantités de Viande Macérée et de Viande de Brousse récupérées par les Chasseurs sont augmentées de 125%.",
+        "resource_count": 4,
+        "resource": "Viande de Brousse",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17150"
+    },
+    {
+        "short_date": "08-13",
+        "offering_to": "Ouchim",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les créatures de type Monstres de Vulkania.",
+        "resource_count": 2,
+        "resource": "Flaque Vénérable",
+        "resource_url": "https://dofusdb.fr/fr/database/object/12443"
+    },
+    {
+        "short_date": "08-14",
+        "offering_to": "Margarou",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Crocodailles de Crocuzko.",
+        "resource_count": 1,
+        "resource": "Œil de Crocodaille albinos",
+        "resource_url": "https://dofusdb.fr/fr/database/object/21206"
+    },
+    {
+        "short_date": "08-15",
+        "offering_to": "Orreip",
+        "bonus": "Anomalies en folieLes gains d'expérience, les chances d'obtenir du butin et le butin généré par les Percepteurs sont augmentés de 100 % dans toutes les zones influencées par une anomalie temporelle.",
+        "resource_count": 6,
+        "resource": "Paupière d'Étoile",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13728"
+    },
+    {
+        "short_date": "08-16",
+        "offering_to": "Lortecaps",
+        "bonus": "Cueillette abondanteLes quantités deGinseng et de Graines de Pandouille récupérées par les Alchimistes sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Ginseng",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16385"
+    },
+    {
+        "short_date": "08-17",
+        "offering_to": "Marjul",
+        "bonus": "Minerai abondantLes quantités de Bronze récupérées par les Mineurs sont augmentées de 125 %.",
+        "resource_count": 30,
+        "resource": "Bronze",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13236"
+    },
+    {
+        "short_date": "08-18",
+        "offering_to": "Ynniw",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Ravageurs.",
+        "resource_count": 2,
+        "resource": "Corne de Typhomet",
+        "resource_url": "https://dofusdb.fr/fr/database/object/26033"
+    },
+    {
+        "short_date": "08-19",
+        "offering_to": "Pilserpus",
+        "bonus": "Objets de qualitéLa qualité des objets fabriqués dans la ville d'Astrub est augmentée.",
+        "resource_count": 1,
+        "resource": "Bottes de Satisfaction",
+        "resource_url": "https://dofusdb.fr/fr/database/object/3207"
+    },
+    {
+        "short_date": "08-20",
+        "offering_to": "Gridoo",
+        "bonus": "Gibier abondantLes quantités de Viande Ladre et de Viande Avariée récupérées par les Chasseurs sont augmentées de 125 %.",
+        "resource_count": 6,
+        "resource": "Viande Avariée",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17134"
+    },
+    {
+        "short_date": "08-21",
+        "offering_to": "Theomak",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans les 4 donjons de l'Eliocalypse (Arbre, Blessures, Désert et Sentence).",
+        "resource_count": 1,
+        "resource": "Terre Stérile",
+        "resource_url": "https://dofusdb.fr/fr/database/object/22052"
+    },
+    {
+        "short_date": "08-22",
+        "offering_to": "Pierdem",
+        "bonus": "Pêche abondanteLes quantités de Morue et d'Espadon récupérées par les Pêcheurs sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Morue",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16481"
+    },
+    {
+        "short_date": "08-23",
+        "offering_to": "Guiboun",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans les zones du Mont Torrideau et de la Ruche des Gloursons.",
+        "resource_count": 2,
+        "resource": "Poils de Boulglours",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11936"
+    },
+    {
+        "short_date": "08-24",
+        "offering_to": "Mikala",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le donjon de la Sousouricière du Rat Noir.",
+        "resource_count": 3,
+        "resource": "Pustule de Rat Sio",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13340"
+    },
+    {
+        "short_date": "08-25",
+        "offering_to": "Lolzeolf",
+        "bonus": "Récolte abondanteLes quantités de céréales récupérées par les Paysans de tous niveaux sont augmentées de 100 %.",
+        "resource_count": 50,
+        "resource": "Millet",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16456"
+    },
+    {
+        "short_date": "08-26",
+        "offering_to": "Fizzi",
+        "bonus": "Percepteurs avidesLe butin généré par les Percepteurs est augmenté de 200 % dans les donjons de niveau 200.",
+        "resource_count": 1,
+        "resource": "Collier d'esclave",
+        "resource_url": "https://dofusdb.fr/fr/database/object/22222"
+    },
+    {
+        "short_date": "08-27",
+        "offering_to": "Talentyre",
+        "bonus": "Pêche abondanteLes quantités de Raie Bleue et de Requin Marteau-Faucille récupérées par les Pêcheurs sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Requin Marteau-Faucille",
+        "resource_url": "https://dofusdb.fr/fr/database/object/602"
+    },
+    {
+        "short_date": "08-28",
+        "offering_to": "Noon",
+        "bonus": "Bois abondantLes quantités de Noyer récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Bois de Noyer",
+        "resource_url": "https://dofusdb.fr/fr/database/object/476"
+    },
+    {
+        "short_date": "08-29",
+        "offering_to": "Dyw",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le donjon du Clos des Blops.",
+        "resource_count": 6,
+        "resource": "Fleur de Blopignon",
+        "resource_url": "https://dofusdb.fr/fr/database/object/9382"
+    },
+    {
+        "short_date": "08-30",
+        "offering_to": "So",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Porcos.",
+        "resource_count": 1,
+        "resource": "Peau de Don Dorgan",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8391"
+    },
+    {
+        "short_date": "08-31",
+        "offering_to": "Bitkyo",
+        "bonus": "Forgemagie amélioréeLes Costumages ont 15 % de chances de ne pas consumer de rune lorsqu'ils tentent d'améliorer un objet.",
+        "resource_count": 4,
+        "resource": "Rune Ré Eau",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7454"
+    },
+    {
+        "short_date": "09-01",
+        "offering_to": "Manoush",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le donjon de la Chambre des maléfices.",
+        "resource_count": 2,
+        "resource": "Épine d'Armuguet",
+        "resource_url": "https://dofusdb.fr/fr/database/object/27399"
+    },
+    {
+        "short_date": "09-02",
+        "offering_to": "Ancestrotek",
+        "bonus": "Vitalité débordanteLa régénération des Points de Vie est augmentée de 300 % (hors combat), et les soins par consommables (vie et énergie) sont augmentés de 100 %.",
+        "resource_count": 4,
+        "resource": "Potion de Mini Soin Supérieure",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1183"
+    },
+    {
+        "short_date": "09-03",
+        "offering_to": "Vikotoru",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Yokianzhi d'encre et Yokianzhi de papier.",
+        "resource_count": 1,
+        "resource": "Pétale d'encre",
+        "resource_url": "https://dofusdb.fr/fr/database/object/23965"
+    },
+    {
+        "short_date": "09-04",
+        "offering_to": "Lorko",
+        "bonus": "Fabrication intensivePour chaque objet fabriqué, les Bûcherons ont 10 % de chances de créer un second objet.",
+        "resource_count": 1,
+        "resource": "Planche Contreplaquée",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16490"
+    },
+    {
+        "short_date": "09-05",
+        "offering_to": "Lucimay",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans la zone et le donjon du Labyrinthe du Minotoror (et son centre).",
+        "resource_count": 4,
+        "resource": "Plume du Serpiplume",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8309"
+    },
+    {
+        "short_date": "09-06",
+        "offering_to": "Zouzo",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Corbacs.",
+        "resource_count": 5,
+        "resource": "Poil de Renarbo",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8250"
+    },
+    {
+        "short_date": "09-07",
+        "offering_to": "Cherop",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les créatures de type Florifaune obscure.",
+        "resource_count": 4,
+        "resource": "Sépale de Nerbe",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8780"
+    },
+    {
+        "short_date": "09-08",
+        "offering_to": "Davut",
+        "bonus": "Apparition des ressourcesLa vitesse d'apparition des ressources est augmentée de 150 % dans les zones des Profondeurs de Sufokia.",
+        "resource_count": 10,
+        "resource": "Écume de mer",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17995"
+    },
+    {
+        "short_date": "09-09",
+        "offering_to": "Mud",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 75 % dans la zone de la Plaine des Porkass.",
+        "resource_count": 6,
+        "resource": "Trident Cassé",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2484"
+    },
+    {
+        "short_date": "09-10",
+        "offering_to": "Mau",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos ébène ainsi que de volkornes améthyste donnent naissance à un bébé supplémentaire.",
+        "resource_count": 1,
+        "resource": "Aile de Dragodinde",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2588"
+    },
+    {
+        "short_date": "09-11",
+        "offering_to": "Xa",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 75 % dans la zone du Territoire des Dragodindes Sauvages.",
+        "resource_count": 4,
+        "resource": "Sueur de dragodinde",
+        "resource_url": "https://dofusdb.fr/fr/database/object/10970"
+    },
+    {
+        "short_date": "09-12",
+        "offering_to": "Grugin",
+        "bonus": "Bonta et BrâkmarLes récompenses en points d'expérience des quêtes d'alignement sont augmentées de 100 %. De plus, une quête répétable spéciale est disponible aujourd'hui à l'intérieur des milices de Bonta ou de Brâkmar. Réalisable à partir du niveau 20 par les personnages alignés, elle est indépendante de la quête d'offrande.\nNom de la quête : Troubles à Bonta. (Être d'alignement Bontarien)\nNom de la quête : Troubles à Brâkmar. (Être d'alignement Brâkmarien)",
+        "resource_count": 6,
+        "resource": "Flamme Spectrale",
+        "resource_url": "https://dofusdb.fr/fr/database/object/14284"
+    },
+    {
+        "short_date": "09-13",
+        "offering_to": "Yukin",
+        "bonus": "Récolte abondanteLes quantités de Lin récupérées par les Paysans sont augmentées de 125 %.",
+        "resource_count": 50,
+        "resource": "Lin",
+        "resource_url": "https://dofusdb.fr/fr/database/object/23449"
+    },
+    {
+        "short_date": "09-14",
+        "offering_to": "Farod",
+        "bonus": "Anomalies temporellesLes gains d'expérience sont augmentés de 50 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone de la Bordure de Brâkmar.",
+        "resource_count": 6,
+        "resource": "Sueur Froide de Fantôme",
+        "resource_url": "https://dofusdb.fr/fr/database/object/14944"
+    },
+    {
+        "short_date": "09-15",
+        "offering_to": "Makss",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon du Laboratoire de Nileza.",
+        "resource_count": 2,
+        "resource": "Bractée de Drosérâle",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13945"
+    },
+    {
+        "short_date": "09-16",
+        "offering_to": "Latürb",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans les zones de la Gorge des Vents Hurlants et de la Cité Oubliée.",
+        "resource_count": 1,
+        "resource": "Carapace de Ver des Sables",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18567"
+    },
+    {
+        "short_date": "09-17",
+        "offering_to": "Nosruo",
+        "bonus": "Apparition des ressourcesLa vitesse d'apparition des ressources est augmentée de 150 % dans la zone de la Forêt d'Amakna.",
+        "resource_count": 1,
+        "resource": "Substrat de Buisson",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2539"
+    },
+    {
+        "short_date": "09-18",
+        "offering_to": "Guidys",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le Donjon des Squelettes.",
+        "resource_count": 9,
+        "resource": "Os de Chafer",
+        "resource_url": "https://dofusdb.fr/fr/database/object/310"
+    },
+    {
+        "short_date": "09-19",
+        "offering_to": "Olvido",
+        "bonus": "Points d'expérience et butin sur les piratesLes gains d'expérience et les chances d'obtenir du butin sont augmentés de 50 % sur tous les monstres considérés comme des pirates.",
+        "resource_count": 6,
+        "resource": "Rhum de Qualité",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2620"
+    },
+    {
+        "short_date": "09-20",
+        "offering_to": "Nido",
+        "bonus": "Gibier abondantLes quantités de Viande Fraîche et de Viande Maigre récupérées par les Chasseurs sont augmentées de 125%.",
+        "resource_count": 4,
+        "resource": "Mijoté Récréatif",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17197"
+    },
+    {
+        "short_date": "09-21",
+        "offering_to": "Bodirom",
+        "bonus": "Objets de qualitéLa qualité des objets fabriqués dans la ville de Brâkmar est augmentée.",
+        "resource_count": 1,
+        "resource": "Épée d'Ha",
+        "resource_url": "https://dofusdb.fr/fr/database/object/62"
+    },
+    {
+        "short_date": "09-22",
+        "offering_to": "Djuuma",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans la zone des Dunes des ossements.",
+        "resource_count": 2,
+        "resource": "Sable Fin",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18366"
+    },
+    {
+        "short_date": "09-23",
+        "offering_to": "Foluk",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Herboricoles.",
+        "resource_count": 1,
+        "resource": "Crinière fleurie",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8753"
+    },
+    {
+        "short_date": "09-24",
+        "offering_to": "Emp",
+        "bonus": "Percepteurs avidesLe butin généré par les Percepteurs est augmenté de 200 % dans tous les donjons.",
+        "resource_count": 3,
+        "resource": "Pépite",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11522"
+    },
+    {
+        "short_date": "09-25",
+        "offering_to": "Franho",
+        "bonus": "Cadeaux surprisesDes Présents surprenants ont été ajoutés aux butins des monstres des donjons. Lorsqu'ils sont utilisés, ils permettent d'obtenir une bonne ou mauvaise surprise.",
+        "resource_count": 3,
+        "resource": "Crabe Surprise",
+        "resource_url": "https://dofusdb.fr/fr/database/object/29378"
+    },
+    {
+        "short_date": "09-26",
+        "offering_to": "Nufrank",
+        "bonus": "Minerai abondantLes quantités de Dolomite et d'Obsidienne récupérées par les Mineurs sont augmentées de 125 %.",
+        "resource_count": 30,
+        "resource": "Obsidienne",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11458"
+    },
+    {
+        "short_date": "09-27",
+        "offering_to": "Wasaru",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le donjon de la Canopée du Kimbo.",
+        "resource_count": 1,
+        "resource": "Tresse du Poolay",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8786"
+    },
+    {
+        "short_date": "09-28",
+        "offering_to": "Sad",
+        "bonus": "Coffres aux trésorsDes Coffres de Sad peuvent être gagnés à la fin des chasses aux trésors.",
+        "resource_count": 1,
+        "resource": "Arc Déroutant",
+        "resource_url": "https://dofusdb.fr/fr/database/object/267"
+    },
+    {
+        "short_date": "09-29",
+        "offering_to": "Dethoama",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les fantômes de l'Équipage du Grolandais.",
+        "resource_count": 3,
+        "resource": "Mât de Fantômat",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11315"
+    },
+    {
+        "short_date": "09-30",
+        "offering_to": "Sulp",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le donjon des Pitons rocheux des Craqueleurs.",
+        "resource_count": 1,
+        "resource": "Dent en Or de Craqueleur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2252"
+    },
+    {
+        "short_date": "10-01",
+        "offering_to": "Moomoo",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les soldats de la Fratrie des Oubliés : les Calcinés et les Submergés.",
+        "resource_count": 2,
+        "resource": "Aquarakne de Crânonier",
+        "resource_url": "https://dofusdb.fr/fr/database/object/19409"
+    },
+    {
+        "short_date": "10-02",
+        "offering_to": "Kosal",
+        "bonus": "Bois abondantLes quantités de Bois de Pin et de Bois d'Oliviolet récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Bois de Pin",
+        "resource_url": "https://dofusdb.fr/fr/database/object/27375"
+    },
+    {
+        "short_date": "10-03",
+        "offering_to": "Chik",
+        "bonus": "Quête répétableUne quête répétable spéciale est disponible aujourd'hui près de la fontaine du village d'Amakna. Réalisable à partir du niveau 20, elle est indépendante de la quête d'offrande.\nNom de la quête : La fête aux tire-fesses.",
+        "resource_count": 1,
+        "resource": "Arc Holic",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1350"
+    },
+    {
+        "short_date": "10-04",
+        "offering_to": "Jujü",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans la zone de la Futaie enneigée.",
+        "resource_count": 2,
+        "resource": "Pom de pin",
+        "resource_url": "https://dofusdb.fr/fr/database/object/27362"
+    },
+    {
+        "short_date": "10-05",
+        "offering_to": "Ounirom",
+        "bonus": "Pêche abondanteLes quantités de Poisson Pané, de Sardine Brillante et de Kralamoure récupérées par les Pêcheurs sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Kralamoure",
+        "resource_url": "https://dofusdb.fr/fr/database/object/9720"
+    },
+    {
+        "short_date": "10-06",
+        "offering_to": "Ketzakwet",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le donjon du Laboratoire du Tynril.",
+        "resource_count": 4,
+        "resource": "Étamine de Floribonde",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8778"
+    },
+    {
+        "short_date": "10-07",
+        "offering_to": "Krûnsh",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 75 % dans la zone du Cauchemar des Ravageurs.",
+        "resource_count": 1,
+        "resource": "Pic de Ravageur",
+        "resource_url": "https://dofusdb.fr/fr/database/object/26036"
+    },
+    {
+        "short_date": "10-08",
+        "offering_to": "Kroketh",
+        "bonus": "Gibier abondantLes quantités de viande récupérées par les Chasseurs de tous niveaux sont augmentées de 100 %.",
+        "resource_count": 5,
+        "resource": "Viande Saignante",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17144"
+    },
+    {
+        "short_date": "10-09",
+        "offering_to": "Nitsougnal",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les créatures de type Firefoux.",
+        "resource_count": 4,
+        "resource": "Poils de Pétartifoux",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7294"
+    },
+    {
+        "short_date": "10-10",
+        "offering_to": "Benjo",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos ivoire donnent naissance à un bébé supplémentaire.",
+        "resource_count": 6,
+        "resource": "Dent de Dragodinde",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2179"
+    },
+    {
+        "short_date": "10-11",
+        "offering_to": "Emattera",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans la zone de la Désolation de Sidimote.",
+        "resource_count": 1,
+        "resource": "Kolérat Mort",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2500"
+    },
+    {
+        "short_date": "10-12",
+        "offering_to": "Diakollec",
+        "bonus": "Voyages dimensionnelsLes gains d'expérience et les chances d'obtenir du butin sont augmentés de 50 % dans toutes les zones des dimensions divines.",
+        "resource_count": 5,
+        "resource": "Tige de Bambouto",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7290"
+    },
+    {
+        "short_date": "10-13",
+        "offering_to": "Takeza",
+        "bonus": "Expérience des monturesLes gains d'expérience des montures sont augmentés de 200 %.",
+        "resource_count": 4,
+        "resource": "Parmentier à l'Oignon",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17179"
+    },
+    {
+        "short_date": "10-14",
+        "offering_to": "Eylen",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon de la Pyramide d'Ombre.",
+        "resource_count": 2,
+        "resource": "Masque de la Vengeance",
+        "resource_url": "https://dofusdb.fr/fr/database/object/14923"
+    },
+    {
+        "short_date": "10-15",
+        "offering_to": "Dnegeleht",
+        "bonus": "Récolte abondanteLes quantités de Chanvre récupérées par les Paysans sont augmentées de 125 %.",
+        "resource_count": 50,
+        "resource": "Chanvre",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17721"
+    },
+    {
+        "short_date": "10-16",
+        "offering_to": "Kuri",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le donjon de la Caverne du Koulosse.",
+        "resource_count": 5,
+        "resource": "Corne du Boufcoul",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7906"
+    },
+    {
+        "short_date": "10-17",
+        "offering_to": "Yaloop",
+        "bonus": "Bois abondantLes quantités de Bois de Noisetier et deBois de Merisier récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Bois de Noisetier",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16488"
+    },
+    {
+        "short_date": "10-18",
+        "offering_to": "Fry",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de l'Armée de brume.",
+        "resource_count": 3,
+        "resource": "Plastron de Tambouraï",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7405"
+    },
+    {
+        "short_date": "10-19",
+        "offering_to": "Zellina",
+        "bonus": "Apparition des ressourcesLa vitesse d'apparition des poissons de tous types est augmentée de 100 %.",
+        "resource_count": 40,
+        "resource": "Perche",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1803"
+    },
+    {
+        "short_date": "10-20",
+        "offering_to": "Sephy",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans les donjons de la Mémoire d'Orukam et du Souvenir d'Imagiro.",
+        "resource_count": 1,
+        "resource": "Pétale de Papier",
+        "resource_url": "https://dofusdb.fr/fr/database/object/23957"
+    },
+    {
+        "short_date": "10-21",
+        "offering_to": "Baba",
+        "bonus": "Fabrication intensiveLes quantités d'objets fabriqués par les Chasseurs sont augmentées de 25 %.",
+        "resource_count": 4,
+        "resource": "Poêlée Paysanne",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17185"
+    },
+    {
+        "short_date": "10-22",
+        "offering_to": "Viviantho",
+        "bonus": "Expérience des métiersLes gains d'expérience sont augmentés de 50 % pour les Bûcherons, les Mineurs et les Alchimistes.",
+        "resource_count": 30,
+        "resource": "Silicate",
+        "resource_url": "https://dofusdb.fr/fr/database/object/916"
+    },
+    {
+        "short_date": "10-23",
+        "offering_to": "Patawaii",
+        "bonus": "Anomalies temporellesLes chances d'obtenir du butin sont augmentées de 50 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone de la Dimension Obscure.",
+        "resource_count": 1,
+        "resource": "Symbole des Obscuranti",
+        "resource_url": "https://dofusdb.fr/fr/database/object/14927"
+    },
+    {
+        "short_date": "10-24",
+        "offering_to": "Sili",
+        "bonus": "Minerai abondantLes quantités de Fer récupérées par les Mineurs sont augmentées de 125 %.",
+        "resource_count": 30,
+        "resource": "Fer",
+        "resource_url": "https://dofusdb.fr/fr/database/object/25180"
+    },
+    {
+        "short_date": "10-25",
+        "offering_to": "Rikoo",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Faune des Pins Perdus.",
+        "resource_count": 40,
+        "resource": "Poils de Smilomouth",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11241"
+    },
+    {
+        "short_date": "10-26",
+        "offering_to": "Capt",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Wabbits, Wabbits mutants et Gawde du Wa.",
+        "resource_count": 9,
+        "resource": "Dent de Wabbit",
+        "resource_url": "https://dofusdb.fr/fr/database/object/305"
+    },
+    {
+        "short_date": "10-27",
+        "offering_to": "Coyo",
+        "bonus": "Économie d'ingrédientsLes Sculpteurs économisent 15 % de leurs ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 1,
+        "resource": "Bâton Feuillu",
+        "resource_url": "https://dofusdb.fr/fr/database/object/183"
+    },
+    {
+        "short_date": "10-28",
+        "offering_to": "Fredocigam",
+        "bonus": "Cueillette abondanteLes quantités de Mandragore et de Belladone récupérées par les Alchimistes sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Mandragore",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16389"
+    },
+    {
+        "short_date": "10-29",
+        "offering_to": "Tchokun",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans la zone de la Crevasse Perge.",
+        "resource_count": 3,
+        "resource": "Malléole de Yomi Givrefoux",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11880"
+    },
+    {
+        "short_date": "10-30",
+        "offering_to": "Macugny",
+        "bonus": "Percepteurs avidesLe butin généré par les Percepteurs est augmenté de 200 % dans les donjons de niveau 120 à 150.",
+        "resource_count": 4,
+        "resource": "Akaslip d'Akakwa",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8344"
+    },
+    {
+        "short_date": "10-31",
+        "offering_to": "Asid",
+        "bonus": "Cadeaux surprisesDes Surprises de Trikortritt ont été ajoutées aux butins des monstres. Lorsqu'elles sont utilisées, elles permettent d'obtenir des Bonbons d'Halouine ou bien de se retrouver transformé en Petite Chauffe-Soutrille.",
+        "resource_count": 6,
+        "resource": "Poils de Barbe du Bwork Mage",
+        "resource_url": "https://dofusdb.fr/fr/database/object/409"
+    },
+    {
+        "short_date": "11-01",
+        "offering_to": "Mitomiel",
+        "bonus": "Points d'expérience et butin en slipLes gains d'expérience lors des combats contre les monstres et les chances d'obtenir du butin sont augmentés de 50 % pour tous les aventuriers qui sont équipés d'un slip.",
+        "resource_count": 1,
+        "resource": "Slip de Troollaraj",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2562"
+    },
+    {
+        "short_date": "11-02",
+        "offering_to": "Nikodeus",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans les zones du Port des Ravageurs et de Pandamonium.",
+        "resource_count": 2,
+        "resource": "Groin de Porkzebuth",
+        "resource_url": "https://dofusdb.fr/fr/database/object/25179"
+    },
+    {
+        "short_date": "11-03",
+        "offering_to": "Miloune",
+        "bonus": "Économie d'ingrédientsLes Tailleurs ont 15 % de chances d'économiser des ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 1,
+        "resource": "Cape Abilité",
+        "resource_url": "https://dofusdb.fr/fr/database/object/775"
+    },
+    {
+        "short_date": "11-04",
+        "offering_to": "Kacinka",
+        "bonus": "Avis de rechercheLa vitesse d'apparition des monstres d'Avis de recherche est augmentée de 200 % .",
+        "resource_count": 1,
+        "resource": "Fibre criminelle",
+        "resource_url": "https://dofusdb.fr/fr/database/object/424"
+    },
+    {
+        "short_date": "11-05",
+        "offering_to": "Mathrû",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon de la Brasserie du roi Dazak.",
+        "resource_count": 2,
+        "resource": "Dent de Vatenbière",
+        "resource_url": "https://dofusdb.fr/fr/database/object/19974"
+    },
+    {
+        "short_date": "11-06",
+        "offering_to": "Hito",
+        "bonus": "Bois abondantLes quantités de Bois de Châtaignier récupérées par les Bûcherons sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Bois de Châtaignier",
+        "resource_url": "https://dofusdb.fr/fr/database/object/473"
+    },
+    {
+        "short_date": "11-07",
+        "offering_to": "Pouki",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les Animaux de la forêt.",
+        "resource_count": 6,
+        "resource": "Pic de Prespic",
+        "resource_url": "https://dofusdb.fr/fr/database/object/407"
+    },
+    {
+        "short_date": "11-08",
+        "offering_to": "Poup",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Serviteurs de l'Indicible.",
+        "resource_count": 2,
+        "resource": "Patte de Li-Fo",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17985"
+    },
+    {
+        "short_date": "11-09",
+        "offering_to": "Tilapiatsu",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les Pirates naufragés et les Pirates de l'Arche d'Otomaï.",
+        "resource_count": 6,
+        "resource": "Foulard du Sparo",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8760"
+    },
+    {
+        "short_date": "11-10",
+        "offering_to": "Otoul",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos orchidée ainsi que de volkornes rubis donnent naissance à un bébé supplémentaire.",
+        "resource_count": 40,
+        "resource": "Goujon",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1782"
+    },
+    {
+        "short_date": "11-11",
+        "offering_to": "Namsprop",
+        "bonus": "Bénédiction de Miss TristeMiss Triste attend les aventuriers qui veulent se refaire une laideur près de la fontaine du village d'Amakna. Sa bénédiction transforme temporairement en Crocodaille (effet qui disparaît quand un combat est lancé) et en Souffre-Douleur (bonus de 50 Puissance et 10 dommages fixes durant 15 combats).",
+        "resource_count": 6,
+        "resource": "Écaille de Crocodaille",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1663"
+    },
+    {
+        "short_date": "11-12",
+        "offering_to": "Jacoula",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Trithons.",
+        "resource_count": 2,
+        "resource": "Lanterne de Tourthon",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17975"
+    },
+    {
+        "short_date": "11-13",
+        "offering_to": "Dek",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon du Laboratoire de Brumen Tinctorias.",
+        "resource_count": 6,
+        "resource": "Graine de Scorbute",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2150"
+    },
+    {
+        "short_date": "11-14",
+        "offering_to": "Flouky",
+        "bonus": "Forgemagie amélioréeLes Joaillomages ont 15 % de chances de ne pas consumer de rune lorsqu'ils tentent d'améliorer un objet.",
+        "resource_count": 4,
+        "resource": "Rune Vi",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1523"
+    },
+    {
+        "short_date": "11-15",
+        "offering_to": "Reniator",
+        "bonus": "Quête répétableUne quête répétable spéciale est disponible aujourd'hui près de la vieille chapelle d'Astrub. Réalisable à partir du niveau 20, elle est indépendante de la quête d'offrande.\nNom de la quête : Vols à la charrette.",
+        "resource_count": 1,
+        "resource": "Leurnettes",
+        "resource_url": "https://dofusdb.fr/fr/database/object/340"
+    },
+    {
+        "short_date": "11-16",
+        "offering_to": "Mustasly",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les Rats Strubiens et les Rats Maknéens.",
+        "resource_count": 6,
+        "resource": "Peau de Ramane d'Égoutant",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8483"
+    },
+    {
+        "short_date": "11-17",
+        "offering_to": "Messikriss",
+        "bonus": "Gibier abondantLes quantités de Viande séchée récupérées par les Chasseurs sont augmentées de 125%.",
+        "resource_count": 5,
+        "resource": "Viande Macérée",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17148"
+    },
+    {
+        "short_date": "11-18",
+        "offering_to": "Annbonny",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans les zones des Canaux Méphitiques et des Entrailles de Brâkmar.",
+        "resource_count": 1,
+        "resource": "Patte de la Gardienne des Égouts",
+        "resource_url": "https://dofusdb.fr/fr/database/object/13341"
+    },
+    {
+        "short_date": "11-19",
+        "offering_to": "Waro",
+        "bonus": "Économie d'ingrédientsLes Bûcherons économisent 15 % de leurs ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 1,
+        "resource": "Substrat de Bocage",
+        "resource_url": "https://dofusdb.fr/fr/database/object/12745"
+    },
+    {
+        "short_date": "11-20",
+        "offering_to": "Julo",
+        "bonus": "Anomalies temporellesLes gains d'expérience des montures sont augmentés de 100 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans les zones (hors donjons) des Cavaliers de l'Eliocalypse.",
+        "resource_count": 2,
+        "resource": "Sang coagulé",
+        "resource_url": "https://dofusdb.fr/fr/database/object/22248"
+    },
+    {
+        "short_date": "11-21",
+        "offering_to": "Mûnir",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Vermines des champs.",
+        "resource_count": 6,
+        "resource": "Ailes de Moskito",
+        "resource_url": "https://dofusdb.fr/fr/database/object/307"
+    },
+    {
+        "short_date": "11-22",
+        "offering_to": "Jeffarctor",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Kanigs des Dents de Pierre.",
+        "resource_count": 3,
+        "resource": "Griffe de Félygiène",
+        "resource_url": "https://dofusdb.fr/fr/database/object/15045"
+    },
+    {
+        "short_date": "11-23",
+        "offering_to": "Angy",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Brûlâmes.",
+        "resource_count": 2,
+        "resource": "Fragment d'Ectorche",
+        "resource_url": "https://dofusdb.fr/fr/database/object/19235"
+    },
+    {
+        "short_date": "11-24",
+        "offering_to": "Fafah",
+        "bonus": "Récolte abondanteLes quantités d'Avoine récupérées par les Paysans sont augmentées de 125 %.",
+        "resource_count": 50,
+        "resource": "Avoine",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7162"
+    },
+    {
+        "short_date": "11-25",
+        "offering_to": "Lateralus",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans la zone des Champs de glace.",
+        "resource_count": 5,
+        "resource": "Laine de Boufmouth légendaire",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11136"
+    },
+    {
+        "short_date": "11-26",
+        "offering_to": "Uicuic",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les Vilinsekts.",
+        "resource_count": 9,
+        "resource": "Antennes de Vilinsekt",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16001"
+    },
+    {
+        "short_date": "11-27",
+        "offering_to": "Vanderivz",
+        "bonus": "Double butinLes aventuriers ont 20 % de chances de générer un second butin sur tous les monstres affrontés dans les donjons.",
+        "resource_count": 1,
+        "resource": "Poils de Barbe de Dragodinde",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8065"
+    },
+    {
+        "short_date": "11-28",
+        "offering_to": "Troyle",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Sulfurieux.",
+        "resource_count": 3,
+        "resource": "Résidu de Solfataré",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11325"
+    },
+    {
+        "short_date": "11-29",
+        "offering_to": "Eltux",
+        "bonus": "Minerai abondantLes quantités de Kobalte récupérées par les mineurs sont augmentées de 125 %.",
+        "resource_count": 30,
+        "resource": "Kobalte",
+        "resource_url": "https://dofusdb.fr/fr/database/object/443"
+    },
+    {
+        "short_date": "11-30",
+        "offering_to": "Inooni",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 125 % sur les créatures de type Givrefoux.",
+        "resource_count": 3,
+        "resource": "Laine de Yokaï Givrefoux",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11339"
+    },
+    {
+        "short_date": "12-01",
+        "offering_to": "Ezimuos",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Goules.",
+        "resource_count": 2,
+        "resource": "Œil de Gouligane",
+        "resource_url": "https://dofusdb.fr/fr/database/object/19071"
+    },
+    {
+        "short_date": "12-02",
+        "offering_to": "Tiris",
+        "bonus": "Expérience des métiersLes gains d'expérience sont augmentés de 50 % pour les Bricoleurs, les Forgerons, les Sculpteurs et les Façonneurs.",
+        "resource_count": 1,
+        "resource": "Bouclier du tournesol sauvage",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18714"
+    },
+    {
+        "short_date": "12-03",
+        "offering_to": "Edacsak",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans la zone du Lac Gelé.",
+        "resource_count": 4,
+        "resource": "Peau de Mansobèse",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11225"
+    },
+    {
+        "short_date": "12-04",
+        "offering_to": "Eltruteht",
+        "bonus": "Bois abondantLes quantités de Bois récupérées par les Bûcherons de tous niveaux sont augmentées de 100 %.",
+        "resource_count": 40,
+        "resource": "Bois d'Oliviolet",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2357"
+    },
+    {
+        "short_date": "12-05",
+        "offering_to": "Ologar",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 75 % dans la zone de la Carrière d'Astrub.",
+        "resource_count": 6,
+        "resource": "Casque de Sherpoa",
+        "resource_url": "https://dofusdb.fr/fr/database/object/6845"
+    },
+    {
+        "short_date": "12-06",
+        "offering_to": "Adam",
+        "bonus": "KolizétonsLa quantité de jetons gagnée en Kolizéum est augmentée de 100 %.",
+        "resource_count": 6,
+        "resource": "Charbon",
+        "resource_url": "https://dofusdb.fr/fr/database/object/447"
+    },
+    {
+        "short_date": "12-07",
+        "offering_to": "Kountar",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les Koalaks et les Koalaks sauvages.",
+        "resource_count": 6,
+        "resource": "Étoffe de Dok Alako",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8002"
+    },
+    {
+        "short_date": "12-08",
+        "offering_to": "Moko",
+        "bonus": "Cueillette abondanteLes quantités de Perce-Neige récupérées par les Alchimistes sont augmentées de 200 %.",
+        "resource_count": 10,
+        "resource": "Perce-Neige",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11102"
+    },
+    {
+        "short_date": "12-09",
+        "offering_to": "Ingmar",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 100 % dans le donjon du Garde-manger du Rat Blanc.",
+        "resource_count": 2,
+        "resource": "Poil de Rat Bontarien",
+        "resource_url": "https://dofusdb.fr/fr/database/object/8570"
+    },
+    {
+        "short_date": "12-10",
+        "offering_to": "Foya",
+        "bonus": "Élevage de monturesToutes les variétés de dragodindes, volkornes et muldos émeraude donnent naissance à un bébé supplémentaire.",
+        "resource_count": 1,
+        "resource": "Queue de Dragodinde",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2594"
+    },
+    {
+        "short_date": "12-11",
+        "offering_to": "Bovjouski",
+        "bonus": "Économie d'ingrédientsLes Cordonniers économisent 15 % de leurs ingrédients lorsqu'ils fabriquent des objets.",
+        "resource_count": 2,
+        "resource": "Pacmabottes",
+        "resource_url": "https://dofusdb.fr/fr/database/object/12757"
+    },
+    {
+        "short_date": "12-12",
+        "offering_to": "Mig",
+        "bonus": "Quête répétableUne quête répétable spéciale est disponible aujourd'hui près des portes de Brâkmar. Réalisable à partir du niveau 20, elle est indépendante de la quête d'offrande.\nNom de la quête : Contrôles anti-baston.",
+        "resource_count": 3,
+        "resource": "Potion de cité : Brâkmar",
+        "resource_url": "https://dofusdb.fr/fr/database/object/6964"
+    },
+    {
+        "short_date": "12-13",
+        "offering_to": "Sêpt",
+        "bonus": "Apparition des ressourcesLa vitesse d'apparition des minerais de tous types est augmentée de 100 %.",
+        "resource_count": 30,
+        "resource": "Dolomite",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7033"
+    },
+    {
+        "short_date": "12-14",
+        "offering_to": "Jason",
+        "bonus": "Challenges augmentésLes bonus apportés par les challenges réussis sont augmentés de 150 % dans le donjon de la Chambre de Tal Kasha.",
+        "resource_count": 1,
+        "resource": "Paupière Dorée",
+        "resource_url": "https://dofusdb.fr/fr/database/object/18540"
+    },
+    {
+        "short_date": "12-15",
+        "offering_to": "Eboren",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 75 % dans la zone de la plaine des Porkass.",
+        "resource_count": 6,
+        "resource": "Cuir de Porkass",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2275"
+    },
+    {
+        "short_date": "12-16",
+        "offering_to": "Lucyvan",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres de Nowel.",
+        "resource_count": 2,
+        "resource": "Emballage de Nowel Écarlate",
+        "resource_url": "https://dofusdb.fr/fr/database/object/12898"
+    },
+    {
+        "short_date": "12-17",
+        "offering_to": "Ryf",
+        "bonus": "Pêche abondanteLes quantités d'Anguille et de Dorade Grise récupérées par les Pêcheurs sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Anguille",
+        "resource_url": "https://dofusdb.fr/fr/database/object/16461"
+    },
+    {
+        "short_date": "12-18",
+        "offering_to": "Sebsokk",
+        "bonus": "Challenges des donjonsLes bonus apportés par les challenges réussis sont augmentés de 150 % dans tous les donjons.",
+        "resource_count": 1,
+        "resource": "Chance d'Ecaflip",
+        "resource_url": "https://dofusdb.fr/fr/database/object/1496"
+    },
+    {
+        "short_date": "12-19",
+        "offering_to": "Reivax",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les monstres de Nowel.",
+        "resource_count": 2,
+        "resource": "Flocon de Neige",
+        "resource_url": "https://dofusdb.fr/fr/database/object/12845"
+    },
+    {
+        "short_date": "12-20",
+        "offering_to": "Benjak",
+        "bonus": "Fabrication intensivePour chaque objet fabriqué, les Mineurs ont 10 % de chances de créer un second objet.",
+        "resource_count": 1,
+        "resource": "Ebonite",
+        "resource_url": "https://dofusdb.fr/fr/database/object/746"
+    },
+    {
+        "short_date": "12-21",
+        "offering_to": "Grüg",
+        "bonus": "Challenge supplémentaireUn challenge supplémentaire est généré contre les monstres présents dans les zones du Cimetière d'Amakna et des Cryptes du Cimetière.",
+        "resource_count": 6,
+        "resource": "Canine Vampiresque",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2279"
+    },
+    {
+        "short_date": "12-22",
+        "offering_to": "Maxarès",
+        "bonus": "Apparition des ressourcesLa vitesse d'apparition des ressources est augmentée de 150 % dans la zone du Port de Madrestam.",
+        "resource_count": 40,
+        "resource": "Poisson Pané",
+        "resource_url": "https://dofusdb.fr/fr/database/object/12934"
+    },
+    {
+        "short_date": "12-23",
+        "offering_to": "Math",
+        "bonus": "Gibier abondantLes quantités de Viande Tendre récupérées par les Chasseurs sont augmentées de 125%.",
+        "resource_count": 6,
+        "resource": "Viande Tendre",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17130"
+    },
+    {
+        "short_date": "12-24",
+        "offering_to": "Milivar",
+        "bonus": "Coffres aux trésorsDes Coffres de Milivar peuvent être gagnés à la fin des chasses aux trésors.",
+        "resource_count": 1,
+        "resource": "Médaille en Chocolat",
+        "resource_url": "https://dofusdb.fr/fr/database/object/29386"
+    },
+    {
+        "short_date": "12-25",
+        "offering_to": "Simsof",
+        "bonus": "Cadeaux surprisesDes Cadeaux de Nowel ont été ajoutés aux butins des monstres. Lorsqu'ils sont utilisés, ils permettent d'obtenir des ressources ou d'autres objets aléatoires.",
+        "resource_count": 4,
+        "resource": "Joli cadeau de Nowel",
+        "resource_url": "https://dofusdb.fr/fr/database/object/27734"
+    },
+    {
+        "short_date": "12-26",
+        "offering_to": "Fhenris",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 100 % dans le donjon de l'Excavation du Mansot Royal.",
+        "resource_count": 4,
+        "resource": "Poil de barbe du Shamansot",
+        "resource_url": "https://dofusdb.fr/fr/database/object/11229"
+    },
+    {
+        "short_date": "12-27",
+        "offering_to": "Korri",
+        "bonus": "Points d'expérienceLes gains d'expérience sont augmentés de 50 % sur les créatures de type Marteaux-Aigris.",
+        "resource_count": 2,
+        "resource": "Fronde de Boufronde",
+        "resource_url": "https://dofusdb.fr/fr/database/object/27437"
+    },
+    {
+        "short_date": "12-28",
+        "offering_to": "Ediva",
+        "bonus": "Percepteurs avidesLe butin généré par les Percepteurs est augmenté de 200 % dans les donjons de niveau 160 à 190.",
+        "resource_count": 3,
+        "resource": "Kaokurimono",
+        "resource_url": "https://dofusdb.fr/fr/database/object/7381"
+    },
+    {
+        "short_date": "12-29",
+        "offering_to": "Cocoyuyu",
+        "bonus": "Récolte abondanteLes quantités de Seigle et de Riz récupérées par les Paysans sont augmentées de 125 %.",
+        "resource_count": 40,
+        "resource": "Riz",
+        "resource_url": "https://dofusdb.fr/fr/database/object/14717"
+    },
+    {
+        "short_date": "12-30",
+        "offering_to": "Dari",
+        "bonus": "ButinLes chances d'obtenir du butin sont augmentées de 50 % sur les créatures de type Automates des Brigandins.",
+        "resource_count": 1,
+        "resource": "Bidule inutile",
+        "resource_url": "https://dofusdb.fr/fr/database/object/2483"
+    },
+    {
+        "short_date": "12-31",
+        "offering_to": "Aisk",
+        "bonus": "Anomalies temporellesLes bonus apportés par les challenges réussis sont augmentés de 75 % dans toutes les zones influencées par une anomalie temporelle. De plus, les gains d'expérience et les chances d'obtenir du butin sont augmentés de 25 % dans la zone de la Forêt des Masques.",
+        "resource_count": 6,
+        "resource": "Viande Ladre",
+        "resource_url": "https://dofusdb.fr/fr/database/object/17132"
+    }
+]

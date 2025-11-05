@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate-key="craft_calculator_main_title">Calculateur de Coût de Fabrication</title>
+    <link rel="icon" type="image/png" href="../images/LogoDGv1.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 - fallback if video fails */
+            color: #e2e8f0; /* Light text */
+            min-height: 100vh; /* Ensure body takes full height */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Background video styles */
+        .video-background {
+            position: fixed; /* Use fixed to ensure it covers the whole screen */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -2; /* Place behind content */
+        }
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-overlay {
+            position: fixed; /* Use fixed for overlay too */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+            z-index: -1; /* Place behind content, above video */
+        }
+        /* Removed .main-container::before background image as video is now the primary background */
+        /* .main-container::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('images/BG_01.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            z-index: -1;
+        } */
+        .card-bg {
+            background-color: rgba(31, 41, 55, 0.85); /* bg-gray-800 with 85% opacity */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .placeholder-custom::placeholder {
+            color: #9ca3af;
+        }
+
+        /* Styles for messages */
+        .message-box {
+            padding: 1rem;
+            margin-top: 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            display: none; /* Hidden by default */
+        }
+        .message-box.block { /* Added this class for explicit display */
+            display: block;
+        }
+        .message-box.error {
+            background-color: rgba(239, 68, 68, 0.1); /* Red-500 with opacity */
+            color: #ef4444; /* text-red-500 */
+            border-left: 4px solid #ef4444; /* border-red-500 */
+        }
+        .message-box.success {
+            background-color: rgba(20, 184, 166, 0.1); /* Teal-500 with opacity */
+            color: #14b8a6; /* text-teal-500 */
+            border-left: 4px solid #14b8a6; /* border-teal-500 */
+        }
+        .message-box.info {
+            background-color: rgba(59, 130, 246, 0.1); /* Blue-500 with opacity */
+            color: #3b82f6; /* text-blue-500 */
+            border-left: 4px solid #3b82f6; /* border-blue-500 */
+        }
+
+        /* Autocomplete styles */
+        .autocomplete-suggestions {
+            position: absolute;
+            background-color: rgba(31, 41, 55, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.5rem;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 100;
+            width: calc(100% - 0.5rem);
+            left: 0.25rem;
+            top: 100%;
+            margin-top: 0.25rem;
+        }
+        .autocomplete-suggestion-item {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: background-color 0.2s ease;
+        }
+        .autocomplete-suggestion-item:hover {
+            background-color: rgba(20, 184, 166, 0.2);
+        }
+        .autocomplete-suggestion-item img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+            border-radius: 0.25rem;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Recipe ingredients styling */
+        .ingredients-list-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem; /* Vertical gap between items */
+        }
+
+        .ingredient-item {
+            display: flex;
+            flex-direction: row; /* Always row for simplicity in single column */
+            align-items: center;
+            justify-content: space-between; /* Space out content */
+            gap: 0.5rem; /* Gap between elements within the item */
+            padding: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            background-color: rgba(45, 55, 72, 0.8);
+            transition: background-color 0.2s ease;
+        }
+        .ingredient-item:hover {
+            background-color: rgba(55, 65, 81, 0.8);
+        }
+        .ingredient-item img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+            border-radius: 0.25rem;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Flex container for name and quantity */
+        .ingredient-name-quantity {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-grow: 1; /* Allow it to take available space */
+        }
+
+        /* Flex container for label and input */
+        .ingredient-price-input {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; /* Align label and input to the right */
+            flex-shrink: 0; /* Prevent shrinking */
+            width: 128px; /* Fixed width for the price input section */
+        }
+        .ingredient-price-input label {
+            text-align: right;
+        }
+        .ingredient-price-input input[type="number"] {
+            width: 100%; /* Make input fill its parent div */
+            text-align: right; /* Align text inside input to the right */
+        }
+    </style>
+</head>
+<body class="text-white antialiased">
+
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="/images/sanctuloop.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-overlay"></div>
+
+    <div class="relative z-10 container mx-auto p-4 md:p-8 max-w-md min-h-screen flex flex-col">
+            
+            <div class="flex justify-between items-center mb-4">
+                <!-- Link back to the main GitHub Pages index -->
+                <a href="https://dofusgadgets.com" class="text-teal-400 hover:text-teal-300" data-translate-key="btn_back_home">&larr; Retour à l'accueil</a>
+                <!-- Language selector -->
+                <select id="language-selector" class="bg-gray-700 border border-gray-600 rounded-lg px-3 py-1 text-white focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition">
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="pt-br">🇧🇷 Português (BR)</option>
+                    <option value="it">🇮🇹 Italiano</option>
+                </select>
+            </div>
+
+            <header class="text-center mb-8">
+                <h1 class="text-3xl md:text-4xl font-bold text-teal-400" data-translate-key="craft_calculator_main_title">Calculateur de Coût de Fabrication</h1>
+                <p class="text-gray-400 mt-2" data-translate-key="craft_calculator_subtitle">Estimez le coût de fabrication de vos objets !</p>
+            </header>
+
+            <!-- Craft Cost Calculator Content -->
+            <div id="content-craft-calculator">
+                <div class="card-bg p-6 rounded-2xl shadow-lg mb-8">
+                    <h2 class="text-xl font-semibold mb-4" data-translate-key="craft_calculator_form_title">Calculer le Coût de Fabrication</h2>
+                    
+                    <div class="mb-4 relative">
+                        <label for="craftItemName" class="block text-sm font-medium text-gray-300 mb-1" data-translate-key="label_item_name">Nom de l'objet à fabriquer (Ex: Coiffe du Craqueleur):</label>
+                        <div class="flex items-center gap-2">
+                            <img id="itemIcon" src="https://placehold.co/32x32/1f2937/9ca3af?text=?" alt="Icône de l'objet" class="h-8 w-8 rounded-md object-contain border border-gray-600">
+                            <input type="text" id="craftItemName" value="" placeholder="Coiffe du Craqueleur" class="flex-grow bg-gray-700 border border-gray-600 rounded-lg px-3 py-2 text-white focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition placeholder-custom" data-translate-key-placeholder="placeholder_item_name">
+                        </div>
+                        <div id="autocompleteSuggestions" class="autocomplete-suggestions hidden"></div>
+                    </div>
+
+                    <div id="recipeDetails" class="hidden mb-6">
+                        <h3 class="text-lg font-semibold mb-2" data-translate-key="recipe_title">Recette:</h3>
+                        <!-- ingredientsList now always uses a single column -->
+                        <div id="ingredientsList" class="ingredients-list-container"> 
+                            <!-- Ingredients will be dynamically added here -->
+                        </div>
+                    </div>
+
+                    <div id="craftQuantitySection" class="hidden mb-4">
+                        <label for="craftQuantity" class="block text-sm font-medium text-gray-300 mb-1" data-translate-key="label_craft_quantity">Quantité à fabriquer:</label>
+                        <input type="number" id="craftQuantity" value="1" min="1" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-3 py-2 text-white focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition placeholder-custom">
+                    </div>
+
+                    <!-- New input for Purchase Price -->
+                    <div id="purchasePriceSection" class="hidden mb-6">
+                        <label for="purchasePrice" class="block text-sm font-medium text-gray-300 mb-1" data-translate-key="label_purchase_price">Prix d'achat (Kamas) (Optionnel):</label>
+                        <input type="number" id="purchasePrice" value="" min="0" placeholder="Ex: 150000" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-3 py-2 text-white focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition placeholder-custom" data-translate-key-placeholder="placeholder_purchase_price">
+                    </div>
+
+                    <button id="calculateCraftCostBtn" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-105 shadow-md hidden" data-translate-key="btn_calculate_craft_cost">
+                        Calculer le Coût de Fabrication
+                    </button>
+
+                    <div id="craft-result" class="message-box success hidden">
+                        <!-- Result will be displayed here -->
+                    </div>
+                    <div id="craft-error-message" class="message-box error hidden">
+                        <!-- Error messages will be displayed here -->
+                    </div>
+                    <div id="craft-info-message" class="message-box info hidden">
+                        <!-- Information messages (e.g., loading) will be displayed here -->
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="text-center text-gray-500 text-sm mt-auto pt-12 pb-4">
+                <!-- Image of Dofus Logo -->
+                <img src="images/LogoDofus.webp" alt="Logo Dofus" class="h-12 mx-auto mb-2 opacity-50">
+                <p data-translate-key="signature">Apps by Ato</p>
+                <p class="text-xs text-gray-600 mt-4" data-translate-key="disclaimer">Dofus et toutes les images associées utilisées sur ce site sont la propriété d'Ankama</p>
+                <p class="text-xs text-gray-600 mt-2" data-translate-key="version_info">Version 1.0.30 - Juillet 2025</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let currentLanguage = 'fr';
+        let selectedItem = null; // Stores the currently selected item with its full details
+        let ingredientPriceInputs = {}; // Stores references to ingredient price input elements
+
+        // DOM elements
+        let craftItemNameInput, itemIcon, autocompleteSuggestions, recipeDetailsDiv, ingredientsListDiv,
+            craftQuantityInput, calculateCraftCostBtn, craftResultDiv, craftErrorDiv, craftInfoDiv,
+            languageSelector, versionInfoElement, purchasePriceInput, purchasePriceSection;
+
+        const DOFUSDB_API_BASE_URL = 'https://api.dofusdb.fr';
+
+        // Translations object
+        const translations = {
+            fr: {
+                btn_back_home: "← Retour à l'accueil",
+                signature: "Apps by Ato",
+                disclaimer: "Dofus et toutes les images associées utilisées sur ce site sont la propriété d'Ankama",
+                version_info: "Version 1.0.30 - Juillet 2025",
+                craft_calculator_main_title: "Calculateur de Coût de Fabrication",
+                craft_calculator_subtitle: "Estimez le coût de fabrication de vos objets !",
+                craft_calculator_form_title: "Calculer le Coût de Fabrication",
+                label_item_name: "Nom de l'objet à fabriquer (Ex: Coiffe du Craqueleur):",
+                placeholder_item_name: "Coiffe du Craqueleur",
+                recipe_title: "Recette:",
+                label_craft_quantity: "Quantité à fabriquer:",
+                label_purchase_price: "Prix d'achat (Kamas) (Optionnel):",
+                placeholder_purchase_price: "Ex: 150000",
+                btn_calculate_craft_cost: "Calculer le Coût de Fabrication",
+                fetching_data: "Recherche en cours...",
+                item_not_found: "Objet non trouvé ou non craftable.",
+                no_recipe_found: "Cet objet n'a pas de recette de fabrication disponible dans la base de données.",
+                label_ingredient_price: "Prix unitaire (Kamas):",
+                craft_cost_result_prefix: "Coût total estimé pour",
+                craft_cost_result_suffix: "Kamas",
+                error_invalid_input: "Veuillez entrer des valeurs numériques valides pour les prix des ingrédients et la quantité à fabriquer.",
+                error_item_name_empty: "Veuillez entrer le nom de l'objet à fabriquer.",
+                error_quantity_invalid: "La quantité à fabriquer doit être un nombre entier positif.",
+                purchase_cost_display: "Coût à l'achat :",
+                profit_display: "Bénéfice :",
+                loss_display: "Perte :",
+                kamas_suffix: "Kamas"
+            },
+            en: {
+                btn_back_home: "← Back to Home",
+                signature: "Apps by Ato",
+                disclaimer: "Dofus and any related images used on this website are the properties of Ankama",
+                version_info: "Version 1.0.30 - July 2025",
+                craft_calculator_main_title: "Craft Cost Calculator",
+                craft_calculator_subtitle: "Estimate the crafting cost of your items!",
+                craft_calculator_form_title: "Calculate Craft Cost",
+                label_item_name: "Item to craft (Ex: Gobball Headgear):",
+                placeholder_item_name: "Gobball Headgear",
+                recipe_title: "Recipe:",
+                label_craft_quantity: "Quantity to craft:",
+                label_purchase_price: "Purchase Price (Kamas) (Optional):",
+                placeholder_purchase_price: "E.g.: 150000",
+                btn_calculate_craft_cost: "Calculate Craft Cost",
+                fetching_data: "Searching...",
+                item_not_found: "Item not found or not craftable.",
+                no_recipe_found: "This item does not have a crafting recipe available in the database.",
+                label_ingredient_price: "Unit price (Kamas):",
+                craft_cost_result_prefix: "Estimated total cost for",
+                craft_cost_result_suffix: "Kamas",
+                error_invalid_input: "Please enter valid numeric values for ingredient prices and craft quantity.",
+                error_item_name_empty: "Please enter the name of the item to craft.",
+                error_quantity_invalid: "The quantity to craft must be a positive integer.",
+                purchase_cost_display: "Purchase Cost:",
+                profit_display: "Profit:",
+                loss_display: "Loss:",
+                kamas_suffix: "Kamas"
+            },
+            es: {
+                btn_back_home: "← Volver al Inicio",
+                signature: "Apps by Ato",
+                disclaimer: "Dofus y cualquier imagen relacionada utilizada en este sitio web son propiedad de Ankama",
+                version_info: "Versión 1.0.30 - Julio 2025",
+                craft_calculator_main_title: "Calculadora de Costo de Fabricación",
+                craft_calculator_subtitle: "¡Estima el costo de fabricación de tus objetos!",
+                craft_calculator_form_title: "Calcular Costo de Fabricación",
+                label_item_name: "Objeto a fabricar (Ej: Sombrero de Jalató):",
+                placeholder_item_name: "Sombrero de Jalató",
+                recipe_title: "Receta:",
+                label_craft_quantity: "Cantidad a fabricar:",
+                label_purchase_price: "Precio de compra (Kamas) (Opcional):",
+                placeholder_purchase_price: "Ej: 150000",
+                btn_calculate_craft_cost: "Calcular Costo de Fabricación",
+                fetching_data: "Buscando...",
+                item_not_found: "Objeto no encontrado o no crafteable.",
+                no_recipe_found: "Este objeto no tiene una receta de fabricación disponible en la base de datos.",
+                label_ingredient_price: "Precio unitario (Kamas):",
+                craft_cost_result_prefix: "Costo total estimado para",
+                craft_cost_result_suffix: "Kamas",
+                error_invalid_input: "Por favor, introduce valores numéricos válidos para los precios de los ingredientes y la cantidad a fabricar.",
+                error_item_name_empty: "Por favor, introduce el nombre del objeto a fabricar.",
+                error_quantity_invalid: "La cantidad a fabricar debe ser un número entero positivo.",
+                purchase_cost_display: "Costo de compra:",
+                profit_display: "Beneficio:",
+                loss_display: "Pérdida:",
+                kamas_suffix: "Kamas"
+            },
+            'pt-br': {
+                btn_back_home: "← Voltar ao Início",
+                signature: "Apps by Ato",
+                disclaimer: "Dofus e quaisquer imágenes relacionadas usadas neste site são propriedade da Ankama",
+                version_info: "Versão 1.0.30 - Julho 2025",
+                craft_calculator_main_title: "Calculadora de Custo de Fabricação",
+                craft_calculator_subtitle: "Estime o custo de fabricação dos seus itens!",
+                craft_calculator_form_title: "Calcular Custo de Fabricação",
+                label_item_name: "Item a fabricar (Ex: Chapéu de Gobball):",
+                placeholder_item_name: "Chapéu de Gobball",
+                recipe_title: "Receta:",
+                label_craft_quantity: "Quantidade a fabricar:",
+                label_purchase_price: "Preço de compra (Kamas) (Opcional):",
+                placeholder_purchase_price: "Ex: 150000",
+                btn_calculate_craft_cost: "Calcular Custo de Fabricação",
+                fetching_data: "Pesquisando...",
+                item_not_found: "Item non trouvé ou non craftable.",
+                no_recipe_found: "Este item non possède une recette de fabrication disponible dans le banco de dados.",
+                label_ingredient_price: "Preço unitário (Kamas):",
+                craft_cost_result_prefix: "Custo total estimado para",
+                craft_cost_result_suffix: "Kamas",
+                error_invalid_input: "Por favor, insira valores numéricos válidos para os preços dos ingredientes e a quantidade a fabricar.",
+                error_item_name_empty: "Por favor, insira o nome do item a ser fabricado.",
+                error_quantity_invalid: "A quantidade a ser fabricada deve ser um número inteiro positivo.",
+                purchase_cost_display: "Custo de compra:",
+                profit_display: "Lucro:",
+                loss_display: "Prejuízo:",
+                kamas_suffix: "Kamas"
+            },
+            it: {
+                btn_back_home: "← Torna alla Home",
+                signature: "Apps by Ato",
+                disclaimer: "Dofus e qualsiasi immagine correlata utilizzata su questo sito Web sono di proprietà di Ankama",
+                version_info: "Versione 1.0.30 - Luglio 2025",
+                craft_calculator_main_title: "Calcolatore Costo di Fabbricazione",
+                craft_calculator_subtitle: "Stima il costo di fabbricazione dei tuoi oggetti!",
+                craft_calculator_form_title: "Calcola Costo di Fabbricazione",
+                label_item_name: "Oggetto da fabbricare (Es: Copricapo del Craqueleur):",
+                placeholder_item_name: "Copricapo del Craqueleur",
+                recipe_title: "Ricetta:",
+                label_craft_quantity: "Quantità da fabbricare:",
+                label_purchase_price: "Prezzo di acquisto (Kama) (Opzionale):",
+                placeholder_purchase_price: "Es: 150000",
+                btn_calculate_craft_cost: "Calcola Costo di Fabbricazione",
+                fetching_data: "Ricerca in corso...",
+                item_not_found: "Oggetto non trovato o non fabbricabile.",
+                no_recipe_found: "Questo oggetto non ha una ricetta di fabbricazione disponibile nel database.",
+                label_ingredient_price: "Prezzo unitario (Kama):",
+                craft_cost_result_prefix: "Costo totale stimato per",
+                craft_cost_result_suffix: "Kama",
+                error_invalid_input: "Inserisci valori numerici validi per i prezzi degli ingredienti e la quantità da fabbricare.",
+                error_item_name_empty: "Inserisci il nome dell'oggetto da fabbricare.",
+                error_quantity_invalid: "La quantité da fabbricare doit être un numéro entier positif."
+            }
+        };
+
+        // Utility function to display messages
+        function showMessage(element, message, type) {
+            element.innerHTML = `<p>${message}</p>`;
+            element.className = `message-box ${type} block`;
+        }
+
+        // Utility function to hide messages
+        function hideMessage(element) {
+            element.classList.add('hidden');
+            element.classList.remove('block');
+            element.innerHTML = '';
+        }
+
+        // Function to set language and translate UI elements
+        function setLanguage(lang) {
+            currentLanguage = lang;
+            localStorage.setItem('dofusCraftLang', lang);
+            document.documentElement.lang = lang;
+            languageSelector.value = lang;
+
+            document.querySelectorAll('[data-translate-key]').forEach(element => {
+                const key = element.getAttribute('data-translate-key');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            document.querySelectorAll('[data-translate-key-placeholder]').forEach(element => {
+                const key = element.getAttribute('data-translate-key-placeholder');
+                if (translations[lang] && translations[lang][key]) {
+                    element.placeholder = translations[lang][key];
+                }
+            });
+            hideMessage(craftResultDiv);
+            hideMessage(craftErrorDiv);
+            hideMessage(craftInfoDiv);
+            // Clear recipe details when language changes or item is unselected
+            recipeDetailsDiv.classList.add('hidden');
+            ingredientsListDiv.innerHTML = '';
+            craftQuantitySection.classList.add('hidden');
+            purchasePriceSection.classList.add('hidden'); // Hide purchase price section
+            calculateCraftCostBtn.classList.add('hidden');
+            selectedItem = null; // Reset selected item
+            craftItemNameInput.value = ''; // Clear input field
+            itemIcon.src = "https://placehold.co/32x32/1f2937/9ca3af?text=?"; // Reset icon
+        }
+
+        // Utility function to normalize string for API search
+        function normalizeString(str) {
+            str = str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            str = str.toLowerCase();
+            str = str.replace(/[^a-z0-9\s]/g, "");
+            return str;
+        }
+
+        // Function to fetch items for autocomplete
+        async function fetchItemsForAutocomplete(searchTerm) {
+            hideMessage(craftErrorDiv);
+            hideMessage(craftResultDiv);
+            hideMessage(craftInfoDiv);
+            recipeDetailsDiv.classList.add('hidden');
+            ingredientsListDiv.innerHTML = '';
+            craftQuantitySection.classList.add('hidden');
+            purchasePriceSection.classList.add('hidden'); // Hide purchase price section
+            calculateCraftCostBtn.classList.add('hidden');
+            selectedItem = null; // Clear selected item when typing
+
+            let normalizedSearchTerm = normalizeString(searchTerm);
+            normalizedSearchTerm = encodeURIComponent(normalizedSearchTerm).replace(/%20/g, '+');
+
+            if (normalizedSearchTerm.length < 4) { // Minimum 4 characters for search, consistent with droprate_calculator.html
+                autocompleteSuggestions.classList.add('hidden');
+                autocompleteSuggestions.innerHTML = '';
+                if (searchTerm.length > 0) {
+                    showMessage(craftInfoDiv, `Veuillez taper au moins 4 caractères pour la recherche.`, 'info');
+                } else {
+                    hideMessage(craftInfoDiv);
+                }
+                return;
+            }
+
+            showMessage(craftInfoDiv, translations[currentLanguage].fetching_data, 'info');
+            autocompleteSuggestions.innerHTML = '';
+            autocompleteSuggestions.classList.remove('hidden');
+
+            try {
+                // Search for items using slug.fr[$search], identical to droprate_calculator.html
+                const paramsArray = [
+                    `typeId[$ne]=203`, // Exclude quest items
+                    `$sort=-id`,
+                    `slug.fr[$search]=${normalizedSearchTerm}`, // This is the correct field for $search, as in your working code
+                    `level[$gte]=0`,
+                    `level[$lte]=200`,
+                    `$skip=0`,
+                    `lang=fr`
+                ];
+                
+                const queryString = paramsArray.join('&');
+                const fullUrl = `${DOFUSDB_API_BASE_URL}/items?${queryString}`;
+                
+                console.log("Requête API envoyée (recherche d'objets):", fullUrl); // Log the full URL for debugging
+
+                const response = await fetch(fullUrl);
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(`HTTP Error: ${response.status} - ${JSON.stringify(data)}`);
+                }
+
+                hideMessage(craftInfoDiv);
+
+                if (data.data && data.data.length > 0) {
+                    data.data.forEach(item => {
+                        const suggestionDiv = document.createElement('div');
+                        suggestionDiv.classList.add('autocomplete-suggestion-item');
+                        suggestionDiv.innerHTML = `
+                            <img src="${item.img || 'https://placehold.co/32x32/1f2937/9ca3af?text=?'}" onerror="this.onerror=null;this.src='https://placehold.co/32x32/1f2937/9ca3af?text=?';" alt="Icône de ${item.name.fr || item.name.en || 'Objet'}">
+                            <span>${item.name.fr || item.name.en || 'Nom inconnu'}</span>
+                        `;
+                        suggestionDiv.addEventListener('click', (event) => {
+                            event.preventDefault();
+                            selectItem(item);
+                            autocompleteSuggestions.classList.add('hidden');
+                        });
+                        autocompleteSuggestions.appendChild(suggestionDiv);
+                    });
+                } else {
+                    autocompleteSuggestions.classList.add('hidden');
+                    showMessage(craftErrorDiv, translations[currentLanguage].item_not_found, 'error');
+                }
+            } catch (error) {
+                console.error("Error fetching items:", error);
+                hideMessage(craftInfoDiv);
+                showMessage(craftErrorDiv, translations[currentLanguage].item_not_found + " " + (error.message || ""), 'error');
+                autocompleteSuggestions.classList.add('hidden');
+            }
+        }
+
+        // Function to handle item selection from autocomplete
+        async function selectItem(item) {
+            craftItemNameInput.value = item.name.fr || item.name.en || '';
+            itemIcon.src = item.img || "https://placehold.co/32x32/1f2937/9ca3af?text=?";
+            itemIcon.onerror = function() { this.onerror=null; this.src='https://placehold.co/32x32/1f2937/9ca3af?text=?'; };
+            hideMessage(craftErrorDiv);
+            hideMessage(craftResultDiv);
+            hideMessage(craftInfoDiv);
+            autocompleteSuggestions.classList.add('hidden');
+            
+            selectedItem = item; // Use the item directly from autocomplete results
+
+            console.log("Objet sélectionné (depuis autocomplete):", selectedItem);
+            console.log("ID de l'objet sélectionné pour la recette (sera utilisé comme Recipe ID):", selectedItem.id);
+
+            let recipeIngredients = [];
+
+            showMessage(craftInfoDiv, translations[currentLanguage].fetching_data, 'info'); // Show loading for recipe fetch
+            try {
+                // Fetch recipe directly from /recipes/{item.id}
+                const recipeResponse = await fetch(`${DOFUSDB_API_BASE_URL}/recipes/${selectedItem.id}`);
+                console.log("Requête API envoyée (recette):", `${DOFUSDB_API_BASE_URL}/recipes/${selectedItem.id}`); // Log the recipe URL
+
+                if (!recipeResponse.ok) {
+                    // If recipe endpoint returns 404 or other error, it means no recipe found for this ID
+                    console.warn(`No recipe found for item ID ${selectedItem.id} from /recipes endpoint, status: ${recipeResponse.status}`);
+                    selectedItem.recipe = []; // Explicitly set recipe to empty array if not found
+                } else {
+                    const recipeData = await recipeResponse.json();
+                    console.log("Données de recette (depuis /recipes/{item.id}):", recipeData);
+                    
+                    // The recipeData directly contains the ingredients array if successful
+                    // The structure is { _id: ..., ingredients: [{ id: ..., quantity: ... }, ...], quantities: [...] }
+                    if (recipeData.ingredients && recipeData.ingredients.length > 0 && recipeData.quantities && recipeData.quantities.length > 0) {
+                        // Combine ingredients with their respective quantities
+                        recipeIngredients = recipeData.ingredients.map((ing, index) => ({
+                            id: ing.id,
+                            quantity: recipeData.quantities[index] || 0 // Use quantity from quantities array
+                        }));
+                    } else {
+                        // If recipeData is empty or doesn't have ingredients/quantities, it's not craftable or no recipe
+                        console.warn(`Recipe data for item ID ${selectedItem.id} is empty or missing ingredients/quantities.`);
+                        selectedItem.recipe = [];
+                    }
+                }
+            } catch (recipeError) {
+                console.error(`Error fetching recipe for ID ${selectedItem.id}:`, recipeError);
+                selectedItem.recipe = []; // Ensure recipe is empty on error
+            } finally {
+                hideMessage(craftInfoDiv); // Hide loading message
+            }
+            
+            selectedItem.recipe = recipeIngredients; // Assign fetched ingredients to selectedItem.recipe
+
+            // Now, check if a recipe is available
+            if (!selectedItem.recipe || selectedItem.recipe.length === 0) {
+                showMessage(craftErrorDiv, translations[currentLanguage].no_recipe_found, 'error');
+                recipeDetailsDiv.classList.add('hidden');
+                craftQuantitySection.classList.add('hidden');
+                purchasePriceSection.classList.add('hidden'); // Hide purchase price section
+                calculateCraftCostBtn.classList.add('hidden');
+                return;
+            }
+
+            await displayRecipeDetails(selectedItem);
+        }
+
+        // Function to display recipe details
+        async function displayRecipeDetails(item) {
+            ingredientsListDiv.innerHTML = '';
+            ingredientPriceInputs = {}; // Reset stored input references
+
+            // This check is now robust as selectedItem.recipe should be populated from /recipes endpoint
+            if (!item.recipe || item.recipe.length === 0) {
+                showMessage(craftErrorDiv, translations[currentLanguage].no_recipe_found, 'error');
+                recipeDetailsDiv.classList.add('hidden');
+                craftQuantitySection.classList.add('hidden');
+                purchasePriceSection.classList.add('hidden'); // Hide purchase price section
+                calculateCraftCostBtn.classList.add('hidden');
+                return;
+            }
+
+            // Fetch details for each ingredient
+            const ingredientPromises = item.recipe.map(async (ing) => {
+                // Log the ingredient object to inspect its structure
+                console.log("Ingrédient dans la recette:", ing); 
+                try {
+                    // Use ing.id as per the expected structure from /recipes endpoint
+                    const response = await fetch(`${DOFUSDB_API_BASE_URL}/items/${ing.id}?lang=fr`); // Changed ing.ingredientId to ing.id
+                    if (!response.ok) {
+                        console.error(`Failed to fetch ingredient ${ing.id}: ${response.status}`);
+                        return null;
+                    }
+                    const ingredientDetails = await response.json();
+                    return { ...ing, details: ingredientDetails };
+                } catch (error) {
+                    console.error(`Error fetching ingredient ${ing.id}:`, error); // Changed ing.ingredientId to ing.id
+                    return null;
+                }
+            });
+
+            const ingredientsWithDetails = (await Promise.all(ingredientPromises)).filter(ing => ing !== null);
+
+            if (ingredientsWithDetails.length === 0) {
+                showMessage(craftErrorDiv, translations[currentLanguage].no_recipe_found, 'error');
+                recipeDetailsDiv.classList.add('hidden');
+                craftQuantitySection.classList.add('hidden');
+                purchasePriceSection.classList.add('hidden'); // Hide purchase price section
+                calculateCraftCostBtn.classList.add('hidden');
+                return;
+            }
+
+            // Ensure it's a single column layout
+            ingredientsListDiv.classList.remove('ingredients-grid'); 
+            ingredientsListDiv.classList.add('space-y-3'); // Add vertical spacing
+
+            ingredientsWithDetails.forEach(ingredient => {
+                const ingredientDiv = document.createElement('div');
+                // Flex container for horizontal alignment of content within each item
+                ingredientDiv.classList.add('ingredient-item', 'flex', 'items-center', 'justify-between', 'gap-2');
+                
+                const ingredientName = ingredient.details.name.fr || ingredient.details.name.en || 'Nom inconnu';
+                const ingredientImg = ingredient.details.img || 'https://placehold.co/32x32/1f2937/9ca3af?text=?';
+
+                ingredientDiv.innerHTML = `
+                    <div class="flex items-center gap-2 flex-grow">
+                        <img src="${ingredientImg}" onerror="this.onerror=null;this.src='https://placehold.co/32x32/1f2937/9ca3af?text=?';" alt="Icône de ${ingredientName}">
+                        <span class="text-gray-200 text-base">${ingredient.quantity} x ${ingredientName}</span>
+                    </div>
+                    <div class="flex flex-col flex-shrink-0 w-32">
+                        <label for="price-${ingredient.id}" class="text-sm font-medium text-gray-400 mb-1 text-right" data-translate-key="label_ingredient_price">${translations[currentLanguage].label_ingredient_price}</label>
+                        <input type="number" id="price-${ingredient.id}" min="0" value="0" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-2 py-1 text-white focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition placeholder-custom text-right">
+                    </div>
+                `;
+                ingredientsListDiv.appendChild(ingredientDiv);
+                // Store reference to the input field
+                ingredientPriceInputs[ingredient.id] = document.getElementById(`price-${ingredient.id}`);
+            });
+
+            recipeDetailsDiv.classList.remove('hidden');
+            craftQuantitySection.classList.remove('hidden');
+            purchasePriceSection.classList.remove('hidden'); // Show purchase price section
+            calculateCraftCostBtn.classList.remove('hidden');
+        }
+
+        // Function to calculate total craft cost
+        function calculateCraftCost() {
+            hideMessage(craftErrorDiv);
+            hideMessage(craftResultDiv);
+            hideMessage(craftInfoDiv);
+
+            console.log("Démarrage du calcul du coût de fabrication.");
+            console.log("Objet sélectionné:", selectedItem);
+            console.log("Recette de l'objet:", selectedItem ? selectedItem.recipe : "N/A");
+
+            if (!selectedItem || !selectedItem.recipe || selectedItem.recipe.length === 0) {
+                showMessage(craftErrorDiv, translations[currentLanguage].no_recipe_found, 'error');
+                console.log("Erreur: Recette non trouvée ou vide.");
+                return;
+            }
+
+            const craftQuantity = parseInt(craftQuantityInput.value);
+            console.log("Quantité à fabriquer:", craftQuantity);
+
+            if (isNaN(craftQuantity) || craftQuantity <= 0) {
+                showMessage(craftErrorDiv, translations[currentLanguage].error_quantity_invalid, 'error');
+                console.log("Erreur: Quantité à fabriquer invalide.");
+                return;
+            }
+
+            let totalCraftCost = 0;
+            let isValid = true;
+
+            selectedItem.recipe.forEach(ingredient => {
+                console.log("Traitement de l'ingrédient:", ingredient);
+                const inputElement = ingredientPriceInputs[ingredient.id];
+                
+                if (inputElement) {
+                    const price = parseFloat(inputElement.value);
+                    console.log(`Ingrédient ${ingredient.id}: Quantité=${ingredient.quantity}, Prix saisi=${price}`);
+
+                    if (isNaN(price) || price < 0) { // Price can be 0 if the ingredient is free/farmed
+                        isValid = false;
+                        console.log(`Erreur: Prix invalide pour l'ingrédient ${ingredient.id}.`);
+                        return; // Exit forEach early if invalid
+                    }
+                    totalCraftCost += (price * ingredient.quantity);
+                } else {
+                    // This case should ideally not happen if ingredientPriceInputs is correctly populated
+                    console.warn(`Avertissement: Élément d'entrée non trouvé pour l'ingrédient ID: ${ingredient.id}.`);
+                    isValid = false; // Treat as invalid if input element is missing
+                    return; // Exit forEach early if input element is missing
+                }
+            });
+
+            if (!isValid) {
+                showMessage(craftErrorDiv, translations[currentLanguage].error_invalid_input, 'error');
+                console.log("Erreur: Entrée invalide détectée pendant le calcul.");
+                return;
+            }
+
+            const finalTotalCraftCost = totalCraftCost * craftQuantity;
+            console.log("Coût total de fabrication calculé (avant formatage):", finalTotalCraftCost);
+
+            // Get purchase price if available
+            const purchasePriceValue = purchasePriceInput.value;
+            let finalPurchaseCost = null;
+            if (purchasePriceValue !== "") {
+                const parsedPurchasePrice = parseFloat(purchasePriceValue);
+                if (!isNaN(parsedPurchasePrice) && parsedPurchasePrice >= 0) {
+                    finalPurchaseCost = parsedPurchasePrice * craftQuantity;
+                    console.log("Coût total à l'achat calculé (avant formatage):", finalPurchaseCost);
+                } else {
+                    showMessage(craftErrorDiv, translations[currentLanguage].error_invalid_input, 'error');
+                    console.log("Erreur: Prix d'achat invalide.");
+                    return;
+                }
+            }
+
+            let resultHtml = `
+                <p class="font-bold">${translations[currentLanguage].craft_cost_result_prefix} <strong>${craftQuantity} x ${selectedItem.name.fr || selectedItem.name.en}</strong> :</p>
+                <ul class="list-none mt-2 space-y-1">
+                    <li><strong>${translations[currentLanguage].craft_calculator_form_title} : <span class="text-teal-300">${finalTotalCraftCost.toLocaleString(currentLanguage)}</span> ${translations[currentLanguage].kamas_suffix}</strong></li>
+            `;
+
+            if (finalPurchaseCost !== null) {
+                const difference = finalTotalCraftCost - finalPurchaseCost; // Changed order for profit/loss calculation
+                const differenceText = difference <= 0 ? translations[currentLanguage].profit_display : translations[currentLanguage].loss_display; // Changed logic for profit/loss text
+                const differenceColor = difference <= 0 ? 'text-green-400' : 'text-red-400'; // Changed logic for profit/loss color
+
+                resultHtml += `
+                    <li>${translations[currentLanguage].purchase_cost_display} <span class="text-white">${finalPurchaseCost.toLocaleString(currentLanguage)}</span> ${translations[currentLanguage].kamas_suffix}</li>
+                    <li>${differenceText} <span class="${differenceColor}">${Math.abs(difference).toLocaleString(currentLanguage)}</span> ${translations[currentLanguage].kamas_suffix}</li>
+                `;
+            }
+
+            resultHtml += `</ul>`;
+
+            craftResultDiv.innerHTML = resultHtml;
+            craftResultDiv.classList.remove('hidden');
+            craftResultDiv.style.display = 'block'; // Explicitly set display to block
+            console.log("Résultat affiché avec succès.");
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize DOM elements
+            craftItemNameInput = document.getElementById('craftItemName');
+            itemIcon = document.getElementById('itemIcon');
+            autocompleteSuggestions = document.getElementById('autocompleteSuggestions');
+            recipeDetailsDiv = document.getElementById('recipeDetails');
+            ingredientsListDiv = document.getElementById('ingredientsList');
+            craftQuantitySection = document.getElementById('craftQuantitySection');
+            craftQuantityInput = document.getElementById('craftQuantity');
+            purchasePriceSection = document.getElementById('purchasePriceSection'); // Get new section
+            purchasePriceInput = document.getElementById('purchasePrice'); // Get new input
+            calculateCraftCostBtn = document.getElementById('calculateCraftCostBtn');
+            craftResultDiv = document.getElementById('craft-result');
+            craftErrorDiv = document.getElementById('craft-error-message');
+            craftInfoDiv = document.getElementById('craft-info-message');
+            languageSelector = document.getElementById('language-selector');
+            versionInfoElement = document.querySelector('[data-translate-key="version_info"]');
+
+            // Event Listeners
+            let debounceTimer;
+            craftItemNameInput.addEventListener('input', () => {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(() => {
+                    fetchItemsForAutocomplete(craftItemNameInput.value);
+                }, 300);
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!craftItemNameInput.contains(e.target) && !autocompleteSuggestions.contains(e.target)) {
+                    autocompleteSuggestions.classList.add('hidden');
+                }
+            });
+
+            calculateCraftCostBtn.addEventListener('click', calculateCraftCost);
+
+            languageSelector.addEventListener('change', (e) => {
+                setLanguage(e.target.value);
+            });
+
+            // Initial load
+            const savedLang = localStorage.getItem('dofusCraftLang') || 'fr';
+            setLanguage(savedLang);
+
+            if (versionInfoElement) {
+                versionInfoElement.textContent = translations[currentLanguage].version_info;
+            }
+
+            craftItemNameInput.value = ''; // Clear input on initial load
+        });
+    </script>
+
+</body>
+</html>

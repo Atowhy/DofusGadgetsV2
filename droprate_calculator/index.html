@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Taux de Butin</title>
+    <link rel="icon" type="image/png" href="images/tifoux.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 - fallback if video fails */
+            color: #e2e8f0; /* Light text */
+            min-height: 100vh; /* Ensure body takes full height */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Background video styles */
+        .video-background {
+            position: fixed; /* Use fixed to ensure it covers the whole screen */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -2; /* Place behind content */
+        }
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-overlay {
+            position: fixed; /* Use fixed for overlay too */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+            z-index: -1; /* Place behind content, above video */
+        }
+        /* Removed .main-container::before background image as video is now the primary background */
+        /* .main-container::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('images/BG_02.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            z-index: -1;
+        } */
+        .card-bg {
+            background-color: rgba(31, 41, 55, 0.85); /* bg-gray-800 with 85% opacity */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .placeholder-custom::placeholder {
+            color: #9ca3af;
+        }
+
+        /* Styles for error/success messages, adapted for dark theme */
+        .message-box {
+            padding: 1rem;
+            margin-top: 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            display: block; /* Ensure it can be displayed */
+        }
+        .message-box.error {
+            background-color: rgba(239, 68, 68, 0.1); /* Red-500 with opacity */
+            color: #ef4444; /* text-red-500 */
+            border-left: 4px solid #ef4444; /* border-red-500 */
+        }
+        .message-box.success {
+            background-color: rgba(20, 184, 166, 0.1); /* Teal-500 with opacity */
+            color: #14b8a6; /* text-teal-500 */
+            border-left: 4px solid #14b8a6; /* border-teal-500 */
+        }
+        .message-box.info {
+            background-color: rgba(59, 130, 246, 0.1); /* Blue-500 with opacity */
+            color: #3b82f6; /* text-blue-500 */
+            border-left: 4px solid #3b82f6; /* border-blue-500 */
+        }
+
+        /* Styles for autocomplete */
+        .autocomplete-suggestions {
+            position: absolute;
+            background-color: rgba(31, 41, 55, 0.95); /* Slightly more opaque than card-bg */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.5rem;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 100;
+            width: calc(100% - 0.5rem); /* Adjust width to match input */
+            left: 0.25rem; /* Align with input padding */
+            top: 100%; /* Position below the input */
+            margin-top: 0.25rem;
+        }
+        .autocomplete-suggestion-item {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: background-color 0.2s ease;
+        }
+        .autocomplete-suggestion-item:hover {
+            background-color: rgba(20, 184, 166, 0.2); /* teal-500 with opacity */
+        }
+        .autocomplete-suggestion-item img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+            border-radius: 0.25rem;
+            background-color: rgba(255, 255, 255, 0.05); /* subtle background for image */
+        }
+
+        /* Styles for monster drop suggestions */
+        .monster-drop-suggestions {
+            position: relative;
+            background-color: rgba(31, 41, 55, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            margin-top: 1rem; /* Consistent spacing */
+            margin-bottom: 1rem; /* Consistent spacing */
+            transition: all 0.3s ease-in-out;
+            
+            /* Initial state: hidden */
+            display: none; 
+            opacity: 0;
+            height: 0; /* Start with 0 height for transition */
+
+            max-height: 280px; /* Increased to ensure more lines are visible */
+            overflow-y: auto; /* Apply scrollbar when content exceeds max-height */
+        }
+        .monster-drop-suggestions.is-visible {
+            display: block;
+            opacity: 1;
+            height: auto; /* Allow height to adjust to content up to max-height */
+            /* No explicit overflow here, let the base class handle it */
+        }
+
+        /* Custom scrollbar styles for Webkit browsers */
+        .monster-drop-suggestions::-webkit-scrollbar {
+            width: 8px; /* Width of the scrollbar */
+        }
+
+        .monster-drop-suggestions::-webkit-scrollbar-track {
+            background: #374151; /* Color of the track */
+            border-radius: 10px;
+        }
+
+        .monster-drop-suggestions::-webkit-scrollbar-thumb {
+            background: #0d9488; /* Color of the scroll thumb */
+            border-radius: 10px;
+        }
+
+        .monster-drop-suggestions::-webkit-scrollbar-thumb:hover {
+            background: #0f766e; /* Color of the scroll thumb on hover */
+        }
+
+
+        .monster-drop-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem; /* Increased padding for more vertical space */
+            cursor: pointer;
+            border-radius: 0.375rem;
+            transition: background-color 0.2s ease;
+        }
+        .monster-drop-item:hover {
+            background-color: rgba(20, 184, 166, 0.2);
+        }
+        .monster-drop-item span {
+            flex-grow: 1;
+            color: #e2e8f0; /* text-gray-200 */
+        }
+        .monster-drop-item .drop-rate {
+            font-weight: 600;
+            color: #4fd1c5; /* teal-300 */
+            min-width: 70px; /* Give it a fixed minimum width */
+            text-align: right; /* Align text to the right within its own span */
+        }
+
+        /* Style for selected monster item */
+        .monster-drop-item.is-selected {
+            background-color: rgba(32, 178, 170, 0.4); /* A more prominent teal */
+            border: 1px solid #4fd1c5; /* A subtle border */
+        }
+    </style>
+</head>
+<body class="text-white antialiased">
+
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="/images/brakloop.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-overlay"></div>
+
+    <div class="relative z-10 container mx-auto p-4 md:p-8 max-w-7xl min-h-screen flex flex-col">
+            
+            <div class="flex justify-between items-center mb-4">
+                <!-- Link back to GitHub Pages homepage -->
+                <a href="https://dofusgadgets.com" class="text-teal-400 hover:text-teal-300">&larr; Retour à l'accueil</a>
+            </div>
+
+            <header class="text-center mb-8">
+                <h1 class="text-3xl md:text-4xl font-bold text-teal-400">Calculateur de Taux de Butin</h1>
+                <p class="text-gray-400 mt-2">Estimez vos chances d'obtenir des objets !</p>
+            </header>
+
+            <!-- Drop Rate Calculator Content -->
+            <div id="content-drop-calculator" class="flex-grow flex flex-wrap justify-center items-start gap-8">
+                <!-- Left Column (Inputs) -->
+                <div class="card-bg p-6 rounded-2xl shadow-lg w-full lg:w-1/2 xl:w-2/5">
+                    <h2 class="text-xl font-semibold mb-4">Calculer le Taux de Butin</h2>
+                    
+                    <div class="mb-4 relative">
+                        <label for="dropItemName" class="block text-sm font-medium text-gray-300 mb-1">Nom de l'objet (Ex: Casque Cassé du Chafer):</label>
+                        <div class="flex items-center gap-2">
+                            <img id="itemIcon" src="https://placehold.co/32x32/1f2937/9ca3af?text=?" alt="Icône de l'objet" class="h-8 w-8 rounded-md object-contain border border-gray-600">
+                            <input type="text" id="dropItemName" value="" placeholder="Casque Cassé du Chafer" class="flex-grow bg-gray-700 border border-gray-600 rounded-lg px-3 py-2 text-white focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition placeholder-custom">
+                        </div>
+                        <div id="autocompleteSuggestions" class="autocomplete-suggestions hidden"></div>
+                    </div>
+
+                    <!-- New section for monster drop suggestions -->
+                    <div id="monsterDropSuggestions" class="monster-drop-suggestions">
+                        <p class="text-gray-400 text-sm mb-2">Sélectionnez un monstre pour pré-remplir le taux de butin :</p>
+                        <div id="monsterDropList" class="space-y-1">
+                            <!-- Monster drop items will be inserted here -->
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="dropBaseDropRate" class="block text-sm font-medium text-gray-300 mb-1">Taux de butin de base (%) (Ex: 8.4 pour Casque Cassé du Chafer):</label>
+                        <input type="number" id="dropBaseDropRate" value="8.4" min="0.1" step="0.1" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-3 py-2 text-white focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition placeholder-custom">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="dropPlayerPP" class="block text-sm font-medium text-gray-300 mb-1">Votre Prospection (PP):</label>
+                        <input type="number" id="dropPlayerPP" value="100" min="100" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-3 py-2 text-white focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition placeholder-custom">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="dropChallengeBonus" class="block text-sm font-medium text-gray-300 mb-1">Bonus de défi (%) (Ex: 50 pour un défi réussi):</label>
+                        <input type="number" id="dropChallengeBonus" value="50" min="0" step="1" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-3 py-2 text-white focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition placeholder-custom">
+                    </div>
+
+                    <!-- Field for Anomaly % -->
+                    <div class="mb-4">
+                        <label for="dropAnomalyBonus" class="block text-sm font-medium text-gray-300 mb-1">% Anomalie (0-120%):</label>
+                        <input type="number" id="dropAnomalyBonus" value="0" min="0" max="120" step="1" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-3 py-2 text-white focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition placeholder-custom">
+                    </div>
+
+                    <!-- Toggle for Ankama Shield -->
+                    <div class="mb-6 flex items-center">
+                        <input type="checkbox" id="ankamaShieldToggle" checked class="h-4 w-4 text-teal-600 bg-gray-700 border-gray-600 rounded focus:ring-teal-500">
+                        <label for="ankamaShieldToggle" class="ml-2 block text-sm font-medium text-gray-300">Activer Ankama Shield (+5% bonus)</label>
+                    </div>
+
+                    <button onclick="calculateDropRate()" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-105 shadow-md">
+                        Calculer le Taux de Butin
+                    </button>
+                </div>
+
+                <!-- Right Column (Results and Messages) -->
+                <div class="card-bg p-6 rounded-2xl shadow-lg w-full lg:w-1/2 xl:w-2/5 flex flex-col justify-center items-center text-center">
+                    <h2 class="text-xl font-semibold mb-4">Résultats du Calcul</h2>
+                    <div id="drop-result" class="message-box success hidden w-full">
+                        <!-- Result will be displayed here -->
+                    </div>
+                    <div id="drop-error-message" class="message-box error hidden w-full">
+                        <!-- Error messages will be displayed here -->
+                    </div>
+                    <div id="drop-info-message" class="message-box info hidden w-full">
+                        <!-- Information messages (e.g., loading) will be displayed here -->
+                    </div>
+                    <p class="text-gray-400 mt-4">Les résultats de votre calcul apparaîtront ici.</p>
+                </div>
+            </div>
+            
+            <footer class="text-center text-gray-500 text-sm mt-auto pt-12 pb-4">
+                <!-- Image of Dofus Logo, corrected path and format -->
+                <img src="../images/LogoDofus.webp" alt="Logo Dofus" class="h-12 mx-auto mb-2 opacity-50">
+                <p>Apps by Ato</p>
+                <p class="text-xs text-gray-600 mt-4">Dofus et toutes les images associées utilisées sur ce site sont la propriété d'Ankama</p>
+                <p class="text-xs text-gray-600 mt-2">Version 2.0.26 - Juillet 2025</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Global or semi-global variable declarations
+        let currentLanguage = 'fr'; // Default language is French
+        let selectedItem = null; // Stores the currently selected item with its full details
+
+        // DOM element declarations for easy access
+        let dropItemNameInput, dropBaseDropRateInput, dropPlayerPPInput, dropChallengeBonusInput,
+            dropAnomalyBonusInput, ankamaShieldToggle, dropResultDiv, dropErrorDiv, dropInfoDiv,
+            itemIcon, autocompleteSuggestions, monsterDropSuggestions, monsterDropList, versionInfoElement;
+
+        const DOFUSDB_API_BASE_URL = 'https://api.dofusdb.fr';
+
+        // Translation definitions
+        const translations = {
+            fr: {
+                btn_back_home: "← Retour à l'accueil",
+                signature: "Apps by Ato",
+                disclaimer: "Dofus et toutes les images associées utilisées sur ce site sont la propriété d'Ankama",
+                version_info: "Version 2.0.26 - Juillet 2025", // Updated version
+                drop_calculator_main_title: "Calculateur de Taux de Butin",
+                drop_calculator_subtitle: "Estimez vos chances d'obtenir des objets !",
+                drop_calculator_form_title: "Calculer le Taux de Butin",
+                label_item_name: "Nom de l'objet (Ex: Casque Cassé du Chafer):",
+                label_item_name_placeholder: "Casque Cassé du Chafer",
+                label_base_drop_rate: "Taux de butin de base (%) (Ex: 8.4 pour Casque Cassé du Chafer):",
+                label_player_pp: "Votre Prospection (PP):",
+                label_challenge_bonus: "Bonus de défi (%) (Ex: 50 pour un défi réussi):",
+                label_anomaly_bonus: "% Anomalie (0-120%):",
+                label_ankama_shield: "Activer Ankama Shield (+5% bonus)",
+                btn_calculate_drop_rate: "Calculer le Taux de Butin",
+                drop_result_prefix: "Pour l'objet",
+                drop_estimated_rate: "Taux de butin estimé",
+                drop_average_combats: "Vous avez 1 chance sur",
+                drop_error_message: "Veuillez entrer des valeurs numériques valides pour le taux de base, la prospection (min 100), le bonus de défi (min 0) et le bonus d'anomalie (entre 0 et 120).",
+                drop_error_item_name: "Veuillez entrer un nom pour l'objet.",
+                item_not_found: "Objet non trouvé.",
+                fetching_data: "Recherche en cours...",
+                no_base_drop_rate: "Aucun monstre ne semble laisser tomber cet objet, ou les données ne sont pas disponibles.",
+                label_select_monster_drop: "Sélectionnez un monstre pour pré-remplir le taux de butin :",
+                no_monster_drops: "Cet objet ne semble pas être droppable par des monstres, ou les données de drop ne sont pas disponibles dans la base de données." // Updated message
+            }
+            // Removed other languages as per user request
+        };
+
+        // Utility function to display messages
+        function showMessage(element, message, type) {
+            element.innerHTML = `<p>${message}</p>`;
+            element.className = `message-box ${type}`;
+            element.classList.remove('hidden');
+            element.classList.add('block'); // Ensure it becomes visible
+        }
+
+        // Utility function to hide messages
+        function hideMessage(element) {
+            element.classList.add('hidden');
+            element.classList.remove('block'); // Ensure it becomes hidden
+            element.innerHTML = '';
+        }
+
+        // Function to manage language setting and translation
+        // This function is now simplified as the language selector is removed
+        function setLanguage(lang) {
+            currentLanguage = lang;
+            localStorage.setItem('dofusDropLang', lang); // Always store the language, even if it's fixed
+            document.documentElement.lang = lang;
+
+            document.querySelectorAll('[data-translate-key]').forEach(element => {
+                const key = element.getAttribute('data-translate-key');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            document.querySelectorAll('[data-translate-key-placeholder]').forEach(element => {
+                const key = element.getAttribute('data-translate-key-placeholder');
+                if (translations[lang] && translations[lang][key]) {
+                    element.placeholder = translations[lang][key];
+                }
+            });
+            hideMessage(dropResultDiv);
+            hideMessage(dropErrorDiv);
+            hideMessage(dropInfoDiv);
+        }
+
+        // Drop Rate Calculator Logic (made global)
+        window.calculateDropRate = function() {
+            hideMessage(dropResultDiv);
+            hideMessage(dropErrorDiv);
+            hideMessage(dropInfoDiv);
+
+            const itemName = dropItemNameInput.value.trim();
+            const baseDropRate = parseFloat(dropBaseDropRateInput.value);
+            let playerPP = parseFloat(dropPlayerPPInput.value);
+            const challengeBonus = parseFloat(dropChallengeBonusInput.value);
+            let anomalyBonus = parseFloat(dropAnomalyBonusInput.value);
+            const isAnkamaShieldActive = ankamaShieldToggle.checked;
+
+            if (isNaN(baseDropRate) || isNaN(playerPP) || isNaN(challengeBonus) || isNaN(anomalyBonus) || baseDropRate <= 0 || playerPP < 100 || anomalyBonus < 0 || anomalyBonus > 120) {
+                showMessage(dropErrorDiv, translations[currentLanguage].drop_error_message, 'error');
+                return;
+            }
+
+            if (itemName === "") {
+                showMessage(dropErrorDiv, translations[currentLanguage].drop_error_item_name, 'error');
+                return;
+            }
+
+            // Prospecting (PP) multiplier formula based on Dofus mechanics (simplified)
+            let ppMultiplier;
+            if (playerPP < 0) { // Should not happen with min="100" but for safety
+                ppMultiplier = 1;
+            } else {
+                const exponent = (250 - playerPP) / 85;
+                ppMultiplier = 0.74 + (1.755 / (1 + Math.exp(exponent)));
+                ppMultiplier = Math.min(ppMultiplier, 2.5); // Capped at 2.5 (250% of base)
+            }
+
+            let effectiveDropRate = baseDropRate * ppMultiplier * (1 + challengeBonus / 100);
+
+            if (anomalyBonus > 0) {
+                effectiveDropRate *= (1 + anomalyBonus / 100);
+            }
+
+            if (isAnkamaShieldActive) {
+                effectiveDropRate *= (1 + 5 / 100); // +5% Ankama Shield bonus
+            }
+
+            let chanceDenominator = 0;
+            if (effectiveDropRate > 0) {
+                chanceDenominator = 100 / effectiveDropRate;
+            } else {
+                chanceDenominator = Infinity; // Avoid division by zero
+            }
+
+            dropResultDiv.innerHTML = `
+                <p class="font-bold">${translations[currentLanguage].drop_result_prefix} "<strong>${itemName}</strong>" :</p>
+                <ul class="list-none mt-2">
+                    <li class="text-lg mt-2"><strong>${translations[currentLanguage].drop_estimated_rate} : <span class="text-teal-300">${effectiveDropRate.toFixed(2)}%</span></strong></li>
+                    <li class="text-gray-400 italic mt-4"><em>${translations[currentLanguage].drop_average_combats} <span class="font-semibold">${chanceDenominator.toFixed(0)}</span> !</em></li>
+                </ul>
+            `;
+            dropResultDiv.classList.remove('hidden');
+            dropResultDiv.classList.add('block'); // Ensure it becomes visible
+        };
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize DOM elements after document load
+            dropItemNameInput = document.getElementById('dropItemName');
+            dropBaseDropRateInput = document.getElementById('dropBaseDropRate');
+            dropPlayerPPInput = document.getElementById('dropPlayerPP');
+            dropChallengeBonusInput = document.getElementById('dropChallengeBonus');
+            dropAnomalyBonusInput = document.getElementById('dropAnomalyBonus');
+            ankamaShieldToggle = document.getElementById('ankamaShieldToggle');
+            dropResultDiv = document.getElementById('drop-result');
+            dropErrorDiv = document.getElementById('drop-error-message');
+            dropInfoDiv = document.getElementById('drop-info-message');
+            itemIcon = document.getElementById('itemIcon');
+            autocompleteSuggestions = document.getElementById('autocompleteSuggestions');
+            monsterDropSuggestions = document.getElementById('monsterDropSuggestions');
+            monsterDropList = document.getElementById('monsterDropList');
+            versionInfoElement = document.querySelector('[data-translate-key="version_info"]');
+
+            const DOFUSDB_API_BASE_URL = 'https://api.dofusdb.fr';
+
+            // Utility function to normalize a string for slug search
+            function normalizeString(str) {
+                str = str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                str = str.toLowerCase();
+                str = str.replace(/[^a-z0-9\s]/g, "");
+                return str;
+            }
+
+            // Function to control the visibility of the monster suggestions box
+            function setMonsterSuggestionsVisibility(isVisible) {
+                if (isVisible) {
+                    monsterDropSuggestions.classList.add('is-visible');
+                    monsterDropSuggestions.classList.remove('hidden');
+                } else {
+                    monsterDropSuggestions.classList.remove('is-visible');
+                    monsterDropSuggestions.classList.add('hidden');
+                }
+            }
+
+            // Function to display monster drop options based on selected item data
+            async function displayMonsterDropOptions(item) {
+                monsterDropList.innerHTML = '';
+                hideMessage(dropInfoDiv);
+                hideMessage(dropErrorDiv);
+                setMonsterSuggestionsVisibility(false);
+
+                let dropGroupsToProcess = [];
+
+                if (item.dropGroups && item.dropGroups.length > 0) {
+                    console.log("Using item dropGroups for monster details and rates.");
+                    const monsterIdsFromGroups = item.dropGroups.map(group => group.monsterId).filter(id => id !== undefined);
+                    dropGroupsToProcess = await Promise.all(monsterIdsFromGroups.map(async monsterId => {
+                        try {
+                            const response = await fetch(`${DOFUSDB_API_BASE_URL}/random-drop-groups?itemId=${item.id}&monsterId=${monsterId}`);
+                            if (!response.ok) {
+                                console.error(`API request for random-drop-groups for item ${item.id}, monster ${monsterId} failed with status ${response.status}.`);
+                                return { monsterId: monsterId, rate: "N/A" };
+                            }
+                            const dropData = await response.json();
+                            const rate = (dropData && dropData.length > 0 && dropData[0].rate !== undefined) ? dropData[0].rate : "N/A";
+                            return { monsterId: monsterId, rate: rate };
+                        } catch (error) {
+                            console.error(`Error fetching random-drop-groups for item ${item.id}, monster ${monsterId}:`, error);
+                            return { monsterId: monsterId, rate: "N/A" };
+                        }
+                    }));
+                } else if (item.dropMonsterIds && item.dropMonsterIds.length > 0) {
+                    console.log("Directly using dropMonsterIds for monster details and rates.");
+                    dropGroupsToProcess = await Promise.all(item.dropMonsterIds.map(async monsterId => {
+                        try {
+                            const response = await fetch(`${DOFUSDB_API_BASE_URL}/monsters/${monsterId}`);
+                            if (!response.ok) {
+                                console.error(`API request for monster ${monsterId} failed with status ${response.status}. URL: ${response.url}`);
+                                throw new Error(`HTTP Error! status: ${response.status}`);
+                            }
+                            const monster = await response.json();
+                            
+                            let rate = "N/A";
+                            if (monster.drops && monster.drops.length > 0) {
+                                const itemDrop = monster.drops.find(d => d.objectId === item.id);
+                                if (itemDrop) {
+                                    if (itemDrop.percentDropForGrade5 !== undefined && itemDrop.percentDropForGrade5 > 0) {
+                                        rate = itemDrop.percentDropForGrade5;
+                                    } else if (itemDrop.percentDropForGrade4 !== undefined && itemDrop.percentDropForGrade4 > 0) {
+                                        rate = itemDrop.percentDropForGrade4;
+                                    } else if (itemDrop.percentDropForGrade3 !== undefined && itemDrop.percentDropForGrade3 > 0) {
+                                        rate = itemDrop.percentDropForGrade3;
+                                    } else if (itemDrop.percentDropForGrade2 !== undefined && itemDrop.percentDropForGrade2 > 0) {
+                                        rate = itemDrop.percentDropForGrade2;
+                                    } else if (itemDrop.percentDropForGrade1 !== undefined && itemDrop.percentDropForGrade1 > 0) {
+                                        rate = itemDrop.percentDropForGrade1;
+                                    } else if (itemDrop.rate !== undefined) {
+                                        rate = itemDrop.rate;
+                                    }
+                                }
+                            }
+                            return { monsterId: monsterId, monster: monster, rate: rate };
+                        } catch (error) {
+                            console.error(`Error fetching monster ${monsterId}:`, error);
+                            return null;
+                        }
+                    }));
+                } else {
+                    showMessage(dropInfoDiv, translations[currentLanguage].no_monster_drops, 'info'); // Updated message
+                    setMonsterSuggestionsVisibility(false);
+                    return;
+                }
+
+                const finalMonsterDrops = [];
+                for (const group of dropGroupsToProcess) {
+                    if (group && group.monsterId) {
+                        let monsterDetails = group.monster;
+                        if (!monsterDetails) {
+                            try {
+                                const response = await fetch(`${DOFUSDB_API_BASE_URL}/monsters/${group.monsterId}`);
+                                if (!response.ok) {
+                                    console.error(`API request for monster ${group.monsterId} failed with status ${response.status}. URL: ${response.url}`);
+                                    continue;
+                                }
+                                monsterDetails = await response.json();
+                            } catch (error) {
+                                console.error(`Error fetching monster ${group.monsterId}:`, error);
+                                continue;
+                            }
+                        }
+                        if (monsterDetails) {
+                            const actualRate = group.rate !== undefined ? group.rate : (monsterDetails.drops && monsterDetails.drops.find(d => d.objectId === item.id)?.percentDropForGrade5 || "N/A");
+                            finalMonsterDrops.push({ monster: monsterDetails, rate: actualRate });
+                        }
+                    }
+                }
+                
+                console.log("Final Monster Drops (after all processing):", finalMonsterDrops);
+
+                if (finalMonsterDrops.length > 0) {
+                    finalMonsterDrops.forEach(({ monster, rate }) => {
+                        const monsterDropDiv = document.createElement('div');
+                        monsterDropDiv.classList.add('monster-drop-item');
+                        const formattedRate = typeof rate === 'number' ? rate.toFixed(2) : rate;
+                        const innerHtmlContent = `
+                            <img src="${monster.img || 'https://placehold.co/28x28/1f2937/9ca3af?text=?'}" onerror="this.onerror=null;this.src='https://placehold.co/28x28/1f2937/9ca3af?text=?';" alt="Icon of ${monster.name.fr || monster.name.en || 'Monster'}">
+                            <span>${monster.name.fr || monster.name.en || 'Unknown Name'}</span>
+                            <span class="drop-rate">${formattedRate}%</span>
+                        `;
+                        monsterDropDiv.innerHTML = innerHtmlContent;
+                        console.log("Generated monsterDropDiv HTML:", innerHtmlContent);
+                        
+                        monsterDropDiv.addEventListener('click', () => {
+                            const currentSelected = monsterDropList.querySelector('.monster-drop-item.is-selected');
+                            if (currentSelected) {
+                                currentSelected.classList.remove('is-selected');
+                            }
+                            monsterDropDiv.classList.add('is-selected');
+
+                            if (typeof rate === 'number') {
+                                dropBaseDropRateInput.value = rate.toFixed(2);
+                                showMessage(dropInfoDiv, `Taux de butin pré-rempli avec ${formattedRate}% pour ${monster.name.fr}.`, 'info');
+                            } else {
+                                showMessage(dropInfoDiv, `Taux de butin non spécifié pour ${monster.name.fr}.`, 'info');
+                            }
+                        });
+
+                        monsterDropList.appendChild(monsterDropDiv);
+                    });
+                    setMonsterSuggestionsVisibility(true);
+                    console.log("Number of children in monsterDropList:", monsterDropList.children.length);
+                } else {
+                    showMessage(dropInfoDiv, translations[currentLanguage].no_monster_drops, 'info'); // Updated message
+                    setMonsterSuggestionsVisibility(false);
+                }
+            }
+
+            // Function to fetch Dofus items from the API for autocomplete
+            async function fetchItemsForAutocomplete(searchTerm) {
+                hideMessage(dropErrorDiv);
+                hideMessage(dropResultDiv);
+                setMonsterSuggestionsVisibility(false);
+                dropBaseDropRateInput.removeAttribute('disabled');
+
+                let normalizedSearchTerm = normalizeString(searchTerm);
+                normalizedSearchTerm = encodeURIComponent(normalizedSearchTerm).replace(/%20/g, '+');
+
+                if (normalizedSearchTerm.length < 4) {
+                    autocompleteSuggestions.classList.add('hidden');
+                    autocompleteSuggestions.innerHTML = '';
+                    if (searchTerm.length > 0) {
+                        showMessage(dropInfoDiv, `Veuillez taper au moins 4 caractères pour la recherche.`, 'info');
+                    } else {
+                        hideMessage(dropInfoDiv);
+                    }
+                    return;
+                }
+
+                showMessage(dropInfoDiv, translations[currentLanguage].fetching_data, 'info');
+                autocompleteSuggestions.innerHTML = '';
+                autocompleteSuggestions.classList.remove('hidden');
+
+                try {
+                    const baseUrl = 'https://api.dofusdb.fr/items';
+                    // Reverted paramsArray to its state before resource filtering
+                    let paramsArray = [
+                        `typeId[$ne]=203`, // Exclude quest items
+                        `$sort=-id`,
+                        `slug.fr[$search]=${normalizedSearchTerm}`,
+                        `level[$gte]=0`,
+                        `level[$lte]=200`,
+                        `$skip=0`,
+                        `lang=fr`
+                    ];
+                    
+                    const queryString = paramsArray.join('&');
+                    const fullUrl = `${baseUrl}?${queryString}`;
+                    
+                    console.log("API request sent (general search):", fullUrl); // Log the general search URL
+
+                    const response = await fetch(fullUrl);
+                    const data = await response.json();
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP Error: ${response.status} - ${JSON.stringify(data)}`);
+                    }
+
+                    hideMessage(dropInfoDiv);
+
+                    if (data.data && data.data.length > 0) {
+                        data.data.forEach(item => {
+                            const suggestionDiv = document.createElement('div');
+                            suggestionDiv.classList.add('autocomplete-suggestion-item');
+                            suggestionDiv.innerHTML = `
+                                <img src="${item.img || 'https://placehold.co/32x32/1f2937/9ca3af?text=?'}" onerror="this.onerror=null;this.src='https://placehold.co/32x32/1f2937/9ca3af?text=?';" alt="Icon of ${item.name.fr || item.name.en || 'Item'}">
+                                <span>${item.name.fr || item.name.en || 'Unknown Name'}</span>
+                            `;
+                            suggestionDiv.addEventListener('click', (event) => {
+                                event.preventDefault();
+                                selectItem(item);
+                                autocompleteSuggestions.classList.add('hidden');
+                            });
+                            autocompleteSuggestions.appendChild(suggestionDiv);
+                        });
+                    } else {
+                        autocompleteSuggestions.classList.add('hidden');
+                        showMessage(dropErrorDiv, translations[currentLanguage].item_not_found, 'error');
+                    }
+                } catch (error) {
+                    console.error("Error fetching items:", error);
+                    hideMessage(dropInfoDiv);
+                    showMessage(dropErrorDiv, translations[currentLanguage].item_not_found + " " + (error.message || ""), 'error');
+                    autocompleteSuggestions.classList.add('hidden');
+                }
+            }
+
+            // Function to handle item selection from autocomplete
+            async function selectItem(item) {
+                selectedItem = item;
+                console.log("Selected item:", selectedItem);
+                dropItemNameInput.value = item.name.fr || item.name.en || '';
+                itemIcon.src = item.img || "https://placehold.co/32x32/1f2937/9ca3af?text=?";
+                itemIcon.onerror = function() { this.onerror=null; this.src='https://placehold.co/32x32/1f2937/9ca3af?text=?'; };
+                hideMessage(dropErrorDiv);
+                hideMessage(dropResultDiv);
+                hideMessage(dropInfoDiv);
+                dropBaseDropRateInput.value = '';
+                dropBaseDropRateInput.removeAttribute('disabled');
+
+                await displayMonsterDropOptions(selectedItem);
+            }
+            
+            // Event Listeners
+            let debounceTimer;
+            dropItemNameInput.addEventListener('input', () => {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(() => {
+                    fetchItemsForAutocomplete(dropItemNameInput.value);
+                }, 300);
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!dropItemNameInput.contains(e.target) && !autocompleteSuggestions.contains(e.target)) {
+                    autocompleteSuggestions.classList.add('hidden');
+                }
+            });
+
+            // Initial load
+            setLanguage('fr'); // Call setLanguage to initialize texts
+
+            if (versionInfoElement) {
+                versionInfoElement.textContent = translations[currentLanguage].version_info;
+            }
+
+            dropItemNameInput.value = ''; // Clear on initial load
+        });
+    </script>
+
+</body>
+</html>
