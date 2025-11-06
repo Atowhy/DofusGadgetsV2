@@ -44,7 +44,7 @@
         { "id": 33, "dbID": 7989, "nom": "Larve Orange", "type": "monstre", "zones": ["Bord de la Forêt Maléfique", "Côte d'Asse", "Port de Madrestam", "Prairies d'Astrub", "Rivière Kawaii"] },
         { "id": 34, "dbID": 153, "nom": "Boulanger Sombre", "type": "monstre", "zones": ["Passage vers Brâkmar", "Territoire des Bandits"] },
         { "id": 35, "dbID": 899, "nom": "Black Tiwabbit", "type": "monstre", "zones": ["Île de la Cawotte"] },
-        { "id": 700, "dbID": 72, "nom": "Tiwabbit Kiafin", "type": "monstre", "zones": ["Île de la Cawotte"] },
+        { "id": 637, "dbID": 72, "nom": "Tiwabbit Kiafin", "type": "monstre", "zones": ["Île de la Cawotte"] },
         { "id": 36, "dbID": 6200, "nom": "Tiwabbit", "type": "monstre", "zones": ["Île de la Cawotte"] },
         { "id": 37, "dbID": 48, "nom": "Tournesol Sauvage", "type": "monstre", "zones": ["Champs d'Astrub", "Rives Iridescentes"] },
         { "id": 38, "dbID": 155, "nom": "Bandit du clan des Roublards", "type": "monstre", "zones": ["Territoire des Bandits"] },
