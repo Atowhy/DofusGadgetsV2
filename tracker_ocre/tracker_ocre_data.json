@@ -408,7 +408,6 @@
         { "id": 305, "dbID": 797, "nom": "Scarabosse Doré", "type": "boss" },
         { "id": 306, "dbID": 792, "nom": "Bworkette", "type": "boss" },
         { "id": 307, "dbID": 1191, "nom": "Dragon Cochon", "type": "boss" },
-        { "id": 308, "dbID": 289, "nom": "Maître Corbac", "type": "boss" },
         { "id": 309, "dbID": 831, "nom": "Mominotor", "type": "boss" },
         { "id": 310, "dbID": 832, "nom": "Déminoboule", "type": "boss" },
         { "id": 311, "dbID": 382, "nom": "Tofu Royal", "type": "boss" },
