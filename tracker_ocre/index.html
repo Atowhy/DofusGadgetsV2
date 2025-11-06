@@ -221,8 +221,9 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                             </svg>
                         </button>
-                        <div id="data-actions-dropdown" class="hidden absolute right-0 mt-2 w-48 card-bg rounded-lg shadow-xl z-20 py-1">
+                        <div id="data-actions-dropdown" class="hidden absolute right-0 mt-2 w-56 card-bg rounded-lg shadow-xl z-20 py-1">
                             <a href="#" id="dropdown-import-btn" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-600 hover:text-white transition-colors" data-translate-key="btn_import">Importer</a>
+                            <a href="#" id="dropdown-import-mopolo-btn" class="block px-4 py-2 text-sm text-yellow-400 hover:bg-yellow-600 hover:text-white transition-colors" data-translate-key="btn_import_mopolo">Importer (Mopolo)</a>
                             <a href="#" id="dropdown-export-btn" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-600 hover:text-white transition-colors" data-translate-key="btn_export">Exporter</a>
                             <a href="#" id="dropdown-reset-btn" class="block px-4 py-2 text-sm text-red-400 hover:bg-red-700 hover:text-white transition-colors" data-translate-key="btn_reset">Réinitialiser</a>
                         </div>
@@ -400,19 +401,24 @@
                     pagination_next: "Suiv.",
                     data_management: "Gestion des Données",
                     btn_import: "Importer",
+                    btn_import_mopolo: "Importer (Mopolo)",
                     btn_export: "Exporter",
                     btn_reset: "Réinitialiser",
                     modal_title_export: "Exporter votre progression",
                     modal_desc_export: "Copiez ce code pour sauvegarder votre progression. Vous pourrez l'importer plus tard sur n'importe quel appareil.",
                     modal_title_import: "Importer votre progression",
                     modal_desc_import: "Collez un code de sauvegarde dans la zone ci-dessous et cliquez sur 'Importer' pour restaurer votre progression.",
+                    modal_title_import_mopolo: "Importer une sauvegarde Mopolo",
+                    modal_desc_import_mopolo: "Collez votre liste de nombres (séparés par des virgules) exportée depuis mopolo.dev pour charger votre progression.",
                     modal_placeholder: "Votre code de sauvegarde...",
+                    modal_placeholder_mopolo: "Ex: 627,288,370,208,...",
                     btn_copy: "Copier",
                     btn_import_code: "Importer ce code",
                     btn_close: "Fermer",
                     alert_copied: "Code copié dans le presse-papiers !",
                     alert_import_success: "Progression importée avec succès !",
                     alert_import_error: "Erreur : Le code de sauvegarde est invalide ou corrompu.",
+                    alert_import_mopolo_error: "Erreur : La liste de nombres est invalide ou ne contient aucun monstre valide.",
                     alert_reset_confirm_1: "Êtes-vous sûr de vouloir réinitialiser toute votre progression ? Cette action est irréversible.",
                     alert_reset_confirm_2: "Dernier avertissement : Toutes vos données de capture seront définitivement effacées. Continuer ?",
                     alert_reset_success: "Votre progression a été réinitialisée."
@@ -456,19 +462,24 @@
                     pagination_next: "Next",
                     data_management: "Data Management",
                     btn_import: "Import",
+                    btn_import_mopolo: "Import (Mopolo)",
                     btn_export: "Export",
                     btn_reset: "Reset",
                     modal_title_export: "Export Your Progress",
                     modal_desc_export: "Copy this code to back up your progress. You can import it later on any device.",
                     modal_title_import: "Import Your Progress",
                     modal_desc_import: "Paste a backup code into the text area below and click 'Import' to restore your progress.",
+                    modal_title_import_mopolo: "Import Mopolo Save",
+                    modal_desc_import_mopolo: "Paste your list of numbers (separated by commas) exported from the mopolo.dev website to load your progress.",
                     modal_placeholder: "Your backup code...",
+                    modal_placeholder_mopolo: "E.g. 627,288,370,208,...",
                     btn_copy: "Copy",
                     btn_import_code: "Import this code",
                     btn_close: "Close",
                     alert_copied: "Code copied to clipboard!",
                     alert_import_success: "Progress imported successfully!",
                     alert_import_error: "Error: The backup code is invalid or corrupted.",
+                    alert_import_mopolo_error: "Error: The list of numbers is invalid or contains no valid monsters.",
                     alert_reset_confirm_1: "Are you sure you want to reset all your progress? This action cannot be undone.",
                     alert_reset_confirm_2: "Final warning: All your captured data will be permanently deleted. Continue?",
                     alert_reset_success: "Your progress has been reset."
@@ -526,6 +537,7 @@
             const dataActionsDropdown = document.getElementById('data-actions-dropdown');
             const dataActionsContainer = document.getElementById('data-actions-container');
             const dropdownImportBtn = document.getElementById('dropdown-import-btn');
+            const dropdownImportMopoloBtn = document.getElementById('dropdown-import-mopolo-btn');
             const dropdownExportBtn = document.getElementById('dropdown-export-btn');
             const dropdownResetBtn = document.getElementById('dropdown-reset-btn');
 
@@ -776,7 +788,7 @@
                     updateProgressSummary();
 
                 } catch (error) {
-                    console.error('Erreur lors de la récupération ou du traitement des données des monstres :', error);
+                    console.error('Erreur lors de la récupération ou du traitement des monstres :', error);
                     emptyMessageElement.textContent = `Erreur de chargement des données : ${error.message}. Veuillez vérifier que le fichier 'tracker_ocre_data.json' est bien présent et correctement formaté.`;
                 }
             }
@@ -880,7 +892,7 @@
 
                 const totalPages = Math.ceil(filteredMonsters.length / monstersPerPage);
                 if (currentPage > totalPages) {
-                    currentPage = 1;
+                    currentPage = totalPages || 1;
                 }
                 const startIndex = (currentPage - 1) * monstersPerPage;
                 const endIndex = startIndex + monstersPerPage;
@@ -983,6 +995,10 @@
             // --- DATA MANAGEMENT FUNCTIONS ---
 
             function openModal(mode) {
+                // Detach listeners first to prevent duplicates
+                importCodeBtn.removeEventListener('click', handleImportCode);
+                importCodeBtn.removeEventListener('click', handleImportMopoloCode);
+
                 if (mode === 'export') {
                     modalTitle.textContent = translations[currentLanguage].modal_title_export;
                     modalDescription.textContent = translations[currentLanguage].modal_desc_export;
@@ -990,7 +1006,7 @@
                     dataCodeTextarea.readOnly = true;
                     importCodeBtn.classList.add('hidden');
                     copyCodeBtn.classList.remove('hidden');
-                } else { // import mode
+                } else if (mode === 'import') {
                     modalTitle.textContent = translations[currentLanguage].modal_title_import;
                     modalDescription.textContent = translations[currentLanguage].modal_desc_import;
                     dataCodeTextarea.value = '';
@@ -998,6 +1014,16 @@
                     dataCodeTextarea.placeholder = translations[currentLanguage].modal_placeholder;
                     importCodeBtn.classList.remove('hidden');
                     copyCodeBtn.classList.add('hidden');
+                    importCodeBtn.addEventListener('click', handleImportCode);
+                } else if (mode === 'import-mopolo') {
+                    modalTitle.textContent = translations[currentLanguage].modal_title_import_mopolo;
+                    modalDescription.textContent = translations[currentLanguage].modal_desc_import_mopolo;
+                    dataCodeTextarea.value = '';
+                    dataCodeTextarea.readOnly = false;
+                    dataCodeTextarea.placeholder = translations[currentLanguage].modal_placeholder_mopolo;
+                    importCodeBtn.classList.remove('hidden');
+                    copyCodeBtn.classList.add('hidden');
+                    importCodeBtn.addEventListener('click', handleImportMopoloCode);
                 }
                 dataModal.classList.remove('hidden');
             }
@@ -1051,6 +1077,37 @@
                 }
             }
 
+            function handleImportMopoloCode() {
+                const code = dataCodeTextarea.value.trim();
+                if (!code) return;
+
+                try {
+                    const monsterIds = code.split(',')
+                                           .map(id => parseInt(id.trim()))
+                                           .filter(id => !isNaN(id));
+                    
+                    const allMonsterIds = new Set(allMonsters.map(m => m.id));
+                    const validIds = monsterIds.filter(id => allMonsterIds.has(id));
+
+                    if (validIds.length === 0) {
+                         throw new Error('No valid monster IDs found in the provided code.');
+                    }
+
+                    capturedMonsters = new Set(validIds);
+                    saveCapturedMonsters();
+                    populateStageFilter(Array.from(new Set(allMonsters.map(m => m.etape))).sort((a, b) => a - b));
+                    currentPage = 1;
+                    renderMonsterList();
+                    updateProgressSummary();
+                    alert(translations[currentLanguage].alert_import_success);
+                    closeModal();
+
+                } catch (error) {
+                    console.error("Mopolo Import failed:", error);
+                    alert(translations[currentLanguage].alert_import_mopolo_error);
+                }
+            }
+
             // --- EVENT LISTENERS ---
 
             monsterListContainer.addEventListener('click', (e) => {
@@ -1059,6 +1116,8 @@
 
                 if (toggleBtn) {
                     const monsterId = parseInt(toggleBtn.dataset.id);
+                    const selectedStage = stageFilter.value; // Save the current selection
+
                     if (capturedMonsters.has(monsterId)) {
                         capturedMonsters.delete(monsterId);
                     } else {
@@ -1066,6 +1125,9 @@
                     }
                     saveCapturedMonsters();
                     populateStageFilter(Array.from(new Set(allMonsters.map(m => m.etape))).sort((a, b) => a - b));
+                    
+                    stageFilter.value = selectedStage; // Restore the selection
+
                     renderMonsterList();
                     updateProgressSummary();
                 } else if (zoneTag) {
@@ -1155,6 +1217,12 @@
                 openModal('import');
                 dataActionsDropdown.classList.add('hidden');
             });
+
+            dropdownImportMopoloBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                openModal('import-mopolo');
+                dataActionsDropdown.classList.add('hidden');
+            });
             
             dropdownExportBtn.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -1176,7 +1244,7 @@
 
             closeModalBtn.addEventListener('click', closeModal);
             copyCodeBtn.addEventListener('click', handleCopyCode);
-            importCodeBtn.addEventListener('click', handleImportCode);
+            // The listener for importCodeBtn is now added dynamically in openModal
             dataModal.addEventListener('click', (e) => {
                 if (e.target === dataModal) {
                     closeModal();
