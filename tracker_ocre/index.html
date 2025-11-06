@@ -165,6 +165,15 @@
             background-color: #FFD700; /* Gold */
         }
     </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
 </head>
 <body class="text-white antialiased">
     <!-- Conteneur de la vidéo d'arrière-plan -->
@@ -716,7 +725,7 @@
             async function fetchMonsterData() {
                 emptyMessageElement.textContent = translations[currentLanguage].empty_list; 
                 try {
-                    const response = await fetch('tracker_ocre_data.json'); 
+                    const response = await fetch('tracker_ocre_data.json?v=' + new Date().getTime()); 
                     if (!response.ok) {
                         console.error(`Erreur HTTP ! statut : ${response.status} - ${response.statusText}`);
                         throw new Error(`Échec du chargement de tracker_ocre_data.json. Statut : ${response.status}`);
@@ -777,7 +786,9 @@
                         });
                     });
                     
-                    allMonsters = processedMonsters;
+                    const uniqueProcessedMonsters = Array.from(new Map(processedMonsters.map(monster => [monster.id, monster])).values());
+
+                    allMonsters = uniqueProcessedMonsters;
                     allMonsters.sort((a, b) => a.etape - b.etape || a.name.localeCompare(b.name));
 
                     populateZoneFilter(Array.from(uniqueZones).sort());
