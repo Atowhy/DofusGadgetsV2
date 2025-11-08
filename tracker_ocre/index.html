@@ -725,7 +725,7 @@
             async function fetchMonsterData() {
                 emptyMessageElement.textContent = translations[currentLanguage].empty_list; 
                 try {
-                    const response = await fetch('tracker_ocre_data.json?v=' + new Date().getTime()); 
+                    const response = await fetch('tracker_ocre_data_v2.json?v=' + new Date().getTime()); 
                     if (!response.ok) {
                         console.error(`Erreur HTTP ! statut : ${response.status} - ${response.statusText}`);
                         throw new Error(`Échec du chargement de tracker_ocre_data.json. Statut : ${response.status}`);
